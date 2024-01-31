@@ -1,0 +1,45 @@
+VER 3 0100000000000007 "元素技能" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:4/2] 暴風之眼
+/cast [talent:4/1] 隕石
+END
+VER 3 0100000000000008 "升騰泉湧" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:7/2] 泉湧
+/cast [talent:7/3] 卓越術
+END
+VER 3 0100000000000006 "地震術" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/施放 [@cursor] 地震術
+END
+VER 3 0100000000000004 "增強薩buff" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/連續施法 閃電之盾,風怒武器,火舌武器;
+END
+VER 3 0100000000000001 "專注斷法" "INV_MISC_QUESTIONMARK"
+#showtooltip 削風術
+/cast [@focus,harm][@target,harm] 削風術
+END
+VER 3 0100000000000003 "治癒之雨" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/施放 [@cursor] 治癒之雨
+END
+VER 3 010000000000000A "測試" "INV_MISC_QUESTIONMARK"
+#showtooltips 妖術(小骷髏迅猛龍)
+END
+VER 3 0100000000000009 "百寶袋" "INV_MISC_QUESTIONMARK"
+#showtooltips 百寶袋
+/cast 百寶袋
+END
+VER 3 0100000000000005 "盟約特技" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use 妖精汲血
+/use 原初震波
+/use 禱鐘圖騰
+/use 連鎖收割
+/run local G=GetSpellInfo SetMacroSpell(GetRunningMacro(), G"原初震波" or  G"妖精汲血" or G"禱鐘圖騰" or G"連鎖收割")
+END
+VER 3 0100000000000002 "電容圖騰" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/施放 [@cursor] 電容圖騰
+END

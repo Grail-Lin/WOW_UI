@@ -1,0 +1,51 @@
+VER 3 0100000000000003 "慰" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [harm,nodead] 真言術：慰
+/stopmacro [harm,nodead]
+/cast [@mouseover,harm,nodead] 真言術：慰
+/stopmacro [@mouseover,harm,nodead]
+/targetenemy
+/cast 真言術：慰
+/targetlasttarget
+END
+VER 3 010000000000000A "慰爆" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/連續施法 reset=9 真言術：慰,心靈震爆
+END
+VER 3 0100000000000007 "暗影癒合" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/targetraid
+/施放 [@mouseover,help,nodead][help][@targettarget,help][@player] 暗影癒合
+/targetlasttarget
+END
+VER 3 010000000000000B "注入" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast 注入能量
+/script SendChatMessage("注入能量給了%T，快享受20秒！","whisper",nil,UnitName("target"))
+END
+VER 3 0100000000000008 "痛" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [harm,nodead] 暗言術：痛
+/stopmacro [harm,nodead]
+/cast [@mouseover,harm,nodead] 暗言術：痛
+/stopmacro [@mouseover,harm,nodead]
+/targetenemy
+/cast 暗言術：痛
+/targetlasttarget
+END
+VER 3 010000000000000C "盟約職技" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use 晉升者恩澤
+/use 玩弄心智
+/run local G=GetSpellInfo SetMacroSpell(GetRunningMacro(), G"晉升者恩澤" or G"玩弄心智")
+END
+VER 3 0100000000000006 "盾" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/targetraid
+/施放 [@mouseover,help,nodead][help][@targettarget,help][@player] 真言術：盾
+/targetlasttarget
+END
+VER 3 0100000000000009 "羽" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor] 天使之羽
+END

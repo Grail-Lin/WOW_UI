@@ -1,0 +1,28 @@
+VER 3 0100000000000004 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1MR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000005 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]一輪輪[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000003 "冰川飾品" "INV_MISC_QUESTIONMARK"
+#showtooltip 冰川長槍
+/use 14
+/cast 冰川長槍
+END
+VER 3 0100000000000002 "冰箱" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelaura 寒冰屏障
+/castsequence reset=240 寒冰屏障, 急速冷卻
+END
+VER 3 0100000000000001 "彗星風暴飾品" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast 彗星風暴
+/use 14
+END
+VER 3 0100000000000007 "暴風雪" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor] 暴風雪
+END
+VER 3 0100000000000006 "神兵隱藏" "132220"
+/run for k, v in pairs({ QuestCompleted = 44384}) do print(format("%s: %s", k, IsQuestFlaggedCompleted(v) and "\124cff00ff00Yes\124r" or "\124cffff0000No\124r")) end
+END

@@ -1,0 +1,10 @@
+VER 3 0100000000000002 "爆發(黑曜)" "134400"
+#showtooltip 爆發(黑曜)
+/cast [nostance:1] 黑曜同調(黑曜)
+/cast 爆發(黑曜)
+END
+VER 3 0100000000000001 "龍之怒" "134400"
+#showtooltip 龍之怒
+/use 14
+/cast 龍之怒
+END

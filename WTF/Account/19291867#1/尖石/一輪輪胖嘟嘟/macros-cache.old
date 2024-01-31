@@ -1,0 +1,98 @@
+VER 3 0100000000000001 "嘲諷" "INV_Misc_QuestionMark"
+#showtooltips
+/cast 嘲心嘯
+/y 我嘲諷了喔！！！
+END
+VER 3 0100000000000002 "專注斷法" "INV_Misc_QuestionMark"
+#showtooltip
+/施放 [target=focus,exists,nodead][target=pet] 點穴
+END
+VER 3 0100000000000003 "復活" "3610508"
+/script SetRaidTarget("target", 7)
+/use 拋棄式光學相位復生器
+END
+VER 3 0100000000000004 "斷法" "INV_Misc_QuestionMark"
+#showtooltip
+/cleartarget
+/targetlasttarget
+/target 圖加‧血圖騰
+/cast 天矛鎖喉手
+/targetlasttarget
+/stopmacro [exists]
+/targetlasttarget
+END
+VER 3 0100000000000005 "氣繭" "INV_Misc_QuestionMark"
+#showtooltips
+/施放 [@mouseover,help,nodead][help][@targettarget,help][@player] 氣繭護體
+END
+VER 3 0100000000000006 "爆裂踢" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [spec:2,talent:1/3] 真氣爆裂;[spec:2,talent:1/1]鶴旋踢;
+END
+VER 3 0100000000000007 "生氣勃勃" "INV_Misc_QuestionMark"
+#showtooltips 生氣勃勃
+/targetraid
+/施放 [@mouseover,help,nodead][help][@targettarget,help][@player] 生氣勃勃
+/targetlasttarget
+END
+VER 3 0100000000000008 "疾風真氣" "INV_Misc_QuestionMark"
+#showtooltip
+/castsequence [spec:2,talent:6/2,talent:1/2] reset=7 翠玉清風,真氣波; [spec:2,talent:6/2,talent:1/3] reset=5 翠玉清風,真氣爆裂;[spec:2,talent:6/3]召喚紅鶴赤吉;
+END
+VER 3 0100000000000009 "白虎武裝" "INV_Misc_QuestionMark"
+#showtooltip
+/castsequence [spec:3] reset=60 召喚白虎雪怒,秩序武裝;
+END
+VER 3 010000000000000A "真氣波" "INV_Misc_QuestionMark"
+#showtooltip
+/cleartarget
+/targetlasttarget
+/target 魔能奔騰圖騰
+/cast 碎玉轟雷掌
+/targetlasttarget
+/stopmacro [exists]
+/targetlasttarget
+END
+VER 3 010000000000000B "群嘲" "INV_Misc_QuestionMark"
+#showtooltip 召喚玄牛雕像
+/target 玄牛雕像
+/cast [help] 嘲心嘯
+/targetlastenemy
+/click TotemFrameTotem1 RightButton
+END
+VER 3 010000000000000C "翠玉斗轉" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [spec:2,talent:6/2]翠玉清風;斗轉星移;
+END
+VER 3 010000000000000D "聖所職業" "INV_Misc_QuestionMark"
+#showtooltip
+/use 門派先人
+/use 骨灰絕釀
+/use 靈脈踐踏
+/use 秩序武裝
+/run local G=GetSpellInfo SetMacroSpell(GetRunningMacro(), G"門派先人" or G"骨灰絕釀" or G"靈脈踐踏" or G"秩序武裝")
+END
+VER 3 010000000000000E "舒和之霧" "INV_Misc_QuestionMark"
+#showtooltips
+/targetraid
+/施放 [@mouseover,help,nodead][help][@targettarget,help][@player] 舒和之霧
+/targetlasttarget
+END
+VER 3 010000000000000F "虎掌滅寂" "INV_Misc_QuestionMark"
+#showtooltips
+/castsequence reset=3 滅寂腿,虎掌
+END
+VER 3 0100000000000010 "超凡入聖改" "INV_Misc_QuestionMark"
+#showtooltips
+/施放 [mod:shift] 超凡入聖;[mod:ctrl]碎玉轟雷掌;[mod:alt]鶴旋踢;超凡入聖：轉
+END
+VER 3 0100000000000011 "點穴巨蟲" "INV_Misc_QuestionMark"
+#showtooltip
+/cleartarget
+/targetlasttarget
+/target 『巨蟲』尤瑪葛
+/cast 點穴
+/targetlasttarget
+/stopmacro [exists]
+/targetlasttarget
+END

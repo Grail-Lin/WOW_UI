@@ -1,0 +1,4 @@
+
+LOIHLootDB = {
+	["debugmode"] = false,
+}

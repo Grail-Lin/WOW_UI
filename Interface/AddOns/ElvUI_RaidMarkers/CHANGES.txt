@@ -1,0 +1,12 @@
+tag 00ccc084d63f7431870f3fe6a6a323b7307a600b 6.2.7
+Author:	Adam Koch <me@adamko.ch>
+Date:	Tue Jan 16 15:59:44 2024 -0500
+
+6.2.7 Release
+
+commit 7b9f52fbfe48eb713fd1b559bec27905fb161b16
+Author: Adam Koch <me@adamko.ch>
+Date:   Tue Jan 16 15:59:41 2024 -0500
+
+    Update TOC for new patch.
+

@@ -1,0 +1,9 @@
+
+LOIHLootCharDB = {
+	["vanity"] = {
+	},
+	["off"] = {
+	},
+	["main"] = {
+	},
+}

@@ -1,0 +1,41 @@
+VER 3 0100000000000001 "VuhDoDCShieldData" "132281"
+P1OM1IH1HM1PM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1SR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000002 "VuhDoDCShieldNames" "132281"
+N熊古光占占狐咕瞳覺得瘟[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]蘭德貝[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000003 "元素" "INV_Misc_QuestionMark"
+#showtooltip
+/連續施法 [talent:4/2]  reset=30 風暴元素,暴風之眼;reset=30 火元素,隕石
+END
+VER 3 0100000000000004 "先祖風驟" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [talent:5/2] 先祖導引;[talent:5/3] 風驟圖騰
+END
+VER 3 0100000000000005 "地震術" "INV_Misc_QuestionMark"
+#showtooltips
+/cast [@cursor] 地震術
+END
+VER 3 0100000000000006 "專注打斷" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@focus,exists] [@target] 削風術
+END
+VER 3 0100000000000007 "泉湧卓越" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [talent:7/2] 泉湧;[talent:7/3] 卓越術
+END
+VER 3 0100000000000008 "盟約職業" "INV_Misc_QuestionMark"
+#showtooltip
+/use 妖精汲血
+/use 原初震波
+/use 禱鐘圖騰
+/run local G=GetSpellInfo SetMacroSpell(GetRunningMacro(), G"妖精汲血" or G"原初震波" or G"禱鐘圖騰")
+END
+VER 3 0100000000000009 "盾" "INV_Misc_QuestionMark"
+#showtooltips
+/cast [mod:ctrl]閃電之盾;[mod:shift] 水之盾;大地之盾;
+END
+VER 3 010000000000000A "電容圖騰" "INV_Misc_QuestionMark"
+#showtooltips
+/cast [@cursor] 電容圖騰
+END

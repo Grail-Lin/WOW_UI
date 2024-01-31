@@ -1,0 +1,148 @@
+VER 3 0000000000000036 "Decursive" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,nomod,exists] 淨化靈魂;  [@mouseover,exists,mod:ctrl] 妖術; [@mouseover,exists,mod:shift] 清毒圖騰
+END
+VER 3 0000000000000002 "Decursive" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,nomod,exists] 淨化靈魂;  [@mouseover,exists,mod:ctrl] 妖術; [@mouseover,exists,mod:shift] 清毒圖騰
+END
+VER 3 0000000000000031 "dump" "136103"
+/dump C_QuestLog.IsQuestFlaggedCompleted(44326)
+END
+VER 3 0000000000000014 "healing" "INV_MISC_QUESTIONMARK"
+#showtooltips 回生迷霧
+/targetraid
+/施放 [@mouseover,help,nodead][help][@targettarget,help][@player] 回生迷霧
+/targetlasttarget
+END
+VER 3 0000000000000029 "HearthRoulette" "413582"
+#showtooltip
+/cast 傳播者充滿愛的爐石
+END
+VER 3 000000000000001B "HELP" "572034"
+/y 救我抱歉，我來不及變身了
+END
+VER 3 0000000000000030 "mhs toggle" "3601531"
+/mhs toggle
+END
+VER 3 0000000000000012 "test" "611420"
+/tar 可疑的奈斯敏
+END
+VER 3 0000000000000010 "toy" "319458"
+/use [mod:shift] 烈焰爐石;[mod:ctrl] 原子校準器; [mod:alt] 燃燒的閃現之環; 和諧圖騰;
+END
+VER 3 000000000000002C "全隊上標" "3573824"
+/script SetRaidTarget("player",1);
+/script SetRaidTarget("party1",2);
+/script SetRaidTarget("party2",3);
+/script SetRaidTarget("party3",5);
+/script SetRaidTarget("party4",6);
+END
+VER 3 0000000000000020 "單吃" "572034"
+/y 我可以單吃別幫我分傷
+END
+VER 3 000000000000000A "嘲諷" "INV_MISC_QUESTIONMARK"
+#showtooltip 嘲心嘯
+/stopcasting
+/target 玄牛雕像
+/cast 嘲心嘯
+/targetlastenemy
+END
+VER 3 0000000000000021 "地城完成度" "237383"
+/run local a local b=0 for i = 1,GetAchievementNumCriteria(11152) do _, _, _, a = GetAchievementCriteriaInfo(11152,i) b = b + a end print("完成副本: " .. b .. "/30")
+END
+VER 3 0000000000000019 "坐下" "651727"
+/sit
+END
+VER 3 0000000000000033 "專注控場" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@focus,harm][@target,harm] 點穴
+/cast [@focus,harm][@target,harm] 妖術
+/run local G=GetSpellInfo SetMacroSpell(GetRunningMacro(), G"點穴" or G"妖術")
+END
+VER 3 0000000000000026 "專注控場" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@focus,harm][@target,harm] 點穴
+/cast [@focus,harm][@target,harm] 妖術(小骷髏迅猛龍)
+/run local G=GetSpellInfo SetMacroSpell(GetRunningMacro(), G"點穴" or G"妖術(小骷髏迅猛龍)")
+END
+VER 3 000000000000001C "專注斷法" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/施放 [target=focus,exists,nodead][target=pet] 斷法
+END
+VER 3 000000000000002E "手腕" "134400"
+#showtooltip
+/use 9
+END
+VER 3 0000000000000008 "拉遠視角" "PANDARENRACIAL_INNERPEACE"
+/script SetCVar("cameraDistanceMaxFactor", 200)
+END
+VER 3 0000000000000037 "放下乘客" "4640492"
+/run EjectPassengerFromSeat(GetMouseButtonClicked()=="LeftButton" and 1 or 2)
+END
+VER 3 0000000000000035 "火坐騎1" "897131"
+/way #2133 25.24 44.80
+/way #2133 26.70 47.00
+/way #2133 27.70 49.00
+/way #2133 27.90 51.00
+/way #2133 28.75 55.30
+/way #2133 29.02 41.94
+/way #2133 29.15 42.50
+/way #2133 29.95 47.97
+/way #2133 30.20 40.00
+/way #2133 31.18 51.95
+/way #2133 32.73 52.23
+END
+VER 3 000000000000002F "火坐騎2" "897131"
+/way #2133 34.41 45.71
+/way #2133 35.63 48.77
+/way #2133 35.79 41.39
+/way #2133 36.20 44.01
+/way #2133 37.58 46.76
+END
+VER 3 000000000000001A "烹飪火焰" "135999"
+#showtooltips
+/施放 [mod:shift] 亞昆達的火杖;烹飪
+END
+VER 3 000000000000002B "焦點玄牛" "608951"
+/target 玄牛雕像
+/focus target
+/target 大型土元素
+/focus target
+/target 『巨蟲』尤瑪葛
+/focus target
+END
+VER 3 0000000000000038 "種子" "134400"
+#showtooltip 悶燃之種
+/cleartarget
+/use 悶燃之種
+/target 樹人幼苗
+END
+VER 3 0000000000000034 "腰帶" "134400"
+#showtooltip
+/use 6
+END
+VER 3 0000000000000028 "隨機坐騎" "3747448"
+#showtooltip
+/cast [mod:ctrl] 大型遠征犛牛;[mod:alt] 『大河之際』紋洛;[mod:shift]再生元龍;
+/run local t,m m=GetZoneText()if(m=="淵喉")then t=1442 else t=0 end;C_MountJournal.SummonByID(t);
+END
+VER 3 0000000000000017 "隱藏外觀世界任" "135328"
+/run local _,_,_,c, d = GetAchievementCriteriaInfo(11153,1) local _,_,_,e, f = GetAchievementCriteriaInfo(11154,1) print("WQs: "..c.."/"..d) print("Kills: "..e.."/"..f)
+/run local a local b=0 for i = 1,GetAchievementNumCriteria(11152) do _, _, _, a = GetA
+END
+VER 3 0000000000000018 "隱藏外觀副本" "132169"
+/run local a local b=0 for i = 1,GetAchievementNumCriteria(11152) do _, _, _, a = GetAchievementCriteriaInfo(11152,i) b = b + a end print("完成副本: " .. b .. "/100")
+END
+VER 3 0000000000000016 "飾品1" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/use 13
+END
+VER 3 000000000000002D "飾品2" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/use 14
+END
+VER 3 0000000000000039 "魯克馬爾" "4640492"
+/target 魯克馬爾
+/cast 碎玉轟雷掌
+END

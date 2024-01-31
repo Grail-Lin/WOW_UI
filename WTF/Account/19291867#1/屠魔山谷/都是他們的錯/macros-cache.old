@@ -1,0 +1,22 @@
+VER 3 0100000000000004 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1PM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000005 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]都是他[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000001 "復仇飾品" "INV_MISC_QUESTIONMARK"
+#showtooltip 復仇之怒
+/use 14
+/cast 復仇之怒
+END
+VER 3 0100000000000002 "死刑裁決" "INV_MISC_QUESTIONMARK"
+#showtooltip 聖殿騎士之裁決
+/castsequence reset=0 0,死刑宣判
+/castsequence reset=0 聖殿騎士之裁決,0
+END
+VER 3 0100000000000003 "聖能" "INV_MISC_QUESTIONMARK"
+#showtoolstip
+/castsequence reset=0 0,0,正義之刃
+/castsequence reset=0 0,審判,0
+/castsequence reset=0 十字軍聖擊,0,0
+END

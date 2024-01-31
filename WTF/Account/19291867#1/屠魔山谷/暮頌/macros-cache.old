@@ -1,0 +1,23 @@
+VER 3 0100000000000001 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1EM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000002 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]暮頌[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000004 "暈眩" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast [talent:3/2] 窒息術;[talent:3/3] 致盲凍雨
+END
+VER 3 0100000000000005 "盟約職業" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use 憎惡體外肢
+/use 劣者枷鎖
+/run local G=GetSpellInfo SetMacroSpell(GetRunningMacro(), G"劣者枷鎖"  or G"憎惡體外肢")
+END
+VER 3 0100000000000003 "符文冰柱" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast 冰霜之柱
+/use 14
+/cast 強力符文武器
+/cast 死者復生
+END

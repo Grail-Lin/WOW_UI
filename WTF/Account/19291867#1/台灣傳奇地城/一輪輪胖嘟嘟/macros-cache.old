@@ -1,0 +1,88 @@
+VER 3 0100000000000003 "五氣+" "INV_MISC_QUESTIONMARK"
+#showtooltip 五氣歸元
+/use 難以捉摸的量子裝置
+/cast 五氣歸元
+END
+VER 3 0100000000000015 "分身" "INV_MISC_QUESTIONMARK"
+#showtooltip 風、火、大地
+/use 13
+/cast 風、火、大地
+END
+VER 3 0100000000000012 "嘲諷" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/cast 嘲心嘯
+/y 我嘲諷了喔！！！
+END
+VER 3 0100000000000001 "回生迷霧" "627487"
+#showtooltips 回生迷霧
+/targetraid
+/施放 [@mouseover,help,nodead][help][@targettarget,help][@player] 回生迷霧
+/targetlasttarget
+END
+VER 3 0100000000000019 "專注斷法" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/施放 [target=focus,exists,nodead][target=pet] 天矛鎖喉手
+END
+VER 3 0100000000000018 "復活" "INV_MISC_QUESTIONMARK"
+/script SetRaidTarget("target", 7)
+/use 拋棄式光學相位復生器
+END
+VER 3 010000000000000F "氣繭" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/施放 [@mouseover,help,nodead][help][@targettarget,help][@player] 氣繭護體
+END
+VER 3 0100000000000013 "爆發" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence reset=30 虎掌,虎掌,虎掌,艾澤拉斯守護者,風、火、大地,幽冥掌,翔陽腳,狂拳連打,口袋型運算裝置,迴龍升天破;
+END
+VER 3 0100000000000016 "爆裂踢" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [spec:2,talent:1/3] 真氣爆裂;[spec:2,talent:1/1]鶴旋踢;
+END
+VER 3 0100000000000008 "生氣勃勃" "INV_MISC_QUESTIONMARK"
+#showtooltips 生氣勃勃
+/targetraid
+/施放 [@mouseover,help,nodead][help][@targettarget,help][@player] 生氣勃勃
+/targetlasttarget
+END
+VER 3 010000000000000A "疾風真氣" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence [spec:2,talent:6/2,talent:1/2] reset=7 翠玉清風,真氣波; [spec:2,talent:6/2,talent:1/3] reset=5 翠玉清風,真氣爆裂;[spec:2,talent:6/3]召喚紅鶴赤吉;
+END
+VER 3 010000000000000B "白虎武裝" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence [spec:3] reset=60 召喚白虎雪怒,秩序武裝;
+END
+VER 3 0100000000000007 "群嘲" "INV_MISC_QUESTIONMARK"
+#showtooltip 召喚玄牛雕像
+/target 玄牛雕像
+/cast [help] 嘲心嘯
+/targetlastenemy
+/click TotemFrameTotem1 RightButton
+END
+VER 3 0100000000000006 "翠玉斗轉" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [spec:2,talent:6/2]翠玉清風;斗轉星移;
+END
+VER 3 0100000000000017 "聖所職業" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use 門派先人
+/use 骨灰絕釀
+/use 靈脈踐踏
+/use 秩序武裝
+/run local G=GetSpellInfo SetMacroSpell(GetRunningMacro(), G"門派先人" or G"骨灰絕釀" or G"靈脈踐踏" or G"秩序武裝")
+END
+VER 3 0100000000000002 "舒和之霧" "606550"
+#showtooltips
+/targetraid
+/施放 [@mouseover,help,nodead][help][@targettarget,help][@player] 舒和之霧
+/targetlasttarget
+END
+VER 3 010000000000000C "虎掌滅寂" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/castsequence reset=3 滅寂腿,虎掌
+END
+VER 3 0100000000000005 "超凡入聖改" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/施放 [mod:shift] 超凡入聖;[mod:ctrl]碎玉轟雷掌;[mod:alt]鶴旋踢;超凡入聖：轉
+END

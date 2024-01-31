@@ -1,0 +1,4 @@
+VER 3 0100000000000001 "魂靈巨集" "134400"
+#showtooltip
+/castsequence 自然迅捷,召集魂靈
+END
