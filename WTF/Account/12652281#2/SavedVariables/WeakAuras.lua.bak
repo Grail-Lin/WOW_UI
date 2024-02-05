@@ -1,0 +1,23 @@
+
+WeakAurasSaved = {
+	["dynamicIconCache"] = {
+	},
+	["CurrentEncounter"] = {
+		["id"] = 2677,
+		["boss_guids"] = {
+			["Creature-0-3901-2549-5775-204931-00003F9290"] = true,
+		},
+		["zone_id"] = 2549,
+	},
+	["displays"] = {
+	},
+	["lastArchiveClear"] = 1707049201,
+	["minimap"] = {
+		["hide"] = false,
+	},
+	["lastUpgrade"] = 1707049209,
+	["dbVersion"] = 70,
+	["registered"] = {
+	},
+	["login_squelch_time"] = 10,
+}

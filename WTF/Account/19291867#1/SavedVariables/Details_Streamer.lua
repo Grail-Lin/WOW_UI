@@ -12,19 +12,24 @@ Details_StreamerDB = {
 		["撕開你的一切 - 屠魔山谷"] = "一輪輪胖嘟嘟 - 屠魔山谷",
 		["一輪輪肥嘟嘟 - 尖石"] = "一輪輪胖嘟嘟 - 屠魔山谷",
 		["都是他們的錯 - 屠魔山谷"] = "一輪輪胖嘟嘟 - 屠魔山谷",
-		["夕行 - 屠魔山谷"] = "一輪輪胖嘟嘟 - 屠魔山谷",
+		["一輪輪胖嘟嘟 - 尖石"] = "一輪輪胖嘟嘟 - 屠魔山谷",
 		["鎖甲好難穿搭 - 屠魔山谷"] = "一輪輪胖嘟嘟 - 屠魔山谷",
 		["只用來看裝備 - 屠魔山谷"] = "一輪輪胖嘟嘟 - 屠魔山谷",
-		["想要跟你飛 - 尖石"] = "一輪輪胖嘟嘟 - 屠魔山谷",
-		["稅道夏武 - 尖石"] = "一輪輪胖嘟嘟 - 屠魔山谷",
 		["一輪輪胖嘟嘟 - 屠魔山谷"] = "一輪輪胖嘟嘟 - 屠魔山谷",
+		["稅道夏武 - 尖石"] = "一輪輪胖嘟嘟 - 屠魔山谷",
+		["想要跟你飛 - 尖石"] = "一輪輪胖嘟嘟 - 屠魔山谷",
 		["馬可西亞斯 - 屠魔山谷"] = "一輪輪胖嘟嘟 - 屠魔山谷",
-		["一輪輪胖嘟嘟 - 尖石"] = "一輪輪胖嘟嘟 - 屠魔山谷",
+		["夕行 - 屠魔山谷"] = "一輪輪胖嘟嘟 - 屠魔山谷",
 		["粉紅塔里克 - 屠魔山谷"] = "一輪輪胖嘟嘟 - 屠魔山谷",
 	},
 	["profiles"] = {
 		["一輪輪胖嘟嘟 - 屠魔山谷"] = {
-			["use_square_mode"] = true,
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["is_first_run"] = false,
 			["grow_direction"] = "right",
 			["arrow_color"] = {
@@ -33,16 +38,8 @@ Details_StreamerDB = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["main_frame_size"] = {
-				259.7300109863281, -- [1]
-				11.9839391708374, -- [2]
-			},
+			["use_square_mode"] = true,
+			["arrow_anchor_y"] = 0,
 			["minimap"] = {
 				["minimapPos"] = 336.7573796871905,
 				["radius"] = 160,
@@ -58,7 +55,7 @@ Details_StreamerDB = {
 			["square_amount"] = 5,
 			["enabled"] = true,
 			["arrow_size"] = 10,
-			["use_spark"] = true,
+			["font_size"] = 10,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -66,10 +63,15 @@ Details_StreamerDB = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["font_size"] = 10,
 			["y"] = 247.0098571777344,
+			["use_spark"] = true,
 			["x"] = 270.1122131347656,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 50,
@@ -84,14 +86,12 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
+			["author"] = "Details! Team",
 			["main_frame_locked"] = false,
-			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				259.7300109863281, -- [1]
+				11.9839391708374, -- [2]
+			},
 		},
 	},
 }

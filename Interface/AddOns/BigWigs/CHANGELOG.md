@@ -1,7 +1,8 @@
 # BigWigs
 
-## [v317.1](https://github.com/BigWigsMods/BigWigs/tree/v317.1) (2024-01-29)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v317...v317.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v318.2](https://github.com/BigWigsMods/BigWigs/tree/v318.2) (2024-02-04)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v318.1...v318.2) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- Plugins/Bars: Tweak frame levels  
-- Plugins/Statistics: Prevent an informational error when running dungeons in a raid group  
+- bump version  
+- Core/BossPrototype: Let `:GetIcon()` take unit tokens  
+- Amirdrassil/Larodar: Tweaks to the Smoldering Suffocation code  

@@ -1,0 +1,141 @@
+VER 3 0000000000000001 "Decursive" "INV_MISC_QUESTIONMARK"
+/script DecursiveRootTable.Dcr:Println('沒有可用法術')
+END
+VER 3 0000000000000004 "停止施法" "2973324"
+/stopcasting
+END
+VER 3 000000000000001C "冰柱符文武器" "135372"
+/cast 冰霜之柱
+/cast 強力符文武器
+/cast 燼魂之塵
+END
+VER 3 000000000000001B "冰霜+恐烈" "135849"
+/cast 冰霜震擊
+/cast 恐懼烈焰容器
+END
+VER 3 000000000000001D "冰龍噴" "458718"
+/cast 冰霜之柱
+/cast 辛德拉苟莎之息
+END
+VER 3 000000000000000C "取消HOT" "132207"
+/取消光環 恢復
+/取消光環 回春術
+/取消光環 激流
+/取消光環 恢復迷霧
+/取消光環 真言術:盾
+/取消光環 野性痊癒
+/取消光環 生命之花
+/取消光環 回生迷霧
+/取消光環 癒合禱言
+/取消光環 光明迴響
+/取消光環 迴響防護
+/取消光環 鑽石屏障
+/取消光環 深海監護
+/取消光環 金鐘絕釀
+/取消光環 烈酒不加料
+/取消光環 聖光信標
+/取消光環 神聖微光
+/取消光環 精華之泉
+/取消光環 猛虎之眼
+/取消光環 艾澤萊晶岩脈
+END
+VER 3 0000000000000013 "問號卓越" "135791"
+/cast 卓越術
+/cast 難以捉摸的量子裝置
+END
+VER 3 0000000000000005 "寒冰停止" "2459294"
+#showtooltip 
+/cancelaura 寒冰屏障
+/cast 寒冰屏障
+END
+VER 3 0000000000000002 "愛~" "ABILITY_DRUID_FEROCIOUSBITE"
+/LOVE
+END
+VER 3 000000000000000D "斷法喊" "135856"
+/showtooltip 法術反制
+/cast 法術反制
+/y 2-3 斷 我要5星武器 霸脫
+END
+VER 3 0000000000000006 "明晰火衝" "2967104"
+/cast 明晰之夢的記憶
+/cast 火焰衝擊
+END
+VER 3 0000000000000007 "燃灼鬥士" "135824"
+/cast 燃灼
+/cast 腐化鬥士徽章
+END
+VER 3 000000000000001E "爐石" "3528303"
+#showtooltip 統御的爐石
+/click rhButton 1
+/click rhButton LeftButton 1
+END
+VER 3 0000000000000016 "直削風" "136018"
+#showtooltip
+/施放 [@mouseover,harm,nodead][@mouseovertarget,harm,nodead][harm][@targettarget,harm]削風術;削風術
+END
+VER 3 000000000000001A "綠卓越" "135791"
+/cast 卓越術
+/cast 喚醒者蕨葉
+END
+VER 3 0000000000000017 "自冰霜" "135849"
+#showtooltip
+/施放 [@mouseover,harm,nodead][@mouseovertarget,harm,nodead][harm][@targettarget,harm]冰霜震擊;冰霜震擊
+END
+VER 3 0000000000000015 "自動斷" "136018"
+#showtooltip 削風術
+/施放 [target=focus,exists,nodead][target=pet] 削風術
+END
+VER 3 000000000000001F "自動淨化" "236288"
+#showtooltip 淨化靈魂
+/施放 [target=focus,exists,nodead][target=pet] 淨化靈魂
+END
+VER 3 0000000000000009 "自動痛" "136207"
+#showtooltip
+/施放 [@mouseover,harm,nodead][@mouseovertarget,harm,nodead][harm][@targettarget,harm]暗言術：痛;暗言術：痛
+END
+VER 3 0000000000000008 "自動觸" "135978"
+#showtooltip
+/施放 [@mouseover,harm,nodead][@mouseovertarget,harm,nodead][harm][@targettarget,harm]吸血之觸;吸血之觸
+END
+VER 3 000000000000000B "自動驅病" "135935"
+#showtooltip
+驅淨疾病/施放 [@mouseover,help,nodead][help][@targettarget,help][@player]驅淨疾病;驅淨疾病
+END
+VER 3 000000000000000A "自動驅魔" "136066"
+#showtooltip
+/施放 [@mouseover,harm,nodead][@mouseovertarget,harm,nodead][harm][@targettarget,harm]驅散魔法;驅散魔法
+END
+VER 3 0000000000000020 "自抓" "237532"
+#showtooltip
+/施放 [@mouseover,harm,nodead][@mouseovertarget,harm,nodead][harm][@targettarget,harm]死亡之握;死亡之握
+END
+VER 3 0000000000000018 "自火" "135813"
+#showtooltip
+/施放 [@mouseover,harm,nodead][@mouseovertarget,harm,nodead][harm][@targettarget,harm]烈焰震擊;烈焰震擊
+END
+VER 3 000000000000000F "表揚" "236288"
+/表揚
+END
+VER 3 0000000000000019 "補靈" "135791"
+/cast 卓越術
+/cast 靈行者之賜
+END
+VER 3 000000000000000E "誤導專注" "132180"
+#showtooltip 誤導
+/施放 [target=focus,exists,nodead][target=pet] 誤導
+END
+VER 3 0000000000000010 "賣賣賣" "132319"
+/run BuyMerchantItem(3)
+/use 棄捨艾澤萊晶岩護軀
+END
+VER 3 0000000000000011 "轉" "135819"
+/console turnspeed 2500
+END
+VER 3 0000000000000012 "風怒PVP" "136114"
+/cast 風怒圖騰
+/cast 罪惡志士兇猛徽章
+END
+VER 3 0000000000000014 "風暴+翅膀+烈焰" "132314"
+/cast 風暴打擊
+/cast 米達斯咒符
+END

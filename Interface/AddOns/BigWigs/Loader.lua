@@ -12,7 +12,7 @@ local strfind = string.find
 -- Generate our version variables
 --
 
-local BIGWIGS_VERSION = 317
+local BIGWIGS_VERSION = 318
 local BIGWIGS_RELEASE_STRING, BIGWIGS_VERSION_STRING
 local versionQueryString, versionResponseString = "Q^%d^%s^%d^%s", "V^%d^%s^%d^%s"
 local customGuildName = false
@@ -36,7 +36,7 @@ do
 	local ALPHA = "ALPHA"
 
 	local releaseType
-	local myGitHash = "f10c0b6" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "56c92da" -- The ZIP packager will replace this with the Git hash.
 	local releaseString
 	--[=[@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -168,39 +168,36 @@ do
 
 	if public.isVanilla then
 		public.currentExpansion = {
-		name = c,
-		littlewigsName = lw_c,
-		littlewigsDefault = lw_c,
-		zones = {
+			name = c,
+			littlewigsName = lw_c,
+			littlewigsDefault = lw_c,
+			zones = {},
 		}
-	}
 	elseif public.isTBC then
 		public.currentExpansion = {
-		name = bc,
-		littlewigsName = lw_bc,
-		littlewigsDefault = lw_bc,
-		zones = {
+			name = bc,
+			littlewigsName = lw_bc,
+			littlewigsDefault = lw_bc,
+			zones = {},
 		}
-	}
 	elseif public.isWrath then
 		public.currentExpansion = {
-		name = wotlk,
-		littlewigsName = lw_wotlk,
-		littlewigsDefault = lw_wotlk,
-		zones = {
+			name = wotlk,
+			littlewigsName = lw_wotlk,
+			littlewigsDefault = lw_wotlk,
+			zones = {},
 		}
-	}
 	else
 		public.currentExpansion = { -- Change on new expansion releases
-		name = df,
-		littlewigsName = lw_df,
-		littlewigsDefault = lw_cs,
-		zones = {
-			[2522] = "BigWigs_VaultOfTheIncarnates",
-			[2569] = "BigWigs_Aberrus",
-			[2549] = "BigWigs_Amirdrassil",
+			name = df,
+			littlewigsName = lw_df,
+			littlewigsDefault = lw_cs,
+			zones = {
+				[2522] = "BigWigs_VaultOfTheIncarnates",
+				[2569] = "BigWigs_Aberrus",
+				[2549] = "BigWigs_Amirdrassil",
+			}
 		}
-	}
 	end
 
 	public.zoneTbl = {
@@ -211,6 +208,7 @@ do
 
 		--[[ BigWigs: Classic ]]--
 		[48] = c, -- Blackfathom Deeps [Classic Season of Discovery Only]
+		[90] = c, -- Gnomeregan [Classic Season of Discovery Only]
 		[309] = c, -- Zul'Gurub [Classic Only]
 		[409] = c, -- Molten Core
 		[469] = c, -- Blackwing Lair

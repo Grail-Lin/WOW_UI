@@ -1,5 +1,5 @@
 --
--- RaiderIO Client Data. Generated on Wed Jan 31 2024 07:46:22 GMT+0000 (Coordinated Universal Time)
+-- RaiderIO Client Data. Generated on Mon Feb 05 2024 17:16:18 GMT+0000 (Coordinated Universal Time)
 --
 local _, ns = ...
 ns.CLIENT_CHARACTERS = {
@@ -13,7 +13,7 @@ ns.CLIENT_CHARACTERS = {
     },
     ["mythic_keystone"] = {
       ["all"] = {
-        ["score"] = 3008.4,
+        ["score"] = 3009.2,
         ["best"] = {
           ["zone_id"] = 7805,
           ["level"] = 24,
@@ -133,14 +133,14 @@ ns.CLIENT_CHARACTERS = {
     },
     ["mythic_keystone"] = {
       ["all"] = {
-        ["score"] = 3231.1,
+        ["score"] = 3261.6,
         ["best"] = {
-          ["zone_id"] = 7805,
-          ["level"] = 25,
+          ["zone_id"] = 1000010,
+          ["level"] = 26,
           ["upgrades"] = 1,
-          ["fraction"] = 0.905,
-          ["score"] = 206.1852388640624,
-          ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/22276258-25-black-rook-hold?utm_source=client"
+          ["fraction"] = 0.922,
+          ["score"] = 212.97751762739716,
+          ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/23855138-26-doti-galakronds-fall?utm_source=client"
         },
         ["bestFortified"] = {
           ["zone_id"] = 7805,
@@ -151,12 +151,12 @@ ns.CLIENT_CHARACTERS = {
           ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/22276258-25-black-rook-hold?utm_source=client"
         },
         ["bestTyrannical"] = {
-          ["zone_id"] = 7805,
-          ["level"] = 24,
-          ["upgrades"] = 2,
-          ["fraction"] = 0.734,
-          ["score"] = 201.3244173181015,
-          ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/21203378-24-black-rook-hold?utm_source=client"
+          ["zone_id"] = 1000010,
+          ["level"] = 26,
+          ["upgrades"] = 1,
+          ["fraction"] = 0.922,
+          ["score"] = 212.97751762739716,
+          ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/23855138-26-doti-galakronds-fall?utm_source=client"
         },
         ["runs"] = {
           {
@@ -225,11 +225,11 @@ ns.CLIENT_CHARACTERS = {
           },
           {
             ["zone_id"] = 1000010,
-            ["level"] = 25,
+            ["level"] = 26,
             ["upgrades"] = 1,
-            ["fraction"] = 0.924,
-            ["score"] = 205.95445294191717,
-            ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/22934969-25-doti-galakronds-fall?utm_source=client"
+            ["fraction"] = 0.922,
+            ["score"] = 212.97751762739716,
+            ["url"] = "https://raider.io/mythic-plus-runs/season-df-3/23855138-26-doti-galakronds-fall?utm_source=client"
           },
           {
             ["zone_id"] = 1000011,

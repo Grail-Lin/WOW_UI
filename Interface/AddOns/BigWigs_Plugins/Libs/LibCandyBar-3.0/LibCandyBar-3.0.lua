@@ -21,7 +21,7 @@ local CreateFrame, error, setmetatable, UIParent = CreateFrame, error, setmetata
 if not LibStub then error("LibCandyBar-3.0 requires LibStub.") end
 local cbh = LibStub:GetLibrary("CallbackHandler-1.0")
 if not cbh then error("LibCandyBar-3.0 requires CallbackHandler-1.0") end
-local lib = LibStub:NewLibrary("LibCandyBar-3.0", 102) -- Bump minor on changes
+local lib = LibStub:NewLibrary("LibCandyBar-3.0", 103) -- Bump minor on changes
 if not lib then return end
 lib.callbacks = lib.callbacks or cbh:New(lib)
 local cb = lib.callbacks
@@ -55,6 +55,8 @@ local function stopBar(bar)
 	bar.running = nil
 	bar.paused = nil
 	bar.pauseWhenDone = nil
+	bar.timeCallback = nil
+	bar.timeCallbackTrigger = nil
 	bar:Hide()
 	bar:SetParent(UIParent)
 end
@@ -95,6 +97,12 @@ local function barUpdate(updater)
 			bar.candyBarDuration:SetFormattedText(tformat3, time)
 		else -- 10 seconds to one minute
 			bar.candyBarDuration:SetFormattedText(tformat4, time)
+		end
+
+		if bar.timeCallback and time < bar.timeCallbackTrigger then
+			bar.timeCallbackTrigger = 0
+			bar.timeCallback(bar)
+			bar.timeCallback = nil
 		end
 
 		if bar.funcs then
@@ -141,6 +149,12 @@ local function barUpdateApprox(updater)
 			bar.candyBarDuration:SetFormattedText(atformat3, time)
 		else -- 10 seconds to one minute
 			bar.candyBarDuration:SetFormattedText(atformat4, time)
+		end
+
+		if bar.timeCallback and time < bar.timeCallbackTrigger then
+			bar.timeCallbackTrigger = 0
+			bar.timeCallback(bar)
+			bar.timeCallback = nil
 		end
 
 		if bar.funcs then
@@ -346,6 +360,13 @@ end
 -- @param bool true to pause the bar when done
 function barPrototype:SetPauseWhenDone(bool)
 	self.pauseWhenDone = bool
+end
+--- Sets a one-time callback to fire after reaching a certain time remaining on the bar
+-- @param func The callback function to fire
+-- @number time The time the bar will have remaining when the callback triggers
+function barPrototype:SetTimeCallback(func, time)
+	self.timeCallback = func
+	self.timeCallbackTrigger = time
 end
 --- Sets the duration of the bar.
 -- This can also be used while the bar is running to adjust the time remaining, within the bounds of the original duration.

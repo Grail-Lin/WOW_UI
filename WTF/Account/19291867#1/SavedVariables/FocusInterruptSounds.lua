@@ -12,14 +12,14 @@ FocusInterruptSoundsDB = {
 		["撕開你的一切 - 屠魔山谷"] = "DEMONHUNTER",
 		["一輪輪肥嘟嘟 - 尖石"] = "HUNTER",
 		["都是他們的錯 - 屠魔山谷"] = "PALADIN",
-		["夕行 - 屠魔山谷"] = "PRIEST",
+		["一輪輪胖嘟嘟 - 屠魔山谷"] = "MONK",
 		["想要跟你飛 - 尖石"] = "EVOKER",
 		["只用來看裝備 - 屠魔山谷"] = "DRUID",
-		["一輪輪胖嘟嘟 - 尖石"] = "MONK",
-		["稅道夏武 - 尖石"] = "WARLOCK",
 		["暮頌 - 屠魔山谷"] = "DEATHKNIGHT",
+		["稅道夏武 - 尖石"] = "WARLOCK",
+		["一輪輪胖嘟嘟 - 尖石"] = "MONK",
 		["馬可西亞斯 - 屠魔山谷"] = "WARLOCK",
-		["一輪輪胖嘟嘟 - 屠魔山谷"] = "MONK",
+		["夕行 - 屠魔山谷"] = "PRIEST",
 		["粉紅塔里克 - 屠魔山谷"] = "WARRIOR",
 	},
 	["profiles"] = {
@@ -33,19 +33,19 @@ FocusInterruptSoundsDB = {
 		},
 		["PRIEST"] = {
 		},
-		["DEATHKNIGHT"] = {
+		["PALADIN"] = {
 		},
 		["WARLOCK"] = {
 		},
 		["DEMONHUNTER"] = {
 		},
-		["EVOKER"] = {
+		["MONK"] = {
 		},
 		["DRUID"] = {
 		},
-		["MONK"] = {
+		["EVOKER"] = {
 		},
-		["PALADIN"] = {
+		["DEATHKNIGHT"] = {
 		},
 	},
 }

@@ -8,7 +8,7 @@ GlobalIgnoreDB = {
 		0, -- [5]
 		0, -- [6]
 		0, -- [7]
-		54989, -- [8]
+		55137, -- [8]
 		0, -- [9]
 		0, -- [10]
 		0, -- [11]
@@ -201,10 +201,22 @@ GlobalIgnoreDB = {
 		"", -- [22]
 		"", -- [23]
 	},
-	["useLFGHacks"] = true,
+	["filterID"] = {
+		"GIL0001", -- [1]
+		"GIL0002", -- [2]
+		"GIL0008", -- [3]
+		"GIL0009", -- [4]
+		"GIL0010", -- [5]
+		"GIL0011", -- [6]
+		"GIL0012", -- [7]
+		"", -- [8]
+		"GIL0003", -- [9]
+		"GIL0013", -- [10]
+		"GIL0014", -- [11]
+	},
 	["skipGuild"] = true,
 	["chatmsg"] = true,
-	["filterTotal"] = 54999,
+	["filterTotal"] = 55147,
 	["dateList"] = {
 		"16 Feb 2023", -- [1]
 		"19 Feb 2023", -- [2]
@@ -231,35 +243,6 @@ GlobalIgnoreDB = {
 		"21 Dec 2023", -- [23]
 	},
 	["useUnitHacks"] = true,
-	["filterList"] = {
-		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
-		"[item=19019]", -- [2]
-		"(([guild] or ([contains=<] and [contains=>]) or ([contains=\\[] and [contains=\\]]) or ([contains=\\(] and [contains=\\)])) and ([contains=recruit] or [contains=progress] or [contains=raid] or [contains=guild] or [contains=seek] or [contains=mythic])) or ([contains=guild] and [contains=recruit])", -- [3]
-		"[community]", -- [4]
-		"[contains=WTS] or [contains=WTB]", -- [5]
-		"[nonlatin]", -- [6]
-		"[contains=trump] or [contains=communist] or [contains=communism] or [word=president] or [contains=biden] or [word=hillary] or [word=hilary] or [contains=democrat] or [contains=republican] or [contains=liberals] or [word=maga] or [word=libs] or [contains=conservatives] or [contains=libtard] or [word=pelosi] or [word=epstein] or [word=AOC] or [word=putin] or [contains=right\\ wing] or [word=dems] or [word=socialism]", -- [7]
-		"[contains=站桩] or [contains=工作室] or [contains=老店] or [contains=淘宝] or [contains=店铺] or [contains=手工] or [contains=支持] or [contains=yy] or [contains=躺全程] or [contains=谘询] or [contains=躺全程] or [contains=散买] or [contains=欢迎询问] or [contains=世界之樹] or [contains=克羅之刃] or [contains=丶] or [contains=灬] or [contains=丨] or [contains=大秘境] or [contains=巨龙] or [contains=开组] or [contains=可躺] or [contains=贩子] or [contains=装备] or [contains=竞技] or [contains=角斗士] or [contains=幻化] or [contains=时代] or [contains=大米] or [contains=国服] or [contains=消費] or [contains=MMM] or [contains=服务] or [contains=躺尸] or [contains=门票] or [contains=专业] or [contains=马上]", -- [8]
-		"([contains=WTS] or [word=selling]) and ([contains=m+] or [contains=boost] or [contains=carry] or [contains=mythic] or [contains=gold\\ only])", -- [9]
-		"([contains=LFW] or [word=trade] or [contains=order] or [contains=tip] or [contains=%] or [contains=max] or [word=free] or [contains=craft] or [word=mats] or [contains=pay]) and ([trade] or [item])", -- [10]
-		"([contains=wts] or [contains=service] or [contains=sell] or [word=fast] or [contains=afk]) and (([contains=power] or [contains=pwr]) and ([contains=level] or [contains=lvl]))", -- [11]
-	},
-	["asknote"] = true,
-	["trackChanges"] = true,
-	["skipParty"] = false,
-	["filterActive"] = {
-		true, -- [1]
-		true, -- [2]
-		false, -- [3]
-		false, -- [4]
-		false, -- [5]
-		false, -- [6]
-		false, -- [7]
-		true, -- [8]
-		false, -- [9]
-		false, -- [10]
-		false, -- [11]
-	},
 	["typeList"] = {
 		"player", -- [1]
 		"player", -- [2]
@@ -285,18 +268,35 @@ GlobalIgnoreDB = {
 		"player", -- [22]
 		"player", -- [23]
 	},
-	["samefaction"] = true,
-	["filterID"] = {
-		"GIL0001", -- [1]
-		"GIL0002", -- [2]
-		"GIL0008", -- [3]
-		"GIL0009", -- [4]
-		"GIL0010", -- [5]
-		"GIL0011", -- [6]
-		"GIL0012", -- [7]
-		"", -- [8]
-		"GIL0003", -- [9]
-		"GIL0013", -- [10]
-		"GIL0014", -- [11]
+	["filterActive"] = {
+		true, -- [1]
+		true, -- [2]
+		false, -- [3]
+		false, -- [4]
+		false, -- [5]
+		false, -- [6]
+		false, -- [7]
+		true, -- [8]
+		false, -- [9]
+		false, -- [10]
+		false, -- [11]
 	},
+	["skipParty"] = false,
+	["trackChanges"] = true,
+	["asknote"] = true,
+	["filterList"] = {
+		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
+		"[item=19019]", -- [2]
+		"(([guild] or ([contains=<] and [contains=>]) or ([contains=\\[] and [contains=\\]]) or ([contains=\\(] and [contains=\\)])) and ([contains=recruit] or [contains=progress] or [contains=raid] or [contains=guild] or [contains=seek] or [contains=mythic])) or ([contains=guild] and [contains=recruit])", -- [3]
+		"[community]", -- [4]
+		"[contains=WTS] or [contains=WTB]", -- [5]
+		"[nonlatin]", -- [6]
+		"[contains=trump] or [contains=communist] or [contains=communism] or [word=president] or [contains=biden] or [word=hillary] or [word=hilary] or [contains=democrat] or [contains=republican] or [contains=liberals] or [word=maga] or [word=libs] or [contains=conservatives] or [contains=libtard] or [word=pelosi] or [word=epstein] or [word=AOC] or [word=putin] or [contains=right\\ wing] or [word=dems] or [word=socialism]", -- [7]
+		"[contains=站桩] or [contains=工作室] or [contains=老店] or [contains=淘宝] or [contains=店铺] or [contains=手工] or [contains=支持] or [contains=yy] or [contains=躺全程] or [contains=谘询] or [contains=躺全程] or [contains=散买] or [contains=欢迎询问] or [contains=世界之樹] or [contains=克羅之刃] or [contains=丶] or [contains=灬] or [contains=丨] or [contains=大秘境] or [contains=巨龙] or [contains=开组] or [contains=可躺] or [contains=贩子] or [contains=装备] or [contains=竞技] or [contains=角斗士] or [contains=幻化] or [contains=时代] or [contains=大米] or [contains=国服] or [contains=消費] or [contains=MMM] or [contains=服务] or [contains=躺尸] or [contains=门票] or [contains=专业] or [contains=马上]", -- [8]
+		"([contains=WTS] or [word=selling]) and ([contains=m+] or [contains=boost] or [contains=carry] or [contains=mythic] or [contains=gold\\ only])", -- [9]
+		"([contains=LFW] or [word=trade] or [contains=order] or [contains=tip] or [contains=%] or [contains=max] or [word=free] or [contains=craft] or [word=mats] or [contains=pay]) and ([trade] or [item])", -- [10]
+		"([contains=wts] or [contains=service] or [contains=sell] or [word=fast] or [contains=afk]) and (([contains=power] or [contains=pwr]) and ([contains=level] or [contains=lvl]))", -- [11]
+	},
+	["samefaction"] = true,
+	["useLFGHacks"] = true,
 }

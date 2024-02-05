@@ -1,68 +1,71 @@
 
 HidingBarDB = {
-	["tstmp"] = 1706636516,
+	["tstmp"] = 1707140903,
 	["profiles"] = {
 		{
 			["isDefault"] = true,
 			["config"] = {
 				["mbtnSettings"] = {
+					["LibDBIcon10_IPMythicTimer"] = {
+						["tstmp"] = 1707140903,
+					},
+					["LibDBIcon10_MythicDungeonTools"] = {
+						["tstmp"] = 1707140903,
+					},
+					["LibDBIcon10_AstralKeys"] = {
+						["tstmp"] = 1707140903,
+					},
+					["LibDBIcon10_BugSack"] = {
+						["tstmp"] = 1707140903,
+					},
+					["LibDBIcon10_Myslot"] = {
+						["tstmp"] = 1707140903,
+					},
 					["LibDBIcon10_Details"] = {
-						["tstmp"] = 1706636516,
+						["tstmp"] = 1707140903,
 					},
 					["LibDBIcon10_LoggerHead"] = {
-						["tstmp"] = 1706636516,
-					},
-					["LibDBIcon10_Plater"] = {
-						["tstmp"] = 1706636516,
+						["tstmp"] = 1707140903,
 					},
 					["LibDBIcon10_MethodRaidTools"] = {
 						false, -- [1]
-						["tstmp"] = 1706636516,
+						["tstmp"] = 1707140903,
 					},
-					["LibDBIcon10_InstanceAchievementTracker"] = {
-						false, -- [1]
-						["tstmp"] = 1706636516,
-					},
-					["LibDBIcon10_WeakAuras"] = {
-						false, -- [1]
-						["tstmp"] = 1706636516,
-					},
-					["LibDBIcon10_SilverDragon"] = {
-						["tstmp"] = 1706636516,
+					["LibDBIcon10_NotEvenClose"] = {
+						["tstmp"] = 1707140903,
 					},
 					["LibDBIcon10_BigWigs"] = {
 						false, -- [1]
-						["tstmp"] = 1706636516,
-					},
-					["LibDBIcon10_MythicDungeonTools"] = {
-						["tstmp"] = 1706636516,
+						["tstmp"] = 1707140903,
 					},
 					["LibDBIcon10_Simple iLevel"] = {
-						["tstmp"] = 1706636516,
+						["tstmp"] = 1707140903,
 					},
-					["LibDBIcon10_IPMythicTimer"] = {
-						["tstmp"] = 1706636516,
+					["LibDBIcon10_Plater"] = {
+						["tstmp"] = 1707140903,
 					},
 					["LibDBIcon10_DetailsStreamer"] = {
 						false, -- [1]
-						["tstmp"] = 1706636516,
+						["tstmp"] = 1707140903,
 					},
-					["LibDBIcon10_AstralKeys"] = {
-						["tstmp"] = 1706636516,
+					["LibDBIcon10_WeakAuras"] = {
+						false, -- [1]
+						["tstmp"] = 1707140903,
 					},
-					["LibDBIcon10_BugSack"] = {
-						["tstmp"] = 1706636516,
+					["LibDBIcon10_InstanceAchievementTracker"] = {
+						false, -- [1]
+						["tstmp"] = 1707140903,
 					},
-					["LibDBIcon10_Myslot"] = {
-						["tstmp"] = 1706636516,
+					["LibDBIcon10_SilverDragon"] = {
+						["tstmp"] = 1707140903,
 					},
 					["LibDBIcon10_Decursive"] = {
-						["tstmp"] = 1706636516,
+						["tstmp"] = 1707140903,
 					},
 				},
 				["btnSettings"] = {
 					["HidingBar"] = {
-						["tstmp"] = 1706636516,
+						["tstmp"] = 1707140903,
 					},
 				},
 				["grabMinimap"] = true,
@@ -125,25 +128,25 @@ HidingBarDB = {
 						["gapSize"] = 0,
 						["interceptTooltip"] = true,
 						["buttonDirection"] = {
-							["H"] = 0,
 							["V"] = 0,
+							["H"] = 0,
 						},
 						["borderOffset"] = 4,
 						["omb"] = {
-							["distanceToBar"] = 0,
+							["hide"] = true,
 							["anchor"] = "right",
 							["barDisplacement"] = 0,
 							["size"] = 31,
-							["hide"] = true,
+							["distanceToBar"] = 0,
 						},
 						["buttonSize"] = 37,
 						["frameStrata"] = 2,
 						["lineBorderSize"] = 2,
 						["fadeOpacity"] = 0.2,
 						["orientation"] = 0,
-						["borderSize"] = 16,
-						["hideHandler"] = 2,
 						["barOffset"] = 2,
+						["hideHandler"] = 2,
+						["borderSize"] = 16,
 					},
 					["name"] = "條 1",
 				}, -- [1]

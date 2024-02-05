@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0808,
+	["LastVersion"] = 2.0809,
 	["LastPlayerFullName"] = "一輪輪胖嘟嘟-屠魔山谷",
 	["AutoSelectScales"] = true,
 	["ItemLevels"] = {

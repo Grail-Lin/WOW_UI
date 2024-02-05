@@ -1,10 +1,10 @@
 VER 3 0000000000000036 "Decursive" "INV_MISC_QUESTIONMARK"
 /stopcasting
-/cast [@mouseover,nomod,exists] 淨化靈魂;  [@mouseover,exists,mod:ctrl] 妖術; [@mouseover,exists,mod:shift] 清毒圖騰
+/cast [@mouseover,nomod,exists] 化毒袪病;  [@mouseover,exists,mod:ctrl] 化毒袪病; [@mouseover,exists,mod:shift] 化毒袪病
 END
 VER 3 0000000000000002 "Decursive" "INV_MISC_QUESTIONMARK"
 /stopcasting
-/cast [@mouseover,nomod,exists] 淨化靈魂;  [@mouseover,exists,mod:ctrl] 妖術; [@mouseover,exists,mod:shift] 清毒圖騰
+/cast [@mouseover,nomod,exists] 化毒袪病;  [@mouseover,exists,mod:ctrl] 化毒袪病; [@mouseover,exists,mod:shift] 化毒袪病
 END
 VER 3 0000000000000031 "dump" "136103"
 /dump C_QuestLog.IsQuestFlaggedCompleted(44326)

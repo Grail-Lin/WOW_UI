@@ -1,0 +1,33 @@
+
+RaiderIO_Config = {
+	["previouslyEnabledLogging"] = false,
+	["profilePoint"] = {
+		["y"] = 0,
+		["x"] = -16,
+		["point"] = "TOPLEFT",
+	},
+}
+RaiderIO_LastCharacter = "tw-福僧-sundown-marsh"
+RaiderIO_MissingCharacters = {
+	["tw-日落西沙-world-tree"] = true,
+	["tw-诚心经-world-tree"] = true,
+	["tw-瑪托雅奶奶-sundown-marsh"] = true,
+	["tw-黄縢酒-demon-fall-canyon"] = true,
+	["tw-来消费装备啊-stormscale"] = true,
+	["tw-快速拿装备丶-frostmane"] = true,
+	["tw-法珂芙蘭德-silverwing-hold"] = true,
+	["tw-打团么兄弟-bleeding-hollow"] = true,
+	["tw-熊熊戰著打-sundown-marsh"] = true,
+	["tw-打团不老铁-order-of-the-cloud-serpent"] = true,
+	["tw-逆特-sundown-marsh"] = true,
+	["tw-搞装备来-dragonmaw"] = true,
+	["tw-非同小可了-krol-blade"] = true,
+	["tw-马上开打咯-frostmane"] = true,
+}
+RaiderIO_MissingServers = {
+}
+RaiderIO_CachedRuns = nil
+RaiderIO_RWF = {
+}
+RaiderIO_CompletedReplays = {
+}

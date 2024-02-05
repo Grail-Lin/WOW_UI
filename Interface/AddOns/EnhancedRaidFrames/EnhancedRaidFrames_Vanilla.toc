@@ -3,7 +3,7 @@
 ## Notes: Enhances the Blizzard raid frames with configurable Buff/Debuff indicators
 ## IconTexture: Interface\Icons\spell_holy_borrowedtime
 ## Author: Britt W. Yazel
-## Version: 3.11.2
+## Version: 3.12.0
 ## DefaultState: enabled
 ## SavedVariables: EnhancedRaidFramesDB
 ## SavedVariablesPerCharacter:

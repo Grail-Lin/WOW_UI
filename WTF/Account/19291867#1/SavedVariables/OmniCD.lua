@@ -12,27 +12,27 @@ OmniCDDB = {
 		["撕開你的一切 - 屠魔山谷"] = "Default",
 		["都是他們的錯 - 屠魔山谷"] = "Default",
 		["一輪輪肥嘟嘟 - 尖石"] = "Default",
-		["一輪輪胖嘟嘟 - 屠魔山谷"] = "Default",
+		["夕行 - 屠魔山谷"] = "Default",
 		["只用來看裝備 - 屠魔山谷"] = "Default",
 		["暮頌 - 屠魔山谷"] = "Default",
 		["稅道夏武 - 尖石"] = "Default",
 		["一輪輪胖嘟嘟 - 尖石"] = "Default",
 		["馬可西亞斯 - 屠魔山谷"] = "Default",
-		["夕行 - 屠魔山谷"] = "Default",
+		["一輪輪胖嘟嘟 - 屠魔山谷"] = "Default",
 		["粉紅塔里克 - 屠魔山谷"] = "Default",
 	},
 	["global"] = {
-		["oodVer"] = 9272724,
-		["oodChk"] = 221026,
 		["disableElvMsg"] = true,
+		["oodChk"] = 221026,
+		["oodVer"] = 9272724,
 	},
 	["namespaces"] = {
 		["LibDualSpec-1.0"] = {
 		},
 	},
+	["version"] = 3,
 	["cooldowns"] = {
 	},
-	["version"] = 3,
 	["profiles"] = {
 		["Default"] = {
 			["Party"] = {

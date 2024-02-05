@@ -8,24 +8,24 @@ AchievementTrackerOptions = {
 	["enableAddon"] = true,
 	["trackingFrameYPos"] = 545.0003662109375,
 	["InfoFramex"] = -317.5225830078125,
-	["toggleSound"] = true,
+	["failedSound"] = "Interface\\AddOns\\InstanceAchievementTracker\\Sounds\\Achievement Failed.ogg",
 	["onlyTrackMissingAchievements"] = false,
 	["minimapPos"] = 143.255861531607,
 	["toggleSoundFailed"] = true,
-	["trackAchievementsInBlizzardUI"] = false,
-	["announceToRaidWarning"] = true,
+	["failedSoundID"] = 11,
 	["displayInfoFrame"] = true,
-	["InfoFramescale"] = 1,
-	["hideCompletedAchievements"] = false,
+	["completedSoundID"] = 13,
 	["announceTrackedAchievements"] = true,
 	["trackAchievementsAutomatically"] = false,
-	["InfoFramey"] = -35.90478515625,
+	["InfoFramescale"] = 1,
+	["hideCompletedAchievements"] = false,
 	["InfoFramepoint"] = "TOPRIGHT",
+	["InfoFramey"] = -35.90478515625,
 	["changeMinimapIcon"] = false,
 	["completedSound"] = "Interface\\AddOns\\InstanceAchievementTracker\\Sounds\\Achievement Completed.ogg",
-	["completedSoundID"] = 13,
-	["failedSoundID"] = 11,
-	["failedSound"] = "Interface\\AddOns\\InstanceAchievementTracker\\Sounds\\Achievement Failed.ogg",
+	["announceToRaidWarning"] = true,
+	["trackAchievementsInBlizzardUI"] = false,
+	["toggleSound"] = true,
 }
 AchievementTrackerDebug = {
 	"15/1/2024 21:3 [DEBUG] Clearing Instance Variables", -- [1]
@@ -3012,6 +3012,1001 @@ AchievementTrackerDebug = {
 	"31/1/2024 1:40 [DEBUG] Enabling Addon", -- [2982]
 	"31/1/2024 1:40 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2983]
 	"31/1/2024 1:42 [DEBUG] Showing Minimap Icon", -- [2984]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [2985]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.35.0", -- [2986]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [2987]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [2988]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [2989]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2990]
+	"1/2/2024 19:44 [DEBUG] Showing Minimap Icon", -- [2991]
+	"1/2/2024 19:51 [DEBUG] ---IAT Runtime---", -- [2992]
+	"1/2/2024 19:51 [DEBUG] Version: 4.35.0", -- [2993]
+	"1/2/2024 19:51 [DEBUG] Attempting to load from local NPC Cache", -- [2994]
+	"1/2/2024 19:51 [DEBUG] Generating NPC Cache...", -- [2995]
+	"1/2/2024 19:51 [DEBUG] Enabling Addon", -- [2996]
+	"1/2/2024 19:51 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [2997]
+	"1/2/2024 19:52 [DEBUG] Showing Minimap Icon", -- [2998]
+	"1/2/2024 20:40 [DEBUG] ---IAT Runtime---", -- [2999]
+	"1/2/2024 20:40 [DEBUG] Version: 4.35.0", -- [3000]
+	"1/2/2024 20:40 [DEBUG] Attempting to load from local NPC Cache", -- [3001]
+	"1/2/2024 20:40 [DEBUG] Generating NPC Cache...", -- [3002]
+	"1/2/2024 20:40 [DEBUG] Enabling Addon", -- [3003]
+	"1/2/2024 20:40 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3004]
+	"1/2/2024 20:40 [DEBUG] Showing Minimap Icon", -- [3005]
+	"1/2/2024 20:52 [DEBUG] ---IAT Runtime---", -- [3006]
+	"1/2/2024 20:52 [DEBUG] Version: 4.35.0", -- [3007]
+	"1/2/2024 20:52 [DEBUG] Attempting to load from local NPC Cache", -- [3008]
+	"1/2/2024 20:52 [DEBUG] Generating NPC Cache...", -- [3009]
+	"1/2/2024 20:52 [DEBUG] Enabling Addon", -- [3010]
+	"1/2/2024 20:52 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3011]
+	"1/2/2024 20:53 [DEBUG] Showing Minimap Icon", -- [3012]
+	"1/2/2024 21:6 [DEBUG] Player has entered instance", -- [3013]
+	"1/2/2024 21:6 [DEBUG] 2549", -- [3014]
+	"1/2/2024 21:6 [DEBUG] Offical Instance Name: 2549 _2549", -- [3015]
+	"1/2/2024 21:6 [DEBUG] Expansion: 10", -- [3016]
+	"1/2/2024 21:6 [DEBUG] Instance Type: Raids", -- [3017]
+	"1/2/2024 21:6 [DEBUG] Instance: 2549", -- [3018]
+	"1/2/2024 21:6 [DEBUG] DifficultyID: 14", -- [3019]
+	"1/2/2024 21:6 [DEBUG] Expansion: 10", -- [3020]
+	"1/2/2024 21:6 [DEBUG] Instance Type: Raids", -- [3021]
+	"1/2/2024 21:6 [DEBUG] Instance: 2549", -- [3022]
+	"1/2/2024 21:6 [DEBUG] Asking user whether they want to track this instance", -- [3023]
+	"1/2/2024 21:6 [DEBUG] Creating Tracking UI", -- [3024]
+	"1/2/2024 21:6 [DEBUG] InfoFrame Setup Complete", -- [3025]
+	"1/2/2024 21:6 [DEBUG] Expansion: 10", -- [3026]
+	"1/2/2024 21:8 [DEBUG] ---IAT Runtime---", -- [3027]
+	"1/2/2024 21:8 [DEBUG] Version: 4.35.0", -- [3028]
+	"1/2/2024 21:8 [DEBUG] Attempting to load from local NPC Cache", -- [3029]
+	"1/2/2024 21:8 [DEBUG] Generating NPC Cache...", -- [3030]
+	"1/2/2024 21:8 [DEBUG] Enabling Addon", -- [3031]
+	"1/2/2024 21:8 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3032]
+	"1/2/2024 21:9 [DEBUG] Showing Minimap Icon", -- [3033]
+	"1/2/2024 21:10 [DEBUG] Player has entered instance", -- [3034]
+	"1/2/2024 21:10 [DEBUG] 2549", -- [3035]
+	"1/2/2024 21:10 [DEBUG] Offical Instance Name: 2549 _2549", -- [3036]
+	"1/2/2024 21:10 [DEBUG] Expansion: 10", -- [3037]
+	"1/2/2024 21:10 [DEBUG] Instance Type: Raids", -- [3038]
+	"1/2/2024 21:10 [DEBUG] Instance: 2549", -- [3039]
+	"1/2/2024 21:10 [DEBUG] DifficultyID: 14", -- [3040]
+	"1/2/2024 21:10 [DEBUG] Expansion: 10", -- [3041]
+	"1/2/2024 21:10 [DEBUG] Instance Type: Raids", -- [3042]
+	"1/2/2024 21:10 [DEBUG] Instance: 2549", -- [3043]
+	"1/2/2024 21:10 [DEBUG] Asking user whether they want to track this instance", -- [3044]
+	"1/2/2024 21:10 [DEBUG] Creating Tracking UI", -- [3045]
+	"1/2/2024 21:10 [DEBUG] InfoFrame Setup Complete", -- [3046]
+	"1/2/2024 21:10 [DEBUG] Expansion: 10", -- [3047]
+	"1/2/2024 21:36 [DEBUG] Hiding Tracking UI", -- [3048]
+	"1/2/2024 21:36 [DEBUG] Clearing Instance Variables", -- [3049]
+	"1/2/2024 21:36 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3050]
+	"1/2/2024 21:36 [DEBUG] Cleaning up instance events for _2549", -- [3051]
+	"1/2/2024 21:36 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3052]
+	"1/2/2024 21:36 [DEBUG] Clearing Instance Variables if exists", -- [3053]
+	"1/2/2024 21:36 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3054]
+	"1/2/2024 21:36 [DEBUG] Clearing Instance Variables if exists", -- [3055]
+	"1/2/2024 21:36 [DEBUG] Clearing Instance Variables", -- [3056]
+	"1/2/2024 21:36 [DEBUG] Resetting Global Variables", -- [3057]
+	"1/2/2024 21:36 [DEBUG] InfoFrame does not need to be reset", -- [3058]
+	"1/2/2024 21:36 [DEBUG] Resetting PlayerRank", -- [3059]
+	"1/2/2024 21:36 [DEBUG] InfoFrame was not active", -- [3060]
+	"1/2/2024 21:37 [DEBUG] Player has entered instance", -- [3061]
+	"1/2/2024 21:37 [DEBUG] 2549", -- [3062]
+	"1/2/2024 21:37 [DEBUG] Offical Instance Name: 2549 _2549", -- [3063]
+	"1/2/2024 21:37 [DEBUG] Expansion: 10", -- [3064]
+	"1/2/2024 21:37 [DEBUG] Instance Type: Raids", -- [3065]
+	"1/2/2024 21:37 [DEBUG] Instance: 2549", -- [3066]
+	"1/2/2024 21:37 [DEBUG] DifficultyID: 15", -- [3067]
+	"1/2/2024 21:37 [DEBUG] Expansion: 10", -- [3068]
+	"1/2/2024 21:37 [DEBUG] Instance Type: Raids", -- [3069]
+	"1/2/2024 21:37 [DEBUG] Instance: 2549", -- [3070]
+	"1/2/2024 21:37 [DEBUG] Asking user whether they want to track this instance", -- [3071]
+	"1/2/2024 21:37 [DEBUG] Displaying Tracking UI since it was already created", -- [3072]
+	"1/2/2024 21:37 [DEBUG] Expansion: 10", -- [3073]
+	"1/2/2024 21:38 [DEBUG] Hiding Tracking UI", -- [3074]
+	"1/2/2024 21:38 [DEBUG] Clearing Instance Variables", -- [3075]
+	"1/2/2024 21:38 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3076]
+	"1/2/2024 21:38 [DEBUG] Cleaning up instance events for _2549", -- [3077]
+	"1/2/2024 21:38 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3078]
+	"1/2/2024 21:38 [DEBUG] Clearing Instance Variables if exists", -- [3079]
+	"1/2/2024 21:38 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3080]
+	"1/2/2024 21:38 [DEBUG] Clearing Instance Variables if exists", -- [3081]
+	"1/2/2024 21:38 [DEBUG] Clearing Instance Variables", -- [3082]
+	"1/2/2024 21:38 [DEBUG] Resetting Global Variables", -- [3083]
+	"1/2/2024 21:38 [DEBUG] InfoFrame does not need to be reset", -- [3084]
+	"1/2/2024 21:38 [DEBUG] Resetting PlayerRank", -- [3085]
+	"1/2/2024 21:38 [DEBUG] InfoFrame was not active", -- [3086]
+	"1/2/2024 21:38 [DEBUG] ---IAT Runtime---", -- [3087]
+	"1/2/2024 21:38 [DEBUG] Version: 4.35.0", -- [3088]
+	"1/2/2024 21:38 [DEBUG] Attempting to load from local NPC Cache", -- [3089]
+	"1/2/2024 21:38 [DEBUG] Generating NPC Cache...", -- [3090]
+	"1/2/2024 21:38 [DEBUG] Enabling Addon", -- [3091]
+	"1/2/2024 21:38 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3092]
+	"1/2/2024 21:38 [DEBUG] Showing Minimap Icon", -- [3093]
+	"1/2/2024 21:38 [DEBUG] Player has entered instance", -- [3094]
+	"1/2/2024 21:38 [DEBUG] 2549", -- [3095]
+	"1/2/2024 21:38 [DEBUG] Offical Instance Name: 2549 _2549", -- [3096]
+	"1/2/2024 21:38 [DEBUG] Expansion: 10", -- [3097]
+	"1/2/2024 21:38 [DEBUG] Instance Type: Raids", -- [3098]
+	"1/2/2024 21:38 [DEBUG] Instance: 2549", -- [3099]
+	"1/2/2024 21:38 [DEBUG] DifficultyID: 14", -- [3100]
+	"1/2/2024 21:38 [DEBUG] Expansion: 10", -- [3101]
+	"1/2/2024 21:38 [DEBUG] Instance Type: Raids", -- [3102]
+	"1/2/2024 21:38 [DEBUG] Instance: 2549", -- [3103]
+	"1/2/2024 21:38 [DEBUG] Asking user whether they want to track this instance", -- [3104]
+	"1/2/2024 21:38 [DEBUG] Creating Tracking UI", -- [3105]
+	"1/2/2024 21:38 [DEBUG] InfoFrame Setup Complete", -- [3106]
+	"1/2/2024 21:38 [DEBUG] Expansion: 10", -- [3107]
+	"1/2/2024 21:38 [DEBUG] Player has entered instance", -- [3108]
+	"1/2/2024 21:38 [DEBUG] 2549", -- [3109]
+	"1/2/2024 21:38 [DEBUG] Offical Instance Name: 2549 _2549", -- [3110]
+	"1/2/2024 21:38 [DEBUG] Expansion: 10", -- [3111]
+	"1/2/2024 21:38 [DEBUG] Instance Type: Raids", -- [3112]
+	"1/2/2024 21:38 [DEBUG] Instance: 2549", -- [3113]
+	"1/2/2024 21:38 [DEBUG] DifficultyID: 14", -- [3114]
+	"1/2/2024 21:38 [DEBUG] Expansion: 10", -- [3115]
+	"1/2/2024 21:38 [DEBUG] Instance Type: Raids", -- [3116]
+	"1/2/2024 21:38 [DEBUG] Instance: 2549", -- [3117]
+	"1/2/2024 21:38 [DEBUG] No Achievements to track for this instance", -- [3118]
+	"1/2/2024 21:38 [DEBUG] Expansion: 10", -- [3119]
+	"1/2/2024 21:39 [DEBUG] Clearing Instance Variables", -- [3120]
+	"1/2/2024 21:39 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3121]
+	"1/2/2024 21:39 [DEBUG] Cleaning up instance events for _2549", -- [3122]
+	"1/2/2024 21:39 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3123]
+	"1/2/2024 21:39 [DEBUG] Clearing Instance Variables if exists", -- [3124]
+	"1/2/2024 21:39 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3125]
+	"1/2/2024 21:39 [DEBUG] Clearing Instance Variables if exists", -- [3126]
+	"1/2/2024 21:39 [DEBUG] Clearing Instance Variables", -- [3127]
+	"1/2/2024 21:39 [DEBUG] Resetting Global Variables", -- [3128]
+	"1/2/2024 21:39 [DEBUG] InfoFrame does not need to be reset", -- [3129]
+	"1/2/2024 21:39 [DEBUG] Resetting PlayerRank", -- [3130]
+	"1/2/2024 21:39 [DEBUG] InfoFrame was not active", -- [3131]
+	"1/2/2024 21:39 [DEBUG] 6", -- [3132]
+	"1/2/2024 21:39 [DEBUG] Hiding Tracking UI", -- [3133]
+	"1/2/2024 21:39 [DEBUG] Hiding Tracking UI", -- [3134]
+	"1/2/2024 21:39 [DEBUG] Player has entered instance", -- [3135]
+	"1/2/2024 21:39 [DEBUG] 2549", -- [3136]
+	"1/2/2024 21:39 [DEBUG] Offical Instance Name: 2549 _2549", -- [3137]
+	"1/2/2024 21:39 [DEBUG] Expansion: 10", -- [3138]
+	"1/2/2024 21:39 [DEBUG] Instance Type: Raids", -- [3139]
+	"1/2/2024 21:39 [DEBUG] Instance: 2549", -- [3140]
+	"1/2/2024 21:39 [DEBUG] DifficultyID: 15", -- [3141]
+	"1/2/2024 21:39 [DEBUG] Expansion: 10", -- [3142]
+	"1/2/2024 21:39 [DEBUG] Instance Type: Raids", -- [3143]
+	"1/2/2024 21:39 [DEBUG] Instance: 2549", -- [3144]
+	"1/2/2024 21:39 [DEBUG] Asking user whether they want to track this instance", -- [3145]
+	"1/2/2024 21:39 [DEBUG] Displaying Tracking UI since it was already created", -- [3146]
+	"1/2/2024 21:39 [DEBUG] Expansion: 10", -- [3147]
+	"1/2/2024 21:55 [DEBUG] ---IAT Runtime---", -- [3148]
+	"1/2/2024 21:55 [DEBUG] Version: 4.35.0", -- [3149]
+	"1/2/2024 21:55 [DEBUG] Attempting to load from local NPC Cache", -- [3150]
+	"1/2/2024 21:55 [DEBUG] Generating NPC Cache...", -- [3151]
+	"1/2/2024 21:55 [DEBUG] Enabling Addon", -- [3152]
+	"1/2/2024 21:55 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3153]
+	"1/2/2024 21:57 [DEBUG] Showing Minimap Icon", -- [3154]
+	"1/2/2024 21:57 [DEBUG] Player has entered instance", -- [3155]
+	"1/2/2024 21:57 [DEBUG] 2549", -- [3156]
+	"1/2/2024 21:57 [DEBUG] Offical Instance Name: 2549 _2549", -- [3157]
+	"1/2/2024 21:57 [DEBUG] Expansion: 10", -- [3158]
+	"1/2/2024 21:57 [DEBUG] Instance Type: Raids", -- [3159]
+	"1/2/2024 21:57 [DEBUG] Instance: 2549", -- [3160]
+	"1/2/2024 21:57 [DEBUG] DifficultyID: 15", -- [3161]
+	"1/2/2024 21:57 [DEBUG] Expansion: 10", -- [3162]
+	"1/2/2024 21:57 [DEBUG] Instance Type: Raids", -- [3163]
+	"1/2/2024 21:57 [DEBUG] Instance: 2549", -- [3164]
+	"1/2/2024 21:57 [DEBUG] Asking user whether they want to track this instance", -- [3165]
+	"1/2/2024 21:57 [DEBUG] Creating Tracking UI", -- [3166]
+	"1/2/2024 21:57 [DEBUG] InfoFrame Setup Complete", -- [3167]
+	"1/2/2024 21:57 [DEBUG] Expansion: 10", -- [3168]
+	"1/2/2024 23:13 [DEBUG] Hiding Tracking UI", -- [3169]
+	"1/2/2024 23:13 [DEBUG] Clearing Instance Variables", -- [3170]
+	"1/2/2024 23:13 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3171]
+	"1/2/2024 23:13 [DEBUG] Cleaning up instance events for _2549", -- [3172]
+	"1/2/2024 23:13 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3173]
+	"1/2/2024 23:13 [DEBUG] Clearing Instance Variables if exists", -- [3174]
+	"1/2/2024 23:13 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3175]
+	"1/2/2024 23:13 [DEBUG] Clearing Instance Variables if exists", -- [3176]
+	"1/2/2024 23:13 [DEBUG] Clearing Instance Variables", -- [3177]
+	"1/2/2024 23:13 [DEBUG] Resetting Global Variables", -- [3178]
+	"1/2/2024 23:13 [DEBUG] InfoFrame does not need to be reset", -- [3179]
+	"1/2/2024 23:13 [DEBUG] Resetting PlayerRank", -- [3180]
+	"1/2/2024 23:13 [DEBUG] InfoFrame was not active", -- [3181]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3182]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.35.0", -- [3183]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3184]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3185]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3186]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3187]
+	"1/2/2024 23:34 [DEBUG] Showing Minimap Icon", -- [3188]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3189]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.35.0", -- [3190]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3191]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3192]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3193]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3194]
+	"2/2/2024 16:13 [DEBUG] Showing Minimap Icon", -- [3195]
+	"2/2/2024 16:17 [DEBUG] ---IAT Runtime---", -- [3196]
+	"2/2/2024 16:17 [DEBUG] Version: 4.35.0", -- [3197]
+	"2/2/2024 16:17 [DEBUG] Attempting to load from local NPC Cache", -- [3198]
+	"2/2/2024 16:17 [DEBUG] Generating NPC Cache...", -- [3199]
+	"2/2/2024 16:17 [DEBUG] Enabling Addon", -- [3200]
+	"2/2/2024 16:17 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3201]
+	"2/2/2024 16:20 [DEBUG] Showing Minimap Icon", -- [3202]
+	"2/2/2024 17:11 [DEBUG] ---IAT Runtime---", -- [3203]
+	"2/2/2024 17:11 [DEBUG] Version: 4.35.0", -- [3204]
+	"2/2/2024 17:11 [DEBUG] Attempting to load from local NPC Cache", -- [3205]
+	"2/2/2024 17:11 [DEBUG] Generating NPC Cache...", -- [3206]
+	"2/2/2024 17:11 [DEBUG] Enabling Addon", -- [3207]
+	"2/2/2024 17:11 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3208]
+	"2/2/2024 17:24 [DEBUG] Showing Minimap Icon", -- [3209]
+	"2/2/2024 17:36 [DEBUG] ---IAT Runtime---", -- [3210]
+	"2/2/2024 17:36 [DEBUG] Version: 4.35.0", -- [3211]
+	"2/2/2024 17:36 [DEBUG] Attempting to load from local NPC Cache", -- [3212]
+	"2/2/2024 17:36 [DEBUG] Generating NPC Cache...", -- [3213]
+	"2/2/2024 17:36 [DEBUG] Enabling Addon", -- [3214]
+	"2/2/2024 17:36 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3215]
+	"2/2/2024 17:36 [DEBUG] Showing Minimap Icon", -- [3216]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3217]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.35.0", -- [3218]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3219]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3220]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3221]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3222]
+	"2/2/2024 19:43 [DEBUG] Showing Minimap Icon", -- [3223]
+	"2/2/2024 20:22 [DEBUG] ---IAT Runtime---", -- [3224]
+	"2/2/2024 20:22 [DEBUG] Version: 4.35.0", -- [3225]
+	"2/2/2024 20:22 [DEBUG] Attempting to load from local NPC Cache", -- [3226]
+	"2/2/2024 20:22 [DEBUG] Generating NPC Cache...", -- [3227]
+	"2/2/2024 20:22 [DEBUG] Enabling Addon", -- [3228]
+	"2/2/2024 20:22 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3229]
+	"2/2/2024 20:22 [DEBUG] Showing Minimap Icon", -- [3230]
+	"2/2/2024 20:31 [DEBUG] Player has entered instance", -- [3231]
+	"2/2/2024 20:31 [DEBUG] 1763", -- [3232]
+	"2/2/2024 20:31 [DEBUG] Offical Instance Name: 1763 _1763", -- [3233]
+	"2/2/2024 20:31 [DEBUG] Expansion: 8", -- [3234]
+	"2/2/2024 20:31 [DEBUG] Instance Type: Dungeons", -- [3235]
+	"2/2/2024 20:31 [DEBUG] Instance: 1763", -- [3236]
+	"2/2/2024 20:31 [DEBUG] DifficultyID: 23", -- [3237]
+	"2/2/2024 20:31 [DEBUG] Expansion: 8", -- [3238]
+	"2/2/2024 20:31 [DEBUG] Instance Type: Dungeons", -- [3239]
+	"2/2/2024 20:31 [DEBUG] Instance: 1763", -- [3240]
+	"2/2/2024 20:31 [DEBUG] Asking user whether they want to track this instance", -- [3241]
+	"2/2/2024 20:31 [DEBUG] Creating Tracking UI", -- [3242]
+	"2/2/2024 20:31 [DEBUG] InfoFrame Setup Complete", -- [3243]
+	"2/2/2024 20:31 [DEBUG] Expansion: 8", -- [3244]
+	"2/2/2024 20:31 [DEBUG] Player has entered instance", -- [3245]
+	"2/2/2024 20:31 [DEBUG] 1763", -- [3246]
+	"2/2/2024 20:31 [DEBUG] Offical Instance Name: 1763 _1763", -- [3247]
+	"2/2/2024 20:31 [DEBUG] Expansion: 8", -- [3248]
+	"2/2/2024 20:31 [DEBUG] Instance Type: Dungeons", -- [3249]
+	"2/2/2024 20:31 [DEBUG] Instance: 1763", -- [3250]
+	"2/2/2024 20:31 [DEBUG] DifficultyID: 23", -- [3251]
+	"2/2/2024 20:31 [DEBUG] Expansion: 8", -- [3252]
+	"2/2/2024 20:31 [DEBUG] Instance Type: Dungeons", -- [3253]
+	"2/2/2024 20:31 [DEBUG] Instance: 1763", -- [3254]
+	"2/2/2024 20:31 [DEBUG] No Achievements to track for this instance", -- [3255]
+	"2/2/2024 20:31 [DEBUG] Expansion: 8", -- [3256]
+	"2/2/2024 20:57 [DEBUG] ---IAT Runtime---", -- [3257]
+	"2/2/2024 20:57 [DEBUG] Version: 4.35.0", -- [3258]
+	"2/2/2024 20:57 [DEBUG] Attempting to load from local NPC Cache", -- [3259]
+	"2/2/2024 20:57 [DEBUG] Generating NPC Cache...", -- [3260]
+	"2/2/2024 20:57 [DEBUG] Enabling Addon", -- [3261]
+	"2/2/2024 20:57 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3262]
+	"2/2/2024 20:57 [DEBUG] Showing Minimap Icon", -- [3263]
+	"2/2/2024 20:59 [DEBUG] Player has entered instance", -- [3264]
+	"2/2/2024 20:59 [DEBUG] 1862", -- [3265]
+	"2/2/2024 20:59 [DEBUG] Offical Instance Name: 1862 _1862", -- [3266]
+	"2/2/2024 20:59 [DEBUG] Expansion: 8", -- [3267]
+	"2/2/2024 20:59 [DEBUG] Instance Type: Dungeons", -- [3268]
+	"2/2/2024 20:59 [DEBUG] Instance: 1862", -- [3269]
+	"2/2/2024 20:59 [DEBUG] DifficultyID: 23", -- [3270]
+	"2/2/2024 20:59 [DEBUG] Expansion: 8", -- [3271]
+	"2/2/2024 20:59 [DEBUG] Instance Type: Dungeons", -- [3272]
+	"2/2/2024 20:59 [DEBUG] Instance: 1862", -- [3273]
+	"2/2/2024 20:59 [DEBUG] Asking user whether they want to track this instance", -- [3274]
+	"2/2/2024 20:59 [DEBUG] Creating Tracking UI", -- [3275]
+	"2/2/2024 20:59 [DEBUG] InfoFrame Setup Complete", -- [3276]
+	"2/2/2024 20:59 [DEBUG] Expansion: 8", -- [3277]
+	"2/2/2024 21:43 [DEBUG] Hiding Tracking UI", -- [3278]
+	"2/2/2024 21:43 [DEBUG] Clearing Instance Variables", -- [3279]
+	"2/2/2024 21:43 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3280]
+	"2/2/2024 21:43 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3281]
+	"2/2/2024 21:43 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3282]
+	"2/2/2024 21:43 [DEBUG] Clearing Instance Variables if exists", -- [3283]
+	"2/2/2024 21:43 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3284]
+	"2/2/2024 21:43 [DEBUG] Clearing Instance Variables if exists", -- [3285]
+	"2/2/2024 21:43 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4038: attempt to call method 'ClearVariables' (a nil value).", -- [3286]
+	"2/2/2024 21:43 [DEBUG] Resetting Global Variables", -- [3287]
+	"2/2/2024 21:43 [DEBUG] InfoFrame does not need to be reset", -- [3288]
+	"2/2/2024 21:43 [DEBUG] Resetting PlayerRank", -- [3289]
+	"2/2/2024 21:43 [DEBUG] InfoFrame was not active", -- [3290]
+	"2/2/2024 21:44 [DEBUG] Player has entered instance", -- [3291]
+	"2/2/2024 21:44 [DEBUG] 1763", -- [3292]
+	"2/2/2024 21:44 [DEBUG] Offical Instance Name: 1763 _1763", -- [3293]
+	"2/2/2024 21:44 [DEBUG] Expansion: 8", -- [3294]
+	"2/2/2024 21:44 [DEBUG] Instance Type: Dungeons", -- [3295]
+	"2/2/2024 21:44 [DEBUG] Instance: 1763", -- [3296]
+	"2/2/2024 21:44 [DEBUG] DifficultyID: 23", -- [3297]
+	"2/2/2024 21:44 [DEBUG] Expansion: 8", -- [3298]
+	"2/2/2024 21:44 [DEBUG] Instance Type: Dungeons", -- [3299]
+	"2/2/2024 21:44 [DEBUG] Instance: 1763", -- [3300]
+	"2/2/2024 21:44 [DEBUG] Asking user whether they want to track this instance", -- [3301]
+	"2/2/2024 21:44 [DEBUG] Displaying Tracking UI since it was already created", -- [3302]
+	"2/2/2024 21:44 [DEBUG] Expansion: 8", -- [3303]
+	"2/2/2024 22:34 [DEBUG] ---IAT Runtime---", -- [3304]
+	"2/2/2024 22:34 [DEBUG] Version: 4.35.0", -- [3305]
+	"2/2/2024 22:34 [DEBUG] Attempting to load from local NPC Cache", -- [3306]
+	"2/2/2024 22:34 [DEBUG] Generating NPC Cache...", -- [3307]
+	"2/2/2024 22:34 [DEBUG] Enabling Addon", -- [3308]
+	"2/2/2024 22:34 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3309]
+	"2/2/2024 22:35 [DEBUG] Showing Minimap Icon", -- [3310]
+	"2/2/2024 22:35 [DEBUG] Player has entered instance", -- [3311]
+	"2/2/2024 22:35 [DEBUG] 1763", -- [3312]
+	"2/2/2024 22:35 [DEBUG] Offical Instance Name: 1763 _1763", -- [3313]
+	"2/2/2024 22:35 [DEBUG] Expansion: 8", -- [3314]
+	"2/2/2024 22:35 [DEBUG] Instance Type: Dungeons", -- [3315]
+	"2/2/2024 22:35 [DEBUG] Instance: 1763", -- [3316]
+	"2/2/2024 22:35 [DEBUG] DifficultyID: 8", -- [3317]
+	"2/2/2024 22:35 [DEBUG] Achievements cannot be earned for the following difficulty 8", -- [3318]
+	"2/2/2024 22:36 [DEBUG] 6", -- [3319]
+	"2/2/2024 22:36 [DEBUG] Clearing Instance Variables", -- [3320]
+	"2/2/2024 22:36 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3321]
+	"2/2/2024 22:36 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3322]
+	"2/2/2024 22:36 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3323]
+	"2/2/2024 22:36 [DEBUG] Clearing Instance Variables if exists", -- [3324]
+	"2/2/2024 22:36 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3325]
+	"2/2/2024 22:36 [DEBUG] Clearing Instance Variables if exists", -- [3326]
+	"2/2/2024 22:36 [DEBUG] Clearing Instance Variables", -- [3327]
+	"2/2/2024 22:36 [DEBUG] Resetting Global Variables", -- [3328]
+	"2/2/2024 22:36 [DEBUG] InfoFrame does not need to be reset", -- [3329]
+	"2/2/2024 22:36 [DEBUG] Resetting PlayerRank", -- [3330]
+	"2/2/2024 22:36 [DEBUG] InfoFrame was not active", -- [3331]
+	"2/2/2024 22:39 [DEBUG] Player has entered instance", -- [3332]
+	"2/2/2024 22:39 [DEBUG] 643", -- [3333]
+	"2/2/2024 22:39 [DEBUG] Offical Instance Name: 643 _643", -- [3334]
+	"2/2/2024 22:39 [DEBUG] Expansion: 4", -- [3335]
+	"2/2/2024 22:39 [DEBUG] Instance Type: Dungeons", -- [3336]
+	"2/2/2024 22:39 [DEBUG] Instance: 643", -- [3337]
+	"2/2/2024 22:39 [DEBUG] DifficultyID: 23", -- [3338]
+	"2/2/2024 22:39 [DEBUG] Achievements cannot be earned for the following difficulty 23", -- [3339]
+	"2/2/2024 23:14 [DEBUG] 6", -- [3340]
+	"2/2/2024 23:14 [DEBUG] Clearing Instance Variables", -- [3341]
+	"2/2/2024 23:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3342]
+	"2/2/2024 23:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3343]
+	"2/2/2024 23:14 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3344]
+	"2/2/2024 23:14 [DEBUG] Clearing Instance Variables if exists", -- [3345]
+	"2/2/2024 23:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3346]
+	"2/2/2024 23:14 [DEBUG] Clearing Instance Variables if exists", -- [3347]
+	"2/2/2024 23:14 [DEBUG] Clearing Instance Variables", -- [3348]
+	"2/2/2024 23:14 [DEBUG] Resetting Global Variables", -- [3349]
+	"2/2/2024 23:14 [DEBUG] InfoFrame does not need to be reset", -- [3350]
+	"2/2/2024 23:14 [DEBUG] Resetting PlayerRank", -- [3351]
+	"2/2/2024 23:14 [DEBUG] InfoFrame was not active", -- [3352]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3353]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.35.0", -- [3354]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3355]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3356]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3357]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3358]
+	"3/2/2024 14:16 [DEBUG] Showing Minimap Icon", -- [3359]
+	"3/2/2024 14:53 [DEBUG] ---IAT Runtime---", -- [3360]
+	"3/2/2024 14:53 [DEBUG] Version: 4.35.0", -- [3361]
+	"3/2/2024 14:53 [DEBUG] Attempting to load from local NPC Cache", -- [3362]
+	"3/2/2024 14:53 [DEBUG] Generating NPC Cache...", -- [3363]
+	"3/2/2024 14:53 [DEBUG] Enabling Addon", -- [3364]
+	"3/2/2024 14:53 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3365]
+	"3/2/2024 14:53 [DEBUG] Showing Minimap Icon", -- [3366]
+	"3/2/2024 14:59 [DEBUG] Player has entered instance", -- [3367]
+	"3/2/2024 14:59 [DEBUG] 1501", -- [3368]
+	"3/2/2024 14:59 [DEBUG] Offical Instance Name: 1501 _1501", -- [3369]
+	"3/2/2024 14:59 [DEBUG] Expansion: 7", -- [3370]
+	"3/2/2024 14:59 [DEBUG] Instance Type: Dungeons", -- [3371]
+	"3/2/2024 14:59 [DEBUG] Instance: 1501", -- [3372]
+	"3/2/2024 14:59 [DEBUG] DifficultyID: 23", -- [3373]
+	"3/2/2024 14:59 [DEBUG] Expansion: 7", -- [3374]
+	"3/2/2024 14:59 [DEBUG] Instance Type: Dungeons", -- [3375]
+	"3/2/2024 14:59 [DEBUG] Instance: 1501", -- [3376]
+	"3/2/2024 14:59 [DEBUG] Asking user whether they want to track this instance", -- [3377]
+	"3/2/2024 14:59 [DEBUG] Creating Tracking UI", -- [3378]
+	"3/2/2024 14:59 [DEBUG] InfoFrame Setup Complete", -- [3379]
+	"3/2/2024 14:59 [DEBUG] Expansion: 7", -- [3380]
+	"3/2/2024 14:59 [DEBUG] Player has entered instance", -- [3381]
+	"3/2/2024 14:59 [DEBUG] 1501", -- [3382]
+	"3/2/2024 14:59 [DEBUG] Offical Instance Name: 1501 _1501", -- [3383]
+	"3/2/2024 14:59 [DEBUG] Expansion: 7", -- [3384]
+	"3/2/2024 14:59 [DEBUG] Instance Type: Dungeons", -- [3385]
+	"3/2/2024 14:59 [DEBUG] Instance: 1501", -- [3386]
+	"3/2/2024 14:59 [DEBUG] DifficultyID: 23", -- [3387]
+	"3/2/2024 14:59 [DEBUG] Expansion: 7", -- [3388]
+	"3/2/2024 14:59 [DEBUG] Instance Type: Dungeons", -- [3389]
+	"3/2/2024 14:59 [DEBUG] Instance: 1501", -- [3390]
+	"3/2/2024 14:59 [DEBUG] No Achievements to track for this instance", -- [3391]
+	"3/2/2024 14:59 [DEBUG] Expansion: 7", -- [3392]
+	"3/2/2024 15:30 [DEBUG] Clearing Instance Variables", -- [3393]
+	"3/2/2024 15:30 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3394]
+	"3/2/2024 15:30 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3395]
+	"3/2/2024 15:30 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3396]
+	"3/2/2024 15:30 [DEBUG] Clearing Instance Variables if exists", -- [3397]
+	"3/2/2024 15:30 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3398]
+	"3/2/2024 15:30 [DEBUG] Clearing Instance Variables if exists", -- [3399]
+	"3/2/2024 15:30 [DEBUG] Clearing Instance Variables", -- [3400]
+	"3/2/2024 15:30 [DEBUG] Resetting Global Variables", -- [3401]
+	"3/2/2024 15:30 [DEBUG] InfoFrame does not need to be reset", -- [3402]
+	"3/2/2024 15:30 [DEBUG] Resetting PlayerRank", -- [3403]
+	"3/2/2024 15:30 [DEBUG] InfoFrame was not active", -- [3404]
+	"3/2/2024 15:30 [DEBUG] 6", -- [3405]
+	"3/2/2024 15:30 [DEBUG] Hiding Tracking UI", -- [3406]
+	"3/2/2024 15:33 [DEBUG] Player has entered instance", -- [3407]
+	"3/2/2024 15:33 [DEBUG] 2579", -- [3408]
+	"3/2/2024 15:33 [DEBUG] Offical Instance Name: 2579 _2579", -- [3409]
+	"3/2/2024 15:33 [DEBUG] Expansion: 10", -- [3410]
+	"3/2/2024 15:33 [DEBUG] Instance Type: Dungeons", -- [3411]
+	"3/2/2024 15:33 [DEBUG] Instance: 2579", -- [3412]
+	"3/2/2024 15:33 [DEBUG] DifficultyID: 23", -- [3413]
+	"3/2/2024 15:33 [DEBUG] Expansion: 10", -- [3414]
+	"3/2/2024 15:33 [DEBUG] Instance Type: Dungeons", -- [3415]
+	"3/2/2024 15:33 [DEBUG] Instance: 2579", -- [3416]
+	"3/2/2024 15:33 [DEBUG] Asking user whether they want to track this instance", -- [3417]
+	"3/2/2024 15:33 [DEBUG] Displaying Tracking UI since it was already created", -- [3418]
+	"3/2/2024 15:33 [DEBUG] Expansion: 10", -- [3419]
+	"3/2/2024 15:33 [DEBUG] Player has entered instance", -- [3420]
+	"3/2/2024 15:33 [DEBUG] 2579", -- [3421]
+	"3/2/2024 15:33 [DEBUG] Offical Instance Name: 2579 _2579", -- [3422]
+	"3/2/2024 15:33 [DEBUG] Expansion: 10", -- [3423]
+	"3/2/2024 15:33 [DEBUG] Instance Type: Dungeons", -- [3424]
+	"3/2/2024 15:33 [DEBUG] Instance: 2579", -- [3425]
+	"3/2/2024 15:33 [DEBUG] DifficultyID: 23", -- [3426]
+	"3/2/2024 15:33 [DEBUG] Expansion: 10", -- [3427]
+	"3/2/2024 15:33 [DEBUG] Instance Type: Dungeons", -- [3428]
+	"3/2/2024 15:33 [DEBUG] Instance: 2579", -- [3429]
+	"3/2/2024 15:33 [DEBUG] No Achievements to track for this instance", -- [3430]
+	"3/2/2024 15:33 [DEBUG] Expansion: 10", -- [3431]
+	"3/2/2024 16:4 [DEBUG] Clearing Instance Variables", -- [3432]
+	"3/2/2024 16:4 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3433]
+	"3/2/2024 16:4 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3434]
+	"3/2/2024 16:4 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3435]
+	"3/2/2024 16:4 [DEBUG] Clearing Instance Variables if exists", -- [3436]
+	"3/2/2024 16:4 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3437]
+	"3/2/2024 16:4 [DEBUG] Clearing Instance Variables if exists", -- [3438]
+	"3/2/2024 16:4 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4038: attempt to call method 'ClearVariables' (a nil value).", -- [3439]
+	"3/2/2024 16:4 [DEBUG] Resetting Global Variables", -- [3440]
+	"3/2/2024 16:4 [DEBUG] InfoFrame does not need to be reset", -- [3441]
+	"3/2/2024 16:4 [DEBUG] Resetting PlayerRank", -- [3442]
+	"3/2/2024 16:4 [DEBUG] InfoFrame was not active", -- [3443]
+	"3/2/2024 16:4 [DEBUG] 6", -- [3444]
+	"3/2/2024 16:4 [DEBUG] Hiding Tracking UI", -- [3445]
+	"3/2/2024 16:4 [DEBUG] ---IAT Runtime---", -- [3446]
+	"3/2/2024 16:4 [DEBUG] Version: 4.35.0", -- [3447]
+	"3/2/2024 16:4 [DEBUG] Attempting to load from local NPC Cache", -- [3448]
+	"3/2/2024 16:4 [DEBUG] Generating NPC Cache...", -- [3449]
+	"3/2/2024 16:4 [DEBUG] Enabling Addon", -- [3450]
+	"3/2/2024 16:4 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3451]
+	"3/2/2024 16:4 [DEBUG] Showing Minimap Icon", -- [3452]
+	"3/2/2024 16:4 [DEBUG] Player has entered instance", -- [3453]
+	"3/2/2024 16:4 [DEBUG] 1763", -- [3454]
+	"3/2/2024 16:4 [DEBUG] Offical Instance Name: 1763 _1763", -- [3455]
+	"3/2/2024 16:4 [DEBUG] Expansion: 8", -- [3456]
+	"3/2/2024 16:4 [DEBUG] Instance Type: Dungeons", -- [3457]
+	"3/2/2024 16:4 [DEBUG] Instance: 1763", -- [3458]
+	"3/2/2024 16:4 [DEBUG] DifficultyID: 8", -- [3459]
+	"3/2/2024 16:4 [DEBUG] Achievements cannot be earned for the following difficulty 8", -- [3460]
+	"3/2/2024 16:5 [DEBUG] 6", -- [3461]
+	"3/2/2024 16:5 [DEBUG] Clearing Instance Variables", -- [3462]
+	"3/2/2024 16:5 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3463]
+	"3/2/2024 16:5 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3464]
+	"3/2/2024 16:5 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3465]
+	"3/2/2024 16:5 [DEBUG] Clearing Instance Variables if exists", -- [3466]
+	"3/2/2024 16:5 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3467]
+	"3/2/2024 16:5 [DEBUG] Clearing Instance Variables if exists", -- [3468]
+	"3/2/2024 16:5 [DEBUG] Clearing Instance Variables", -- [3469]
+	"3/2/2024 16:5 [DEBUG] Resetting Global Variables", -- [3470]
+	"3/2/2024 16:5 [DEBUG] InfoFrame does not need to be reset", -- [3471]
+	"3/2/2024 16:5 [DEBUG] Resetting PlayerRank", -- [3472]
+	"3/2/2024 16:5 [DEBUG] InfoFrame was not active", -- [3473]
+	"3/2/2024 16:6 [DEBUG] Player has entered instance", -- [3474]
+	"3/2/2024 16:6 [DEBUG] 1501", -- [3475]
+	"3/2/2024 16:6 [DEBUG] Offical Instance Name: 1501 _1501", -- [3476]
+	"3/2/2024 16:6 [DEBUG] Expansion: 7", -- [3477]
+	"3/2/2024 16:6 [DEBUG] Instance Type: Dungeons", -- [3478]
+	"3/2/2024 16:6 [DEBUG] Instance: 1501", -- [3479]
+	"3/2/2024 16:6 [DEBUG] DifficultyID: 23", -- [3480]
+	"3/2/2024 16:6 [DEBUG] Expansion: 7", -- [3481]
+	"3/2/2024 16:6 [DEBUG] Instance Type: Dungeons", -- [3482]
+	"3/2/2024 16:6 [DEBUG] Instance: 1501", -- [3483]
+	"3/2/2024 16:6 [DEBUG] Asking user whether they want to track this instance", -- [3484]
+	"3/2/2024 16:6 [DEBUG] Creating Tracking UI", -- [3485]
+	"3/2/2024 16:6 [DEBUG] InfoFrame Setup Complete", -- [3486]
+	"3/2/2024 16:6 [DEBUG] Expansion: 7", -- [3487]
+	"3/2/2024 16:34 [DEBUG] Hiding Tracking UI", -- [3488]
+	"3/2/2024 16:34 [DEBUG] Clearing Instance Variables", -- [3489]
+	"3/2/2024 16:34 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3490]
+	"3/2/2024 16:34 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3491]
+	"3/2/2024 16:34 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3492]
+	"3/2/2024 16:34 [DEBUG] Clearing Instance Variables if exists", -- [3493]
+	"3/2/2024 16:34 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3494]
+	"3/2/2024 16:34 [DEBUG] Clearing Instance Variables if exists", -- [3495]
+	"3/2/2024 16:34 [DEBUG] Clearing Instance Variables", -- [3496]
+	"3/2/2024 16:34 [DEBUG] Resetting Global Variables", -- [3497]
+	"3/2/2024 16:34 [DEBUG] InfoFrame does not need to be reset", -- [3498]
+	"3/2/2024 16:34 [DEBUG] Resetting PlayerRank", -- [3499]
+	"3/2/2024 16:34 [DEBUG] InfoFrame was not active", -- [3500]
+	"3/2/2024 16:36 [DEBUG] ---IAT Runtime---", -- [3501]
+	"3/2/2024 16:36 [DEBUG] Version: 4.35.0", -- [3502]
+	"3/2/2024 16:36 [DEBUG] Attempting to load from local NPC Cache", -- [3503]
+	"3/2/2024 16:36 [DEBUG] Generating NPC Cache...", -- [3504]
+	"3/2/2024 16:36 [DEBUG] Enabling Addon", -- [3505]
+	"3/2/2024 16:36 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3506]
+	"3/2/2024 16:35 [DEBUG] Showing Minimap Icon", -- [3507]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3508]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.35.0", -- [3509]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3510]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3511]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3512]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3513]
+	"3/2/2024 20:36 [DEBUG] Showing Minimap Icon", -- [3514]
+	"3/2/2024 20:56 [DEBUG] ---IAT Runtime---", -- [3515]
+	"3/2/2024 20:56 [DEBUG] Version: 4.35.0", -- [3516]
+	"3/2/2024 20:56 [DEBUG] Attempting to load from local NPC Cache", -- [3517]
+	"3/2/2024 20:56 [DEBUG] Generating NPC Cache...", -- [3518]
+	"3/2/2024 20:56 [DEBUG] Enabling Addon", -- [3519]
+	"3/2/2024 20:56 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3520]
+	"3/2/2024 20:56 [DEBUG] Showing Minimap Icon", -- [3521]
+	"3/2/2024 20:58 [DEBUG] ---IAT Runtime---", -- [3522]
+	"3/2/2024 20:58 [DEBUG] Version: 4.35.0", -- [3523]
+	"3/2/2024 20:58 [DEBUG] Attempting to load from local NPC Cache", -- [3524]
+	"3/2/2024 20:58 [DEBUG] Generating NPC Cache...", -- [3525]
+	"3/2/2024 20:58 [DEBUG] Enabling Addon", -- [3526]
+	"3/2/2024 20:58 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3527]
+	"3/2/2024 21:1 [DEBUG] Showing Minimap Icon", -- [3528]
+	"3/2/2024 21:1 [DEBUG] Player has entered instance", -- [3529]
+	"3/2/2024 21:1 [DEBUG] 2549", -- [3530]
+	"3/2/2024 21:1 [DEBUG] Offical Instance Name: 2549 _2549", -- [3531]
+	"3/2/2024 21:1 [DEBUG] Expansion: 10", -- [3532]
+	"3/2/2024 21:1 [DEBUG] Instance Type: Raids", -- [3533]
+	"3/2/2024 21:1 [DEBUG] Instance: 2549", -- [3534]
+	"3/2/2024 21:1 [DEBUG] DifficultyID: 15", -- [3535]
+	"3/2/2024 21:1 [DEBUG] Expansion: 10", -- [3536]
+	"3/2/2024 21:1 [DEBUG] Instance Type: Raids", -- [3537]
+	"3/2/2024 21:1 [DEBUG] Instance: 2549", -- [3538]
+	"3/2/2024 21:1 [DEBUG] Asking user whether they want to track this instance", -- [3539]
+	"3/2/2024 21:1 [DEBUG] Creating Tracking UI", -- [3540]
+	"3/2/2024 21:1 [DEBUG] InfoFrame Setup Complete", -- [3541]
+	"3/2/2024 21:1 [DEBUG] Expansion: 10", -- [3542]
+	"3/2/2024 21:1 [DEBUG] Hiding Tracking UI", -- [3543]
+	"3/2/2024 21:1 [DEBUG] Clearing Instance Variables", -- [3544]
+	"3/2/2024 21:1 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3545]
+	"3/2/2024 21:1 [DEBUG] Cleaning up instance events for _2549", -- [3546]
+	"3/2/2024 21:1 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3547]
+	"3/2/2024 21:1 [DEBUG] Clearing Instance Variables if exists", -- [3548]
+	"3/2/2024 21:1 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3549]
+	"3/2/2024 21:1 [DEBUG] Clearing Instance Variables if exists", -- [3550]
+	"3/2/2024 21:1 [DEBUG] Clearing Instance Variables", -- [3551]
+	"3/2/2024 21:1 [DEBUG] Resetting Global Variables", -- [3552]
+	"3/2/2024 21:1 [DEBUG] InfoFrame does not need to be reset", -- [3553]
+	"3/2/2024 21:1 [DEBUG] Resetting PlayerRank", -- [3554]
+	"3/2/2024 21:1 [DEBUG] InfoFrame was not active", -- [3555]
+	"3/2/2024 21:2 [DEBUG] ---IAT Runtime---", -- [3556]
+	"3/2/2024 21:2 [DEBUG] Version: 4.35.0", -- [3557]
+	"3/2/2024 21:2 [DEBUG] Attempting to load from local NPC Cache", -- [3558]
+	"3/2/2024 21:2 [DEBUG] Generating NPC Cache...", -- [3559]
+	"3/2/2024 21:2 [DEBUG] Enabling Addon", -- [3560]
+	"3/2/2024 21:2 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3561]
+	"3/2/2024 21:3 [DEBUG] Showing Minimap Icon", -- [3562]
+	"3/2/2024 21:10 [DEBUG] Player has entered instance", -- [3563]
+	"3/2/2024 21:10 [DEBUG] 2549", -- [3564]
+	"3/2/2024 21:10 [DEBUG] Offical Instance Name: 2549 _2549", -- [3565]
+	"3/2/2024 21:10 [DEBUG] Expansion: 10", -- [3566]
+	"3/2/2024 21:10 [DEBUG] Instance Type: Raids", -- [3567]
+	"3/2/2024 21:10 [DEBUG] Instance: 2549", -- [3568]
+	"3/2/2024 21:10 [DEBUG] DifficultyID: 14", -- [3569]
+	"3/2/2024 21:10 [DEBUG] Expansion: 10", -- [3570]
+	"3/2/2024 21:10 [DEBUG] Instance Type: Raids", -- [3571]
+	"3/2/2024 21:10 [DEBUG] Instance: 2549", -- [3572]
+	"3/2/2024 21:10 [DEBUG] Asking user whether they want to track this instance", -- [3573]
+	"3/2/2024 21:10 [DEBUG] Creating Tracking UI", -- [3574]
+	"3/2/2024 21:10 [DEBUG] InfoFrame Setup Complete", -- [3575]
+	"3/2/2024 21:10 [DEBUG] Expansion: 10", -- [3576]
+	"3/2/2024 21:24 [DEBUG] Hiding Tracking UI", -- [3577]
+	"3/2/2024 21:24 [DEBUG] Clearing Instance Variables", -- [3578]
+	"3/2/2024 21:24 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3579]
+	"3/2/2024 21:24 [DEBUG] Cleaning up instance events for _2549", -- [3580]
+	"3/2/2024 21:24 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3581]
+	"3/2/2024 21:24 [DEBUG] Clearing Instance Variables if exists", -- [3582]
+	"3/2/2024 21:24 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3583]
+	"3/2/2024 21:24 [DEBUG] Clearing Instance Variables if exists", -- [3584]
+	"3/2/2024 21:24 [DEBUG] Clearing Instance Variables", -- [3585]
+	"3/2/2024 21:24 [DEBUG] Resetting Global Variables", -- [3586]
+	"3/2/2024 21:24 [DEBUG] InfoFrame does not need to be reset", -- [3587]
+	"3/2/2024 21:24 [DEBUG] Resetting PlayerRank", -- [3588]
+	"3/2/2024 21:24 [DEBUG] InfoFrame was not active", -- [3589]
+	"3/2/2024 21:25 [DEBUG] Hiding Tracking UI", -- [3590]
+	"3/2/2024 21:25 [DEBUG] Player has entered instance", -- [3591]
+	"3/2/2024 21:25 [DEBUG] 2549", -- [3592]
+	"3/2/2024 21:25 [DEBUG] Offical Instance Name: 2549 _2549", -- [3593]
+	"3/2/2024 21:25 [DEBUG] Expansion: 10", -- [3594]
+	"3/2/2024 21:25 [DEBUG] Instance Type: Raids", -- [3595]
+	"3/2/2024 21:25 [DEBUG] Instance: 2549", -- [3596]
+	"3/2/2024 21:25 [DEBUG] DifficultyID: 15", -- [3597]
+	"3/2/2024 21:25 [DEBUG] Expansion: 10", -- [3598]
+	"3/2/2024 21:25 [DEBUG] Instance Type: Raids", -- [3599]
+	"3/2/2024 21:25 [DEBUG] Instance: 2549", -- [3600]
+	"3/2/2024 21:25 [DEBUG] Asking user whether they want to track this instance", -- [3601]
+	"3/2/2024 21:25 [DEBUG] Displaying Tracking UI since it was already created", -- [3602]
+	"3/2/2024 21:25 [DEBUG] Expansion: 10", -- [3603]
+	"3/2/2024 21:25 [DEBUG] Player has entered instance", -- [3604]
+	"3/2/2024 21:25 [DEBUG] 2549", -- [3605]
+	"3/2/2024 21:25 [DEBUG] Offical Instance Name: 2549 _2549", -- [3606]
+	"3/2/2024 21:25 [DEBUG] Expansion: 10", -- [3607]
+	"3/2/2024 21:25 [DEBUG] Instance Type: Raids", -- [3608]
+	"3/2/2024 21:25 [DEBUG] Instance: 2549", -- [3609]
+	"3/2/2024 21:25 [DEBUG] DifficultyID: 15", -- [3610]
+	"3/2/2024 21:25 [DEBUG] Expansion: 10", -- [3611]
+	"3/2/2024 21:25 [DEBUG] Instance Type: Raids", -- [3612]
+	"3/2/2024 21:25 [DEBUG] Instance: 2549", -- [3613]
+	"3/2/2024 21:25 [DEBUG] No Achievements to track for this instance", -- [3614]
+	"3/2/2024 21:25 [DEBUG] Expansion: 10", -- [3615]
+	"3/2/2024 21:25 [DEBUG] ---IAT Runtime---", -- [3616]
+	"3/2/2024 21:25 [DEBUG] Version: 4.35.0", -- [3617]
+	"3/2/2024 21:25 [DEBUG] Attempting to load from local NPC Cache", -- [3618]
+	"3/2/2024 21:25 [DEBUG] Generating NPC Cache...", -- [3619]
+	"3/2/2024 21:25 [DEBUG] Enabling Addon", -- [3620]
+	"3/2/2024 21:25 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3621]
+	"3/2/2024 21:25 [DEBUG] Showing Minimap Icon", -- [3622]
+	"3/2/2024 21:25 [DEBUG] Player has entered instance", -- [3623]
+	"3/2/2024 21:25 [DEBUG] 2549", -- [3624]
+	"3/2/2024 21:25 [DEBUG] Offical Instance Name: 2549 _2549", -- [3625]
+	"3/2/2024 21:25 [DEBUG] Expansion: 10", -- [3626]
+	"3/2/2024 21:25 [DEBUG] Instance Type: Raids", -- [3627]
+	"3/2/2024 21:25 [DEBUG] Instance: 2549", -- [3628]
+	"3/2/2024 21:25 [DEBUG] DifficultyID: 15", -- [3629]
+	"3/2/2024 21:25 [DEBUG] Expansion: 10", -- [3630]
+	"3/2/2024 21:25 [DEBUG] Instance Type: Raids", -- [3631]
+	"3/2/2024 21:25 [DEBUG] Instance: 2549", -- [3632]
+	"3/2/2024 21:25 [DEBUG] Asking user whether they want to track this instance", -- [3633]
+	"3/2/2024 21:25 [DEBUG] Creating Tracking UI", -- [3634]
+	"3/2/2024 21:25 [DEBUG] InfoFrame Setup Complete", -- [3635]
+	"3/2/2024 21:25 [DEBUG] Expansion: 10", -- [3636]
+	"3/2/2024 23:1 [DEBUG] Hiding Tracking UI", -- [3637]
+	"3/2/2024 23:1 [DEBUG] Clearing Instance Variables", -- [3638]
+	"3/2/2024 23:1 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3639]
+	"3/2/2024 23:1 [DEBUG] Cleaning up instance events for _2549", -- [3640]
+	"3/2/2024 23:1 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3641]
+	"3/2/2024 23:1 [DEBUG] Clearing Instance Variables if exists", -- [3642]
+	"3/2/2024 23:1 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3643]
+	"3/2/2024 23:1 [DEBUG] Clearing Instance Variables if exists", -- [3644]
+	"3/2/2024 23:1 [DEBUG] Clearing Instance Variables", -- [3645]
+	"3/2/2024 23:1 [DEBUG] Resetting Global Variables", -- [3646]
+	"3/2/2024 23:1 [DEBUG] InfoFrame does not need to be reset", -- [3647]
+	"3/2/2024 23:1 [DEBUG] Resetting PlayerRank", -- [3648]
+	"3/2/2024 23:1 [DEBUG] InfoFrame was not active", -- [3649]
+	"3/2/2024 23:1 [DEBUG] Hiding Tracking UI", -- [3650]
+	"3/2/2024 23:1 [DEBUG] Hiding Tracking UI", -- [3651]
+	"3/2/2024 23:2 [DEBUG] Player has entered instance", -- [3652]
+	"3/2/2024 23:2 [DEBUG] 2521", -- [3653]
+	"3/2/2024 23:2 [DEBUG] Offical Instance Name: 2521 _2521", -- [3654]
+	"3/2/2024 23:2 [DEBUG] Expansion: 10", -- [3655]
+	"3/2/2024 23:2 [DEBUG] Instance Type: Dungeons", -- [3656]
+	"3/2/2024 23:2 [DEBUG] Instance: 2521", -- [3657]
+	"3/2/2024 23:2 [DEBUG] DifficultyID: 23", -- [3658]
+	"3/2/2024 23:2 [DEBUG] Expansion: 10", -- [3659]
+	"3/2/2024 23:2 [DEBUG] Instance Type: Dungeons", -- [3660]
+	"3/2/2024 23:2 [DEBUG] Instance: 2521", -- [3661]
+	"3/2/2024 23:2 [DEBUG] Asking user whether they want to track this instance", -- [3662]
+	"3/2/2024 23:2 [DEBUG] Displaying Tracking UI since it was already created", -- [3663]
+	"3/2/2024 23:2 [DEBUG] Expansion: 10", -- [3664]
+	"3/2/2024 23:3 [DEBUG] Hiding Tracking UI", -- [3665]
+	"3/2/2024 23:3 [DEBUG] Clearing Instance Variables", -- [3666]
+	"3/2/2024 23:3 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3667]
+	"3/2/2024 23:3 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3668]
+	"3/2/2024 23:3 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3669]
+	"3/2/2024 23:3 [DEBUG] Clearing Instance Variables if exists", -- [3670]
+	"3/2/2024 23:3 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3671]
+	"3/2/2024 23:3 [DEBUG] Clearing Instance Variables if exists", -- [3672]
+	"3/2/2024 23:3 [DEBUG] Clearing Instance Variables", -- [3673]
+	"3/2/2024 23:3 [DEBUG] Resetting Global Variables", -- [3674]
+	"3/2/2024 23:3 [DEBUG] InfoFrame does not need to be reset", -- [3675]
+	"3/2/2024 23:3 [DEBUG] Resetting PlayerRank", -- [3676]
+	"3/2/2024 23:3 [DEBUG] InfoFrame was not active", -- [3677]
+	"3/2/2024 23:4 [DEBUG] Hiding Tracking UI", -- [3678]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3679]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.35.0", -- [3680]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3681]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3682]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3683]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3684]
+	"3/2/2024 23:34 [DEBUG] Showing Minimap Icon", -- [3685]
+	"3/2/2024 23:41 [DEBUG] ---IAT Runtime---", -- [3686]
+	"3/2/2024 23:41 [DEBUG] Version: 4.35.0", -- [3687]
+	"3/2/2024 23:41 [DEBUG] Attempting to load from local NPC Cache", -- [3688]
+	"3/2/2024 23:41 [DEBUG] Generating NPC Cache...", -- [3689]
+	"3/2/2024 23:41 [DEBUG] Enabling Addon", -- [3690]
+	"3/2/2024 23:41 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3691]
+	"3/2/2024 23:57 [DEBUG] Showing Minimap Icon", -- [3692]
+	"4/2/2024 0:15 [DEBUG] Player has entered instance", -- [3693]
+	"4/2/2024 0:15 [DEBUG] 2579", -- [3694]
+	"4/2/2024 0:15 [DEBUG] Offical Instance Name: 2579 _2579", -- [3695]
+	"4/2/2024 0:15 [DEBUG] Expansion: 10", -- [3696]
+	"4/2/2024 0:15 [DEBUG] Instance Type: Dungeons", -- [3697]
+	"4/2/2024 0:15 [DEBUG] Instance: 2579", -- [3698]
+	"4/2/2024 0:15 [DEBUG] DifficultyID: 23", -- [3699]
+	"4/2/2024 0:15 [DEBUG] Expansion: 10", -- [3700]
+	"4/2/2024 0:15 [DEBUG] Instance Type: Dungeons", -- [3701]
+	"4/2/2024 0:15 [DEBUG] Instance: 2579", -- [3702]
+	"4/2/2024 0:15 [DEBUG] Asking user whether they want to track this instance", -- [3703]
+	"4/2/2024 0:15 [DEBUG] Creating Tracking UI", -- [3704]
+	"4/2/2024 0:15 [DEBUG] InfoFrame Setup Complete", -- [3705]
+	"4/2/2024 0:15 [DEBUG] Expansion: 10", -- [3706]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3707]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.35.0", -- [3708]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3709]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3710]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3711]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3712]
+	"4/2/2024 13:44 [DEBUG] Showing Minimap Icon", -- [3713]
+	"4/2/2024 14:14 [DEBUG] Player has entered instance", -- [3714]
+	"4/2/2024 14:14 [DEBUG] 1466", -- [3715]
+	"4/2/2024 14:14 [DEBUG] Offical Instance Name: 1466 _1466", -- [3716]
+	"4/2/2024 14:14 [DEBUG] Expansion: 7", -- [3717]
+	"4/2/2024 14:14 [DEBUG] Instance Type: Dungeons", -- [3718]
+	"4/2/2024 14:14 [DEBUG] Instance: 1466", -- [3719]
+	"4/2/2024 14:14 [DEBUG] DifficultyID: 23", -- [3720]
+	"4/2/2024 14:14 [DEBUG] Expansion: 7", -- [3721]
+	"4/2/2024 14:14 [DEBUG] Instance Type: Dungeons", -- [3722]
+	"4/2/2024 14:14 [DEBUG] Instance: 1466", -- [3723]
+	"4/2/2024 14:14 [DEBUG] Asking user whether they want to track this instance", -- [3724]
+	"4/2/2024 14:14 [DEBUG] Creating Tracking UI", -- [3725]
+	"4/2/2024 14:14 [DEBUG] InfoFrame Setup Complete", -- [3726]
+	"4/2/2024 14:14 [DEBUG] Expansion: 7", -- [3727]
+	"4/2/2024 14:14 [DEBUG] Player has entered instance", -- [3728]
+	"4/2/2024 14:14 [DEBUG] 1466", -- [3729]
+	"4/2/2024 14:14 [DEBUG] Offical Instance Name: 1466 _1466", -- [3730]
+	"4/2/2024 14:14 [DEBUG] Expansion: 7", -- [3731]
+	"4/2/2024 14:14 [DEBUG] Instance Type: Dungeons", -- [3732]
+	"4/2/2024 14:14 [DEBUG] Instance: 1466", -- [3733]
+	"4/2/2024 14:14 [DEBUG] DifficultyID: 23", -- [3734]
+	"4/2/2024 14:14 [DEBUG] Expansion: 7", -- [3735]
+	"4/2/2024 14:14 [DEBUG] Instance Type: Dungeons", -- [3736]
+	"4/2/2024 14:14 [DEBUG] Instance: 1466", -- [3737]
+	"4/2/2024 14:14 [DEBUG] No Achievements to track for this instance", -- [3738]
+	"4/2/2024 14:14 [DEBUG] Expansion: 7", -- [3739]
+	"4/2/2024 14:42 [DEBUG] 6", -- [3740]
+	"4/2/2024 14:42 [DEBUG] Hiding Tracking UI", -- [3741]
+	"4/2/2024 14:42 [DEBUG] Hiding Tracking UI", -- [3742]
+	"4/2/2024 14:42 [DEBUG] Clearing Instance Variables", -- [3743]
+	"4/2/2024 14:42 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3744]
+	"4/2/2024 14:42 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3745]
+	"4/2/2024 14:42 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3746]
+	"4/2/2024 14:42 [DEBUG] Clearing Instance Variables if exists", -- [3747]
+	"4/2/2024 14:42 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3748]
+	"4/2/2024 14:42 [DEBUG] Clearing Instance Variables if exists", -- [3749]
+	"4/2/2024 14:42 [DEBUG] Clearing Instance Variables", -- [3750]
+	"4/2/2024 14:42 [DEBUG] Resetting Global Variables", -- [3751]
+	"4/2/2024 14:42 [DEBUG] InfoFrame does not need to be reset", -- [3752]
+	"4/2/2024 14:42 [DEBUG] Resetting PlayerRank", -- [3753]
+	"4/2/2024 14:42 [DEBUG] InfoFrame was not active", -- [3754]
+	"4/2/2024 14:43 [DEBUG] Hiding Tracking UI", -- [3755]
+	"4/2/2024 14:44 [DEBUG] Hiding Tracking UI", -- [3756]
+	"4/2/2024 14:44 [DEBUG] Player has entered instance", -- [3757]
+	"4/2/2024 14:44 [DEBUG] 643", -- [3758]
+	"4/2/2024 14:44 [DEBUG] Offical Instance Name: 643 _643", -- [3759]
+	"4/2/2024 14:44 [DEBUG] Expansion: 4", -- [3760]
+	"4/2/2024 14:44 [DEBUG] Instance Type: Dungeons", -- [3761]
+	"4/2/2024 14:44 [DEBUG] Instance: 643", -- [3762]
+	"4/2/2024 14:44 [DEBUG] DifficultyID: 23", -- [3763]
+	"4/2/2024 14:44 [DEBUG] Achievements cannot be earned for the following difficulty 23", -- [3764]
+	"4/2/2024 15:17 [DEBUG] Clearing Instance Variables", -- [3765]
+	"4/2/2024 15:17 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3766]
+	"4/2/2024 15:17 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3767]
+	"4/2/2024 15:17 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3768]
+	"4/2/2024 15:17 [DEBUG] Clearing Instance Variables if exists", -- [3769]
+	"4/2/2024 15:17 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3770]
+	"4/2/2024 15:17 [DEBUG] Clearing Instance Variables if exists", -- [3771]
+	"4/2/2024 15:17 [DEBUG] Clearing Instance Variables", -- [3772]
+	"4/2/2024 15:17 [DEBUG] Resetting Global Variables", -- [3773]
+	"4/2/2024 15:17 [DEBUG] InfoFrame does not need to be reset", -- [3774]
+	"4/2/2024 15:17 [DEBUG] Resetting PlayerRank", -- [3775]
+	"4/2/2024 15:17 [DEBUG] InfoFrame was not active", -- [3776]
+	"4/2/2024 15:17 [DEBUG] 6", -- [3777]
+	"4/2/2024 15:17 [DEBUG] Hiding Tracking UI", -- [3778]
+	"4/2/2024 15:17 [DEBUG] ---IAT Runtime---", -- [3779]
+	"4/2/2024 15:17 [DEBUG] Version: 4.35.0", -- [3780]
+	"4/2/2024 15:17 [DEBUG] Attempting to load from local NPC Cache", -- [3781]
+	"4/2/2024 15:17 [DEBUG] Generating NPC Cache...", -- [3782]
+	"4/2/2024 15:17 [DEBUG] Enabling Addon", -- [3783]
+	"4/2/2024 15:17 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3784]
+	"4/2/2024 15:17 [DEBUG] Showing Minimap Icon", -- [3785]
+	"4/2/2024 15:35 [DEBUG] Player has entered instance", -- [3786]
+	"4/2/2024 15:35 [DEBUG] 1501", -- [3787]
+	"4/2/2024 15:35 [DEBUG] Offical Instance Name: 1501 _1501", -- [3788]
+	"4/2/2024 15:35 [DEBUG] Expansion: 7", -- [3789]
+	"4/2/2024 15:35 [DEBUG] Instance Type: Dungeons", -- [3790]
+	"4/2/2024 15:35 [DEBUG] Instance: 1501", -- [3791]
+	"4/2/2024 15:35 [DEBUG] DifficultyID: 23", -- [3792]
+	"4/2/2024 15:35 [DEBUG] Expansion: 7", -- [3793]
+	"4/2/2024 15:35 [DEBUG] Instance Type: Dungeons", -- [3794]
+	"4/2/2024 15:35 [DEBUG] Instance: 1501", -- [3795]
+	"4/2/2024 15:35 [DEBUG] Asking user whether they want to track this instance", -- [3796]
+	"4/2/2024 15:35 [DEBUG] Creating Tracking UI", -- [3797]
+	"4/2/2024 15:35 [DEBUG] InfoFrame Setup Complete", -- [3798]
+	"4/2/2024 15:35 [DEBUG] Expansion: 7", -- [3799]
+	"4/2/2024 16:7 [DEBUG] Hiding Tracking UI", -- [3800]
+	"4/2/2024 16:7 [DEBUG] Clearing Instance Variables", -- [3801]
+	"4/2/2024 16:7 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3802]
+	"4/2/2024 16:7 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3803]
+	"4/2/2024 16:7 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3804]
+	"4/2/2024 16:7 [DEBUG] Clearing Instance Variables if exists", -- [3805]
+	"4/2/2024 16:7 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3806]
+	"4/2/2024 16:7 [DEBUG] Clearing Instance Variables if exists", -- [3807]
+	"4/2/2024 16:7 [DEBUG] Clearing Instance Variables", -- [3808]
+	"4/2/2024 16:7 [DEBUG] Resetting Global Variables", -- [3809]
+	"4/2/2024 16:7 [DEBUG] InfoFrame does not need to be reset", -- [3810]
+	"4/2/2024 16:7 [DEBUG] Resetting PlayerRank", -- [3811]
+	"4/2/2024 16:7 [DEBUG] InfoFrame was not active", -- [3812]
+	"4/2/2024 16:10 [DEBUG] Hiding Tracking UI", -- [3813]
+	"4/2/2024 16:13 [DEBUG] Player has entered instance", -- [3814]
+	"4/2/2024 16:13 [DEBUG] 2579", -- [3815]
+	"4/2/2024 16:13 [DEBUG] Offical Instance Name: 2579 _2579", -- [3816]
+	"4/2/2024 16:13 [DEBUG] Expansion: 10", -- [3817]
+	"4/2/2024 16:13 [DEBUG] Instance Type: Dungeons", -- [3818]
+	"4/2/2024 16:13 [DEBUG] Instance: 2579", -- [3819]
+	"4/2/2024 16:13 [DEBUG] DifficultyID: 23", -- [3820]
+	"4/2/2024 16:13 [DEBUG] Expansion: 10", -- [3821]
+	"4/2/2024 16:13 [DEBUG] Instance Type: Dungeons", -- [3822]
+	"4/2/2024 16:13 [DEBUG] Instance: 2579", -- [3823]
+	"4/2/2024 16:13 [DEBUG] Asking user whether they want to track this instance", -- [3824]
+	"4/2/2024 16:13 [DEBUG] Displaying Tracking UI since it was already created", -- [3825]
+	"4/2/2024 16:13 [DEBUG] Expansion: 10", -- [3826]
+	"4/2/2024 16:51 [DEBUG] Hiding Tracking UI", -- [3827]
+	"4/2/2024 16:51 [DEBUG] Clearing Instance Variables", -- [3828]
+	"4/2/2024 16:51 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3829]
+	"4/2/2024 16:51 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3830]
+	"4/2/2024 16:51 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3831]
+	"4/2/2024 16:51 [DEBUG] Clearing Instance Variables if exists", -- [3832]
+	"4/2/2024 16:51 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3833]
+	"4/2/2024 16:51 [DEBUG] Clearing Instance Variables if exists", -- [3834]
+	"4/2/2024 16:51 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4038: attempt to call method 'ClearVariables' (a nil value).", -- [3835]
+	"4/2/2024 16:51 [DEBUG] Resetting Global Variables", -- [3836]
+	"4/2/2024 16:51 [DEBUG] InfoFrame does not need to be reset", -- [3837]
+	"4/2/2024 16:51 [DEBUG] Resetting PlayerRank", -- [3838]
+	"4/2/2024 16:51 [DEBUG] InfoFrame was not active", -- [3839]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [3840]
+	"0/0/1999 -1:-1 [DEBUG] Version: 4.35.0", -- [3841]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [3842]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [3843]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [3844]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3845]
+	"5/2/2024 21:0 [DEBUG] Showing Minimap Icon", -- [3846]
+	"5/2/2024 21:25 [DEBUG] Player has entered instance", -- [3847]
+	"5/2/2024 21:25 [DEBUG] 2549", -- [3848]
+	"5/2/2024 21:25 [DEBUG] Offical Instance Name: 2549 _2549", -- [3849]
+	"5/2/2024 21:25 [DEBUG] Expansion: 10", -- [3850]
+	"5/2/2024 21:25 [DEBUG] Instance Type: Raids", -- [3851]
+	"5/2/2024 21:25 [DEBUG] Instance: 2549", -- [3852]
+	"5/2/2024 21:25 [DEBUG] DifficultyID: 16", -- [3853]
+	"5/2/2024 21:25 [DEBUG] Expansion: 10", -- [3854]
+	"5/2/2024 21:25 [DEBUG] Instance Type: Raids", -- [3855]
+	"5/2/2024 21:25 [DEBUG] Instance: 2549", -- [3856]
+	"5/2/2024 21:25 [DEBUG] Asking user whether they want to track this instance", -- [3857]
+	"5/2/2024 21:25 [DEBUG] Creating Tracking UI", -- [3858]
+	"5/2/2024 21:25 [DEBUG] InfoFrame Setup Complete", -- [3859]
+	"5/2/2024 21:25 [DEBUG] Expansion: 10", -- [3860]
+	"5/2/2024 21:44 [DEBUG] Hiding Tracking UI", -- [3861]
+	"5/2/2024 21:44 [DEBUG] Clearing Instance Variables", -- [3862]
+	"5/2/2024 21:44 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3863]
+	"5/2/2024 21:44 [DEBUG] Cleaning up instance events for _2549", -- [3864]
+	"5/2/2024 21:44 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3865]
+	"5/2/2024 21:44 [DEBUG] Clearing Instance Variables if exists", -- [3866]
+	"5/2/2024 21:44 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3867]
+	"5/2/2024 21:44 [DEBUG] Clearing Instance Variables if exists", -- [3868]
+	"5/2/2024 21:44 [DEBUG] Clearing Instance Variables", -- [3869]
+	"5/2/2024 21:44 [DEBUG] Resetting Global Variables", -- [3870]
+	"5/2/2024 21:44 [DEBUG] InfoFrame does not need to be reset", -- [3871]
+	"5/2/2024 21:44 [DEBUG] Resetting PlayerRank", -- [3872]
+	"5/2/2024 21:44 [DEBUG] InfoFrame was not active", -- [3873]
+	"5/2/2024 21:46 [DEBUG] ---IAT Runtime---", -- [3874]
+	"5/2/2024 21:46 [DEBUG] Version: 4.35.0", -- [3875]
+	"5/2/2024 21:46 [DEBUG] Attempting to load from local NPC Cache", -- [3876]
+	"5/2/2024 21:46 [DEBUG] Generating NPC Cache...", -- [3877]
+	"5/2/2024 21:46 [DEBUG] Enabling Addon", -- [3878]
+	"5/2/2024 21:46 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [3879]
+	"5/2/2024 21:48 [DEBUG] Showing Minimap Icon", -- [3880]
+	"5/2/2024 21:48 [DEBUG] Player has entered instance", -- [3881]
+	"5/2/2024 21:48 [DEBUG] 2579", -- [3882]
+	"5/2/2024 21:48 [DEBUG] Offical Instance Name: 2579 _2579", -- [3883]
+	"5/2/2024 21:48 [DEBUG] Expansion: 10", -- [3884]
+	"5/2/2024 21:48 [DEBUG] Instance Type: Dungeons", -- [3885]
+	"5/2/2024 21:48 [DEBUG] Instance: 2579", -- [3886]
+	"5/2/2024 21:48 [DEBUG] DifficultyID: 8", -- [3887]
+	"5/2/2024 21:48 [DEBUG] Achievements cannot be earned for the following difficulty 8", -- [3888]
+	"5/2/2024 21:50 [DEBUG] 6", -- [3889]
+	"5/2/2024 21:50 [DEBUG] Clearing Instance Variables", -- [3890]
+	"5/2/2024 21:50 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3891]
+	"5/2/2024 21:50 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3892]
+	"5/2/2024 21:50 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3893]
+	"5/2/2024 21:50 [DEBUG] Clearing Instance Variables if exists", -- [3894]
+	"5/2/2024 21:50 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3895]
+	"5/2/2024 21:50 [DEBUG] Clearing Instance Variables if exists", -- [3896]
+	"5/2/2024 21:50 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4038: attempt to call method 'ClearVariables' (a nil value).", -- [3897]
+	"5/2/2024 21:50 [DEBUG] Resetting Global Variables", -- [3898]
+	"5/2/2024 21:50 [DEBUG] InfoFrame does not need to be reset", -- [3899]
+	"5/2/2024 21:50 [DEBUG] Resetting PlayerRank", -- [3900]
+	"5/2/2024 21:50 [DEBUG] InfoFrame was not active", -- [3901]
+	"5/2/2024 21:53 [DEBUG] Player has entered instance", -- [3902]
+	"5/2/2024 21:53 [DEBUG] 1862", -- [3903]
+	"5/2/2024 21:53 [DEBUG] Offical Instance Name: 1862 _1862", -- [3904]
+	"5/2/2024 21:53 [DEBUG] Expansion: 8", -- [3905]
+	"5/2/2024 21:53 [DEBUG] Instance Type: Dungeons", -- [3906]
+	"5/2/2024 21:53 [DEBUG] Instance: 1862", -- [3907]
+	"5/2/2024 21:53 [DEBUG] DifficultyID: 23", -- [3908]
+	"5/2/2024 21:53 [DEBUG] Expansion: 8", -- [3909]
+	"5/2/2024 21:53 [DEBUG] Instance Type: Dungeons", -- [3910]
+	"5/2/2024 21:53 [DEBUG] Instance: 1862", -- [3911]
+	"5/2/2024 21:53 [DEBUG] Asking user whether they want to track this instance", -- [3912]
+	"5/2/2024 21:53 [DEBUG] Creating Tracking UI", -- [3913]
+	"5/2/2024 21:53 [DEBUG] InfoFrame Setup Complete", -- [3914]
+	"5/2/2024 21:53 [DEBUG] Expansion: 8", -- [3915]
+	"5/2/2024 22:22 [DEBUG] Hiding Tracking UI", -- [3916]
+	"5/2/2024 22:22 [DEBUG] Clearing Instance Variables", -- [3917]
+	"5/2/2024 22:22 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3918]
+	"5/2/2024 22:22 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3919]
+	"5/2/2024 22:22 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3920]
+	"5/2/2024 22:22 [DEBUG] Clearing Instance Variables if exists", -- [3921]
+	"5/2/2024 22:22 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3922]
+	"5/2/2024 22:22 [DEBUG] Clearing Instance Variables if exists", -- [3923]
+	"5/2/2024 22:22 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4038: attempt to call method 'ClearVariables' (a nil value).", -- [3924]
+	"5/2/2024 22:22 [DEBUG] Resetting Global Variables", -- [3925]
+	"5/2/2024 22:22 [DEBUG] InfoFrame does not need to be reset", -- [3926]
+	"5/2/2024 22:22 [DEBUG] Resetting PlayerRank", -- [3927]
+	"5/2/2024 22:22 [DEBUG] InfoFrame was not active", -- [3928]
+	"5/2/2024 22:26 [DEBUG] Hiding Tracking UI", -- [3929]
+	"5/2/2024 22:26 [DEBUG] Player has entered instance", -- [3930]
+	"5/2/2024 22:26 [DEBUG] 1466", -- [3931]
+	"5/2/2024 22:26 [DEBUG] Offical Instance Name: 1466 _1466", -- [3932]
+	"5/2/2024 22:26 [DEBUG] Expansion: 7", -- [3933]
+	"5/2/2024 22:26 [DEBUG] Instance Type: Dungeons", -- [3934]
+	"5/2/2024 22:26 [DEBUG] Instance: 1466", -- [3935]
+	"5/2/2024 22:26 [DEBUG] DifficultyID: 23", -- [3936]
+	"5/2/2024 22:26 [DEBUG] Expansion: 7", -- [3937]
+	"5/2/2024 22:26 [DEBUG] Instance Type: Dungeons", -- [3938]
+	"5/2/2024 22:26 [DEBUG] Instance: 1466", -- [3939]
+	"5/2/2024 22:26 [DEBUG] Asking user whether they want to track this instance", -- [3940]
+	"5/2/2024 22:26 [DEBUG] Displaying Tracking UI since it was already created", -- [3941]
+	"5/2/2024 22:26 [DEBUG] Expansion: 7", -- [3942]
+	"5/2/2024 22:57 [DEBUG] Hiding Tracking UI", -- [3943]
+	"5/2/2024 22:57 [DEBUG] Clearing Instance Variables", -- [3944]
+	"5/2/2024 22:57 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3945]
+	"5/2/2024 22:57 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3946]
+	"5/2/2024 22:57 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3947]
+	"5/2/2024 22:57 [DEBUG] Clearing Instance Variables if exists", -- [3948]
+	"5/2/2024 22:57 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3949]
+	"5/2/2024 22:57 [DEBUG] Clearing Instance Variables if exists", -- [3950]
+	"5/2/2024 22:57 [DEBUG] Clearing Instance Variables", -- [3951]
+	"5/2/2024 22:57 [DEBUG] Resetting Global Variables", -- [3952]
+	"5/2/2024 22:57 [DEBUG] InfoFrame does not need to be reset", -- [3953]
+	"5/2/2024 22:57 [DEBUG] Resetting PlayerRank", -- [3954]
+	"5/2/2024 22:57 [DEBUG] InfoFrame was not active", -- [3955]
+	"5/2/2024 22:58 [DEBUG] Hiding Tracking UI", -- [3956]
+	"5/2/2024 22:58 [DEBUG] Player has entered instance", -- [3957]
+	"5/2/2024 22:58 [DEBUG] 33", -- [3958]
+	"5/2/2024 22:58 [DEBUG] Offical Instance Name: 33 _33", -- [3959]
+	"5/2/2024 22:58 [DEBUG] Expansion: 4", -- [3960]
+	"5/2/2024 22:58 [DEBUG] Instance Type: Dungeons", -- [3961]
+	"5/2/2024 22:58 [DEBUG] Instance: 33", -- [3962]
+	"5/2/2024 22:58 [DEBUG] DifficultyID: 19", -- [3963]
+	"5/2/2024 22:58 [DEBUG] Achievements cannot be earned for the following difficulty 19", -- [3964]
+	"5/2/2024 22:59 [DEBUG] 6", -- [3965]
+	"5/2/2024 22:59 [DEBUG] Hiding Tracking UI", -- [3966]
+	"5/2/2024 22:59 [DEBUG] Hiding Tracking UI", -- [3967]
+	"5/2/2024 22:59 [DEBUG] Clearing Instance Variables", -- [3968]
+	"5/2/2024 22:59 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [3969]
+	"5/2/2024 22:59 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).", -- [3970]
+	"5/2/2024 22:59 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [3971]
+	"5/2/2024 22:59 [DEBUG] Clearing Instance Variables if exists", -- [3972]
+	"5/2/2024 22:59 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).", -- [3973]
+	"5/2/2024 22:59 [DEBUG] Clearing Instance Variables if exists", -- [3974]
+	"5/2/2024 22:59 [DEBUG] Clearing Instance Variables", -- [3975]
+	"5/2/2024 22:59 [DEBUG] Resetting Global Variables", -- [3976]
+	"5/2/2024 22:59 [DEBUG] InfoFrame does not need to be reset", -- [3977]
+	"5/2/2024 22:59 [DEBUG] Resetting PlayerRank", -- [3978]
+	"5/2/2024 22:59 [DEBUG] InfoFrame was not active", -- [3979]
 	[68593] = "29/5/2023 21:17 [DEBUG] Enabling Addon",
 	[72689] = "11/6/2023 23:27 [DEBUG] Registering CHAT_MSG_ADDON prefix",
 	[76785] = "27/6/2023 22:54 [DEBUG] Attempting to load from local NPC Cache",
@@ -49620,7 +50615,7 @@ AchievementTrackerDebug = {
 	[88860] = "16/8/2023 23:4 [DEBUG] Clearing Instance Variables if exists",
 	[92956] = "3/1/2024 21:38 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
 	[97052] = "6/1/2024 16:5 [DEBUG] Expansion: 6",
-	[97559] = "9/1/2024 0:21 [DEBUG] Expansion: 7",
+	[98305] = "15/1/2024 21:3 [DEBUG] Hiding Tracking UI",
 	[68381] = "29/5/2023 2:16 [DEBUG] Asking user whether they want to track this instance",
 	[72477] = "10/6/2023 1:40 [DEBUG] Hiding Tracking UI",
 	[76573] = "26/6/2023 2:17 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2011: attempt to call method 'InstanceCleanup' (a nil value).",
@@ -49645,13 +50640,13 @@ AchievementTrackerDebug = {
 	[88862] = "16/8/2023 23:4 [DEBUG] Clearing Instance Variables if exists",
 	[92958] = "3/1/2024 21:38 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[97054] = "6/1/2024 16:5 [DEBUG] Instance: 1279",
-	[98071] = "11/1/2024 20:50 [DEBUG] Expansion: 10",
-	[97565] = "9/1/2024 0:21 [DEBUG] Instance: 1501",
-	[98077] = "11/1/2024 20:55 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[97567] = "9/1/2024 0:21 [DEBUG] Creating Tracking UI",
-	[98079] = "11/1/2024 20:56 [DEBUG] Player has entered instance",
-	[96609] = "4/1/2024 23:12 [DEBUG] Expansion: 6",
-	[96611] = "0/0/1999 -1:-1 [DEBUG] Version: 4.34.0",
+	[98303] = "15/1/2024 20:26 [DEBUG] InfoFrame Setup Complete",
+	[98301] = "15/1/2024 20:26 [DEBUG] Asking user whether they want to track this instance",
+	[98299] = "15/1/2024 20:26 [DEBUG] Instance Type: Dungeons",
+	[98297] = "15/1/2024 20:26 [DEBUG] DifficultyID: 23",
+	[98295] = "15/1/2024 20:26 [DEBUG] Instance Type: Dungeons",
+	[98293] = "15/1/2024 20:26 [DEBUG] Offical Instance Name: 2579 _2579",
+	[98291] = "15/1/2024 20:26 [DEBUG] Player has entered instance",
 	[96613] = "0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...",
 	[68383] = "29/5/2023 2:16 [DEBUG] InfoFrame Setup Complete",
 	[72479] = "10/6/2023 1:41 [DEBUG] 1754",
@@ -49716,7 +50711,7 @@ AchievementTrackerDebug = {
 	[98275] = "15/1/2024 20:26 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[98273] = "15/1/2024 20:26 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
 	[98271] = "15/1/2024 20:26 [DEBUG] Hiding Tracking UI",
-	[48632] = "31/3/2023 21:6 [DEBUG] Resetting Global Variables",
+	[97263] = "6/1/2024 23:22 [DEBUG] Generating NPC Cache...",
 	[68387] = "29/5/2023 2:16 [DEBUG] Offical Instance Name: 755 _755",
 	[72483] = "10/6/2023 1:41 [DEBUG] Instance: 1754",
 	[76579] = "26/6/2023 2:17 [DEBUG] Resetting Global Variables",
@@ -49748,7 +50743,7 @@ AchievementTrackerDebug = {
 	[98259] = "15/1/2024 20:25 [DEBUG] Offical Instance Name: 2579 _2579",
 	[98261] = "15/1/2024 20:25 [DEBUG] Instance Type: Dungeons",
 	[98255] = "0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[98253] = "0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...",
+	[98241] = "14/1/2024 23:26 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[68389] = "29/5/2023 2:16 [DEBUG] Instance Type: Dungeons",
 	[72485] = "10/6/2023 1:41 [DEBUG] Expansion: 8",
 	[76581] = "26/6/2023 2:17 [DEBUG] Resetting PlayerRank",
@@ -49773,13 +50768,13 @@ AchievementTrackerDebug = {
 	[88870] = "16/8/2023 23:4 [DEBUG] 1754",
 	[92966] = "3/1/2024 21:38 [DEBUG] InfoFrame was not active",
 	[97062] = "6/1/2024 16:5 [DEBUG] Expansion: 6",
-	[98251] = "0/0/1999 -1:-1 [DEBUG] Version: 4.34.0",
-	[98249] = "14/1/2024 23:26 [DEBUG] InfoFrame was not active",
-	[98247] = "14/1/2024 23:26 [DEBUG] InfoFrame does not need to be reset",
-	[98245] = "14/1/2024 23:26 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4038: attempt to call method 'ClearVariables' (a nil value).",
-	[98243] = "14/1/2024 23:26 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
-	[96627] = "4/1/2024 23:43 [DEBUG] Attempting to load from local NPC Cache",
-	[96629] = "4/1/2024 23:43 [DEBUG] Enabling Addon",
+	[98239] = "14/1/2024 23:26 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
+	[98237] = "14/1/2024 23:26 [DEBUG] Hiding Tracking UI",
+	[98235] = "14/1/2024 23:26 [DEBUG] 6",
+	[98233] = "14/1/2024 22:54 [DEBUG] No Achievements to track for this instance",
+	[98231] = "14/1/2024 22:54 [DEBUG] Instance Type: Dungeons",
+	[98229] = "14/1/2024 22:54 [DEBUG] DifficultyID: 23",
+	[98227] = "14/1/2024 22:54 [DEBUG] Instance Type: Dungeons",
 	[96631] = "4/1/2024 23:43 [DEBUG] Showing Minimap Icon",
 	[68391] = "29/5/2023 2:16 [DEBUG] DifficultyID: 24",
 	[72487] = "10/6/2023 1:41 [DEBUG] Instance: 1754",
@@ -49844,7 +50839,7 @@ AchievementTrackerDebug = {
 	[98211] = "14/1/2024 22:53 [DEBUG] Offical Instance Name: 2579 _2579",
 	[98209] = "14/1/2024 22:53 [DEBUG] Player has entered instance",
 	[98207] = "14/1/2024 22:47 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[48631] = "31/3/2023 21:6 [DEBUG] Clearing Instance Variables",
+	[97261] = "6/1/2024 23:22 [DEBUG] Version: 4.34.0",
 	[68395] = "29/5/2023 2:16 [DEBUG] No Achievements to track for this instance",
 	[72491] = "10/6/2023 2:13 [DEBUG] Hiding Tracking UI",
 	[76587] = "26/6/2023 2:17 [DEBUG] Enabling Addon",
@@ -49876,7 +50871,7 @@ AchievementTrackerDebug = {
 	[98195] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
 	[98197] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
 	[98191] = "11/1/2024 23:39 [DEBUG] InfoFrame does not need to be reset",
-	[98189] = "11/1/2024 23:39 [DEBUG] Clearing Instance Variables",
+	[98177] = "11/1/2024 23:30 [DEBUG] Instance: 603",
 	[68397] = "29/5/2023 2:25 [DEBUG] Clearing Instance Variables",
 	[72493] = "10/6/2023 2:13 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2003: attempt to call method 'IATInstanceCleanup' (a nil value).",
 	[76589] = "26/6/2023 2:19 [DEBUG] Showing Minimap Icon",
@@ -49901,13 +50896,13 @@ AchievementTrackerDebug = {
 	[88878] = "16/8/2023 23:4 [DEBUG] Instance: 1754",
 	[92974] = "3/1/2024 21:39 [DEBUG] Player has entered instance",
 	[97070] = "6/1/2024 16:55 [DEBUG] Clearing Instance Variables if exists",
-	[98187] = "11/1/2024 23:39 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
-	[98185] = "11/1/2024 23:39 [DEBUG] Player has left instance. Unregestering events and resetting variables",
-	[98183] = "11/1/2024 23:39 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
-	[98181] = "11/1/2024 23:39 [DEBUG] Hiding Tracking UI",
-	[98179] = "11/1/2024 23:30 [DEBUG] Displaying Tracking UI since it was already created",
-	[96645] = "4/1/2024 23:44 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[96647] = "4/1/2024 23:44 [DEBUG] Player has entered instance",
+	[98175] = "11/1/2024 23:30 [DEBUG] Expansion: 3",
+	[98173] = "11/1/2024 23:30 [DEBUG] Instance: 603",
+	[98171] = "11/1/2024 23:30 [DEBUG] Expansion: 3",
+	[98169] = "11/1/2024 23:30 [DEBUG] 603",
+	[98167] = "11/1/2024 23:29 [DEBUG] InfoFrame was not active",
+	[98165] = "11/1/2024 23:29 [DEBUG] InfoFrame does not need to be reset",
+	[98163] = "11/1/2024 23:29 [DEBUG] Clearing Instance Variables",
 	[96649] = "4/1/2024 23:44 [DEBUG] Offical Instance Name: 1279 _1279",
 	[68399] = "29/5/2023 2:25 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2011: attempt to call method 'InstanceCleanup' (a nil value).",
 	[72495] = "10/6/2023 2:13 [DEBUG] Player has left instance. Unregestering events and resetting variables",
@@ -49972,7 +50967,7 @@ AchievementTrackerDebug = {
 	[98147] = "11/1/2024 23:3 [DEBUG] DifficultyID: 24",
 	[98145] = "11/1/2024 23:3 [DEBUG] Instance Type: Raids",
 	[98143] = "11/1/2024 23:3 [DEBUG] Offical Instance Name: 603 _603",
-	[48630] = "31/3/2023 21:6 [DEBUG] Clearing Instance Variables if exists",
+	[97259] = "6/1/2024 23:19 [DEBUG] Showing Minimap Icon",
 	[68403] = "29/5/2023 2:25 [DEBUG] Clearing Instance Variables if exists",
 	[72499] = "10/6/2023 2:13 [DEBUG] Clearing Instance Variables",
 	[76595] = "26/6/2023 2:20 [DEBUG] Instance: 2451",
@@ -50004,7 +50999,7 @@ AchievementTrackerDebug = {
 	[98131] = "11/1/2024 21:27 [DEBUG] Expansion: 10",
 	[98133] = "11/1/2024 21:27 [DEBUG] Instance: 2549",
 	[98127] = "11/1/2024 21:27 [DEBUG] Hiding Tracking UI",
-	[98125] = "11/1/2024 21:23 [DEBUG] Resetting PlayerRank",
+	[98113] = "11/1/2024 21:7 [DEBUG] Expansion: 10",
 	[68405] = "29/5/2023 2:25 [DEBUG] Resetting Global Variables",
 	[72501] = "10/6/2023 2:13 [DEBUG] InfoFrame does not need to be reset",
 	[76597] = "26/6/2023 2:20 [DEBUG] Expansion: 10",
@@ -50029,13 +51024,13 @@ AchievementTrackerDebug = {
 	[88886] = "16/8/2023 23:41 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[92982] = "3/1/2024 21:39 [DEBUG] Instance Type: Dungeons",
 	[97078] = "6/1/2024 16:55 [DEBUG] Attempting to load from local NPC Cache",
-	[98123] = "11/1/2024 21:23 [DEBUG] Resetting Global Variables",
-	[98121] = "11/1/2024 21:23 [DEBUG] Clearing Instance Variables if exists",
-	[98119] = "11/1/2024 21:23 [DEBUG] Clearing Instance Variables if exists",
-	[98117] = "11/1/2024 21:23 [DEBUG] Cleaning up instance events for _2549",
-	[98115] = "11/1/2024 21:23 [DEBUG] Clearing Instance Variables",
-	[96663] = "5/1/2024 0:26 [DEBUG] Clearing Instance Variables",
-	[96665] = "5/1/2024 0:26 [DEBUG] InfoFrame does not need to be reset",
+	[98111] = "11/1/2024 21:7 [DEBUG] Creating Tracking UI",
+	[98109] = "11/1/2024 21:7 [DEBUG] Instance: 2549",
+	[98107] = "11/1/2024 21:7 [DEBUG] Expansion: 10",
+	[98105] = "11/1/2024 21:7 [DEBUG] Instance: 2549",
+	[98103] = "11/1/2024 21:7 [DEBUG] Expansion: 10",
+	[98101] = "11/1/2024 21:7 [DEBUG] 2549",
+	[98099] = "11/1/2024 21:7 [DEBUG] Showing Minimap Icon",
 	[96667] = "5/1/2024 0:26 [DEBUG] InfoFrame was not active",
 	[68407] = "29/5/2023 2:25 [DEBUG] Resetting PlayerRank",
 	[72503] = "10/6/2023 2:13 [DEBUG] InfoFrame was not active",
@@ -50100,7 +51095,7 @@ AchievementTrackerDebug = {
 	[98083] = "11/1/2024 20:56 [DEBUG] Instance Type: Raids",
 	[98081] = "11/1/2024 20:56 [DEBUG] Offical Instance Name: 2549 _2549",
 	[98075] = "11/1/2024 20:55 [DEBUG] Generating NPC Cache...",
-	[48629] = "31/3/2023 21:6 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4015: attempt to call method 'clearVariables' (a nil value).",
+	[97257] = "6/1/2024 23:19 [DEBUG] Enabling Addon",
 	[68411] = "29/5/2023 2:27 [DEBUG] Hiding Tracking UI",
 	[72507] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
 	[76603] = "26/6/2023 2:20 [DEBUG] Expansion: 10",
@@ -50132,7 +51127,7 @@ AchievementTrackerDebug = {
 	[98061] = "11/1/2024 20:50 [DEBUG] Offical Instance Name: 2549 _2549",
 	[98059] = "11/1/2024 20:50 [DEBUG] Player has entered instance",
 	[98057] = "11/1/2024 20:49 [DEBUG] InfoFrame was not active",
-	[98055] = "11/1/2024 20:49 [DEBUG] InfoFrame does not need to be reset",
+	[98049] = "11/1/2024 20:49 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[68413] = "29/5/2023 2:27 [DEBUG] 725",
 	[72509] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
 	[76605] = "26/6/2023 2:21 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2003: attempt to call method 'IATInstanceCleanup' (a nil value).",
@@ -50157,13 +51152,13 @@ AchievementTrackerDebug = {
 	[88894] = "16/8/2023 23:41 [DEBUG] InfoFrame was not active",
 	[92990] = "3/1/2024 21:39 [DEBUG] Starting Initial Setup If Needed...",
 	[97086] = "6/1/2024 17:0 [DEBUG] Expansion: 10",
-	[98053] = "11/1/2024 20:49 [DEBUG] Clearing Instance Variables",
-	[98051] = "11/1/2024 20:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
-	[96681] = "5/1/2024 0:32 [DEBUG] Expansion: 10",
-	[96683] = "5/1/2024 0:32 [DEBUG] 2579",
-	[96685] = "5/1/2024 0:32 [DEBUG] Expansion: 10",
-	[96687] = "5/1/2024 0:32 [DEBUG] Instance: 2579",
-	[96689] = "5/1/2024 0:32 [DEBUG] Expansion: 10",
+	[98047] = "11/1/2024 20:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
+	[98045] = "11/1/2024 20:49 [DEBUG] Hiding Tracking UI",
+	[98043] = "11/1/2024 20:49 [DEBUG] InfoFrame Setup Complete",
+	[98041] = "11/1/2024 20:49 [DEBUG] Asking user whether they want to track this instance",
+	[98039] = "11/1/2024 20:49 [DEBUG] Instance Type: Raids",
+	[98037] = "11/1/2024 20:49 [DEBUG] DifficultyID: 14",
+	[98035] = "11/1/2024 20:49 [DEBUG] Instance Type: Raids",
 	[96691] = "5/1/2024 0:32 [DEBUG] Instance: 2579",
 	[68415] = "29/5/2023 2:27 [DEBUG] Expansion: 4",
 	[72511] = "10/6/2023 20:20 [DEBUG] Showing Minimap Icon",
@@ -50228,7 +51223,7 @@ AchievementTrackerDebug = {
 	[98015] = "11/1/2024 20:34 [DEBUG] Registering CHAT_MSG_ADDON prefix",
 	[98013] = "11/1/2024 20:34 [DEBUG] Generating NPC Cache...",
 	[98011] = "11/1/2024 20:34 [DEBUG] Version: 4.34.0",
-	[48628] = "31/3/2023 21:6 [DEBUG] Clearing Instance Variables if exists",
+	[97255] = "6/1/2024 23:19 [DEBUG] Attempting to load from local NPC Cache",
 	[68419] = "29/5/2023 2:27 [DEBUG] Expansion: 4",
 	[72515] = "10/6/2023 20:53 [DEBUG] Expansion: 10",
 	[76611] = "26/6/2023 2:21 [DEBUG] Clearing Instance Variables",
@@ -50260,7 +51255,7 @@ AchievementTrackerDebug = {
 	[48546] = "30/3/2023 23:59 [DEBUG] Hiding Tracking UI",
 	[97999] = "11/1/2024 20:25 [DEBUG] Generating NPC Cache...",
 	[97997] = "11/1/2024 20:25 [DEBUG] Version: 4.34.0",
-	[97995] = "11/1/2024 20:12 [DEBUG] Showing Minimap Icon",
+	[97985] = "11/1/2024 10:39 [DEBUG] Generating NPC Cache...",
 	[68421] = "29/5/2023 2:27 [DEBUG] Instance: 725",
 	[72517] = "10/6/2023 20:53 [DEBUG] Instance: 2569",
 	[76613] = "26/6/2023 2:21 [DEBUG] InfoFrame does not need to be reset",
@@ -50285,13 +51280,13 @@ AchievementTrackerDebug = {
 	[88902] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
 	[92998] = "3/1/2024 21:39 [DEBUG] Calling Detect Boss 3: 143622",
 	[97094] = "6/1/2024 17:0 [DEBUG] Creating Tracking UI",
-	[97993] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
-	[97991] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
-	[97989] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
-	[97987] = "11/1/2024 10:39 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[96699] = "5/1/2024 1:3 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
-	[96701] = "5/1/2024 1:3 [DEBUG] Clearing Instance Variables if exists",
-	[96703] = "5/1/2024 1:3 [DEBUG] Clearing Instance Variables if exists",
+	[97983] = "11/1/2024 10:39 [DEBUG] Version: 4.34.0",
+	[97981] = "11/1/2024 10:38 [DEBUG] Showing Minimap Icon",
+	[97979] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
+	[97977] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
+	[97975] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
+	[97973] = "0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix",
+	[97971] = "0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...",
 	[96705] = "5/1/2024 1:3 [DEBUG] Resetting Global Variables",
 	[68423] = "29/5/2023 2:27 [DEBUG] Displaying Tracking UI since it was already created",
 	[72519] = "10/6/2023 20:53 [DEBUG] Expansion: 10",
@@ -50356,7 +51351,7 @@ AchievementTrackerDebug = {
 	[97953] = "10/1/2024 22:29 [DEBUG] DifficultyID: 8",
 	[97951] = "10/1/2024 22:29 [DEBUG] Instance Type: Dungeons",
 	[97949] = "10/1/2024 22:29 [DEBUG] Offical Instance Name: 2579 _2579",
-	[48627] = "31/3/2023 21:6 [DEBUG] Player has left instance. Unregestering events and resetting variables",
+	[97253] = "6/1/2024 23:19 [DEBUG] ---IAT Runtime---",
 	[68427] = "29/5/2023 2:33 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2003: attempt to call method 'IATInstanceCleanup' (a nil value).",
 	[72523] = "10/6/2023 20:53 [DEBUG] Creating Tracking UI",
 	[76619] = "26/6/2023 2:21 [DEBUG] Offical Instance Name: 2451 _2451",
@@ -50388,7 +51383,7 @@ AchievementTrackerDebug = {
 	[97941] = "0/0/1999 -1:-1 [DEBUG] Version: 4.34.0",
 	[97935] = "10/1/2024 22:22 [DEBUG] Expansion: 10",
 	[97933] = "10/1/2024 22:22 [DEBUG] 2579",
-	[97931] = "10/1/2024 22:22 [DEBUG] Showing Minimap Icon",
+	[97921] = "10/1/2024 22:12 [DEBUG] Asking user whether they want to track this instance",
 	[68429] = "29/5/2023 2:33 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[72525] = "10/6/2023 20:53 [DEBUG] Expansion: 10",
 	[76621] = "26/6/2023 2:21 [DEBUG] Instance Type: Dungeons",
@@ -50413,13 +51408,13 @@ AchievementTrackerDebug = {
 	[88910] = "17/8/2023 19:47 [DEBUG] Registering CHAT_MSG_ADDON prefix",
 	[93006] = "3/1/2024 21:41 [DEBUG] Group Size set to: 5",
 	[97102] = "6/1/2024 17:28 [DEBUG] Clearing Instance Variables if exists",
-	[97929] = "10/1/2024 22:20 [DEBUG] Enabling Addon",
-	[97927] = "10/1/2024 22:20 [DEBUG] Attempting to load from local NPC Cache",
-	[97925] = "10/1/2024 22:20 [DEBUG] ---IAT Runtime---",
-	[97923] = "10/1/2024 22:12 [DEBUG] InfoFrame Setup Complete",
-	[96717] = "5/1/2024 20:17 [DEBUG] 1279",
-	[96719] = "5/1/2024 20:17 [DEBUG] Expansion: 6",
-	[96721] = "5/1/2024 20:17 [DEBUG] Instance: 1279",
+	[97919] = "10/1/2024 22:12 [DEBUG] Instance Type: Dungeons",
+	[97917] = "10/1/2024 22:12 [DEBUG] DifficultyID: 23",
+	[97915] = "10/1/2024 22:12 [DEBUG] Instance Type: Dungeons",
+	[97913] = "10/1/2024 22:12 [DEBUG] Offical Instance Name: 2579 _2579",
+	[97911] = "10/1/2024 22:12 [DEBUG] Player has entered instance",
+	[97909] = "10/1/2024 22:9 [DEBUG] Registering CHAT_MSG_ADDON prefix",
+	[97907] = "10/1/2024 22:9 [DEBUG] Generating NPC Cache...",
 	[96723] = "5/1/2024 20:17 [DEBUG] Expansion: 6",
 	[68431] = "29/5/2023 2:33 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4015: attempt to call method 'clearVariables' (a nil value).",
 	[72527] = "10/6/2023 20:55 [DEBUG] Version: 4.21.0",
@@ -50484,7 +51479,7 @@ AchievementTrackerDebug = {
 	[97889] = "10/1/2024 22:9 [DEBUG] 6",
 	[97887] = "10/1/2024 22:8 [DEBUG] No Achievements to track for this instance",
 	[97885] = "10/1/2024 22:8 [DEBUG] Instance Type: Dungeons",
-	[48626] = "31/3/2023 21:6 [DEBUG] Cleaning up instance events for _2522",
+	[97251] = "0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix",
 	[68435] = "29/5/2023 2:33 [DEBUG] InfoFrame does not need to be reset",
 	[72531] = "10/6/2023 20:55 [DEBUG] Registering CHAT_MSG_ADDON prefix",
 	[76627] = "26/6/2023 2:21 [DEBUG] Asking user whether they want to track this instance",
@@ -50516,7 +51511,7 @@ AchievementTrackerDebug = {
 	[97877] = "10/1/2024 22:8 [DEBUG] Player has entered instance",
 	[97871] = "10/1/2024 22:8 [DEBUG] Instance Type: Dungeons",
 	[97869] = "10/1/2024 22:8 [DEBUG] DifficultyID: 23",
-	[97867] = "10/1/2024 22:8 [DEBUG] Instance Type: Dungeons",
+	[97857] = "10/1/2024 21:49 [DEBUG] Version: 4.34.0",
 	[68437] = "29/5/2023 2:33 [DEBUG] InfoFrame was not active",
 	[72533] = "10/6/2023 20:55 [DEBUG] Player has entered instance",
 	[76629] = "26/6/2023 2:21 [DEBUG] Expansion: 10",
@@ -50541,13 +51536,13 @@ AchievementTrackerDebug = {
 	[88918] = "17/8/2023 20:54 [DEBUG] DifficultyID: 15",
 	[93014] = "3/1/2024 21:41 |cff00ccffIAT: |cffffffff成就掃描完成 (5/5)",
 	[97110] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
-	[97865] = "10/1/2024 22:8 [DEBUG] Offical Instance Name: 2579 _2579",
-	[97863] = "10/1/2024 22:8 [DEBUG] Player has entered instance",
-	[97861] = "10/1/2024 21:49 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[97859] = "10/1/2024 21:49 [DEBUG] Generating NPC Cache...",
-	[96735] = "5/1/2024 20:50 [DEBUG] Clearing Instance Variables if exists",
-	[96737] = "5/1/2024 20:50 [DEBUG] Clearing Instance Variables if exists",
-	[96739] = "5/1/2024 20:50 [DEBUG] Resetting Global Variables",
+	[97855] = "10/1/2024 21:35 [DEBUG] InfoFrame was not active",
+	[97853] = "10/1/2024 21:35 [DEBUG] InfoFrame does not need to be reset",
+	[97851] = "10/1/2024 21:35 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4038: attempt to call method 'ClearVariables' (a nil value).",
+	[97849] = "10/1/2024 21:35 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
+	[97847] = "10/1/2024 21:35 [DEBUG] Player has left instance. Unregestering events and resetting variables",
+	[97845] = "10/1/2024 21:35 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
+	[97843] = "10/1/2024 21:35 [DEBUG] 6",
 	[96741] = "5/1/2024 20:50 [DEBUG] Resetting PlayerRank",
 	[68439] = "29/5/2023 2:35 [DEBUG] Player has entered instance",
 	[72535] = "10/6/2023 20:55 [DEBUG] Offical Instance Name: 2569 _2569",
@@ -50612,7 +51607,7 @@ AchievementTrackerDebug = {
 	[97825] = "10/1/2024 20:59 [DEBUG] Creating Tracking UI",
 	[97823] = "10/1/2024 20:59 [DEBUG] Instance: 2579",
 	[97821] = "10/1/2024 20:59 [DEBUG] Expansion: 10",
-	[48625] = "31/3/2023 21:6 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2003: attempt to call method 'IATInstanceCleanup' (a nil value).",
+	[97249] = "0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...",
 	[68443] = "29/5/2023 2:35 [DEBUG] Instance Type: Dungeons",
 	[72539] = "10/6/2023 20:55 [DEBUG] DifficultyID: 15",
 	[76635] = "26/6/2023 2:50 [DEBUG] Clearing Instance Variables if exists",
@@ -50644,7 +51639,7 @@ AchievementTrackerDebug = {
 	[97813] = "10/1/2024 20:37 [DEBUG] Showing Minimap Icon",
 	[97807] = "10/1/2024 20:34 [DEBUG] ---IAT Runtime---",
 	[97805] = "0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[97803] = "0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...",
+	[97793] = "10/1/2024 0:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
 	[68445] = "29/5/2023 2:35 [DEBUG] DifficultyID: 24",
 	[72541] = "10/6/2023 20:55 [DEBUG] Instance Type: Raids",
 	[76637] = "26/6/2023 2:50 [DEBUG] Clearing Instance Variables if exists",
@@ -50669,13 +51664,13 @@ AchievementTrackerDebug = {
 	[88926] = "17/8/2023 20:55 [DEBUG] ---IAT Runtime---",
 	[93022] = "3/1/2024 21:42 [DEBUG] Setting rank to: 0",
 	[97118] = "0/0/1999 -1:-1 [DEBUG] Version: 4.34.0",
-	[97801] = "0/0/1999 -1:-1 [DEBUG] Version: 4.34.0",
-	[97799] = "10/1/2024 0:49 [DEBUG] InfoFrame was not active",
-	[97797] = "10/1/2024 0:49 [DEBUG] InfoFrame does not need to be reset",
-	[97795] = "10/1/2024 0:49 [DEBUG] Clearing Instance Variables",
-	[96753] = "5/1/2024 20:55 [DEBUG] Asking user whether they want to track this instance",
-	[96755] = "5/1/2024 20:55 [DEBUG] Expansion: 8",
-	[96757] = "5/1/2024 20:55 [DEBUG] Version: 4.34.0",
+	[97791] = "10/1/2024 0:49 [DEBUG] Player has left instance. Unregestering events and resetting variables",
+	[97789] = "10/1/2024 0:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
+	[97787] = "10/1/2024 0:49 [DEBUG] Hiding Tracking UI",
+	[97785] = "10/1/2024 0:49 [DEBUG] 6",
+	[97783] = "10/1/2024 0:20 [DEBUG] No Achievements to track for this instance",
+	[97781] = "10/1/2024 0:20 [DEBUG] Instance Type: Dungeons",
+	[97779] = "10/1/2024 0:20 [DEBUG] DifficultyID: 23",
 	[96759] = "5/1/2024 20:55 [DEBUG] Generating NPC Cache...",
 	[68447] = "29/5/2023 2:35 [DEBUG] Instance Type: Dungeons",
 	[72543] = "10/6/2023 20:55 [DEBUG] Asking user whether they want to track this instance",
@@ -50740,7 +51735,7 @@ AchievementTrackerDebug = {
 	[97761] = "10/1/2024 0:20 [DEBUG] Offical Instance Name: 1501 _1501",
 	[97759] = "10/1/2024 0:20 [DEBUG] Player has entered instance",
 	[97757] = "10/1/2024 0:14 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[48624] = "31/3/2023 21:6 [DEBUG] Clearing Instance Variables",
+	[97247] = "0/0/1999 -1:-1 [DEBUG] Version: 4.34.0",
 	[68451] = "29/5/2023 2:35 [DEBUG] Expansion: 4",
 	[72547] = "10/6/2023 23:8 [DEBUG] Hiding Tracking UI",
 	[76643] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
@@ -50772,7 +51767,7 @@ AchievementTrackerDebug = {
 	[97749] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
 	[97743] = "9/1/2024 23:18 [DEBUG] Resetting PlayerRank",
 	[97741] = "9/1/2024 23:18 [DEBUG] Resetting Global Variables",
-	[97739] = "9/1/2024 23:18 [DEBUG] Clearing Instance Variables if exists",
+	[97729] = "9/1/2024 22:43 [DEBUG] Expansion: 7",
 	[68453] = "29/5/2023 2:42 [DEBUG] Clearing Instance Variables",
 	[72549] = "10/6/2023 23:8 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2003: attempt to call method 'IATInstanceCleanup' (a nil value).",
 	[76645] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
@@ -50797,13 +51792,13 @@ AchievementTrackerDebug = {
 	[88934] = "17/8/2023 20:55 [DEBUG] 2569",
 	[93030] = "3/1/2024 21:42 [DEBUG] Calling Detect Boss 3: 205435",
 	[97126] = "6/1/2024 19:59 [DEBUG] Offical Instance Name: 2549 _2549",
-	[97737] = "9/1/2024 23:18 [DEBUG] Clearing Instance Variables if exists",
-	[97735] = "9/1/2024 23:18 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
-	[97733] = "9/1/2024 23:18 [DEBUG] Clearing Instance Variables",
-	[97731] = "9/1/2024 23:18 [DEBUG] Hiding Tracking UI",
-	[96771] = "5/1/2024 20:56 [DEBUG] Instance Type: Dungeons",
-	[96773] = "5/1/2024 20:56 [DEBUG] Asking user whether they want to track this instance",
-	[96775] = "5/1/2024 20:56 [DEBUG] InfoFrame Setup Complete",
+	[97727] = "9/1/2024 22:43 [DEBUG] Instance: 1466",
+	[97725] = "9/1/2024 22:43 [DEBUG] Expansion: 7",
+	[97723] = "9/1/2024 22:43 [DEBUG] Instance: 1466",
+	[97721] = "9/1/2024 22:43 [DEBUG] Expansion: 7",
+	[97719] = "9/1/2024 22:43 [DEBUG] 1466",
+	[97717] = "9/1/2024 22:43 [DEBUG] Expansion: 7",
+	[97715] = "9/1/2024 22:43 [DEBUG] Asking user whether they want to track this instance",
 	[96777] = "5/1/2024 20:56 [DEBUG] Hiding Tracking UI",
 	[68455] = "29/5/2023 2:42 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2011: attempt to call method 'InstanceCleanup' (a nil value).",
 	[72551] = "10/6/2023 23:8 [DEBUG] Player has left instance. Unregestering events and resetting variables",
@@ -50868,7 +51863,7 @@ AchievementTrackerDebug = {
 	[97697] = "9/1/2024 22:41 [DEBUG] Clearing Instance Variables if exists",
 	[97695] = "9/1/2024 22:41 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
 	[97693] = "9/1/2024 22:41 [DEBUG] Clearing Instance Variables",
-	[48623] = "31/3/2023 20:39 [DEBUG] Expansion: 10",
+	[97245] = "6/1/2024 22:49 [DEBUG] InfoFrame was not active",
 	[68459] = "29/5/2023 2:42 [DEBUG] Clearing Instance Variables if exists",
 	[72555] = "10/6/2023 23:8 [DEBUG] Clearing Instance Variables",
 	[76651] = "27/6/2023 0:55 [DEBUG] Version: 4.21.0",
@@ -50900,7 +51895,7 @@ AchievementTrackerDebug = {
 	[97685] = "9/1/2024 22:17 [DEBUG] Expansion: 8",
 	[97679] = "9/1/2024 22:17 [DEBUG] 1763",
 	[97677] = "9/1/2024 22:17 [DEBUG] Expansion: 8",
-	[97675] = "9/1/2024 22:17 [DEBUG] Asking user whether they want to track this instance",
+	[97665] = "9/1/2024 22:17 [DEBUG] Player has entered instance",
 	[68461] = "29/5/2023 2:42 [DEBUG] Resetting Global Variables",
 	[72557] = "10/6/2023 23:8 [DEBUG] InfoFrame does not need to be reset",
 	[76653] = "27/6/2023 0:55 [DEBUG] Generating NPC Cache...",
@@ -50925,13 +51920,13 @@ AchievementTrackerDebug = {
 	[88942] = "17/8/2023 20:55 [DEBUG] Instance: 2569",
 	[93038] = "3/1/2024 21:42 [DEBUG] Calling Detect Boss 3: 55659",
 	[97134] = "6/1/2024 19:59 [DEBUG] Asking user whether they want to track this instance",
-	[97673] = "9/1/2024 22:17 [DEBUG] Instance Type: Dungeons",
-	[97671] = "9/1/2024 22:17 [DEBUG] DifficultyID: 23",
-	[97669] = "9/1/2024 22:17 [DEBUG] Instance Type: Dungeons",
-	[97667] = "9/1/2024 22:17 [DEBUG] Offical Instance Name: 1763 _1763",
-	[96789] = "5/1/2024 20:56 [DEBUG] InfoFrame was not active",
-	[96791] = "5/1/2024 20:56 [DEBUG] 1763",
-	[96793] = "5/1/2024 20:56 [DEBUG] Expansion: 8",
+	[97663] = "9/1/2024 22:4 [DEBUG] InfoFrame was not active",
+	[97661] = "9/1/2024 22:4 [DEBUG] InfoFrame does not need to be reset",
+	[97659] = "9/1/2024 22:4 [DEBUG] Clearing Instance Variables",
+	[97657] = "9/1/2024 22:4 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
+	[97655] = "9/1/2024 22:4 [DEBUG] Player has left instance. Unregestering events and resetting variables",
+	[97653] = "9/1/2024 22:4 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
+	[97651] = "9/1/2024 22:4 [DEBUG] Hiding Tracking UI",
 	[96795] = "5/1/2024 20:56 [DEBUG] Instance: 1763",
 	[68463] = "29/5/2023 2:42 [DEBUG] Resetting PlayerRank",
 	[72559] = "10/6/2023 23:8 [DEBUG] InfoFrame was not active",
@@ -50996,7 +51991,7 @@ AchievementTrackerDebug = {
 	[97633] = "9/1/2024 21:34 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4038: attempt to call method 'ClearVariables' (a nil value).",
 	[97631] = "9/1/2024 21:34 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
 	[97629] = "9/1/2024 21:34 [DEBUG] Player has left instance. Unregestering events and resetting variables",
-	[48622] = "31/3/2023 20:39 [DEBUG] No Achievements to track for this instance",
+	[97243] = "6/1/2024 22:49 [DEBUG] InfoFrame does not need to be reset",
 	[68467] = "29/5/2023 2:42 [DEBUG] Offical Instance Name: 645 _645",
 	[72563] = "10/6/2023 23:9 [DEBUG] Offical Instance Name: 2521 _2521",
 	[76659] = "27/6/2023 0:58 [DEBUG] Offical Instance Name: 657 _657",
@@ -51028,7 +52023,7 @@ AchievementTrackerDebug = {
 	[97621] = "9/1/2024 21:1 [DEBUG] Asking user whether they want to track this instance",
 	[97615] = "9/1/2024 21:1 [DEBUG] Instance Type: Dungeons",
 	[97613] = "9/1/2024 21:1 [DEBUG] Offical Instance Name: 2579 _2579",
-	[97611] = "9/1/2024 21:1 [DEBUG] Player has entered instance",
+	[97601] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
 	[68469] = "29/5/2023 2:42 [DEBUG] Instance Type: Dungeons",
 	[72565] = "10/6/2023 23:9 [DEBUG] Instance Type: Dungeons",
 	[76661] = "27/6/2023 0:58 [DEBUG] Instance Type: Dungeons",
@@ -51053,13 +52048,13 @@ AchievementTrackerDebug = {
 	[88950] = "17/8/2023 23:30 [DEBUG] Cleaning up instance events for _2569",
 	[93046] = "3/1/2024 21:43 [DEBUG] Clearing Instance Variables if exists",
 	[97142] = "6/1/2024 19:59 [DEBUG] Player has left instance. Unregestering events and resetting variables",
-	[97609] = "9/1/2024 20:58 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[97607] = "9/1/2024 20:58 [DEBUG] Generating NPC Cache...",
-	[97605] = "9/1/2024 20:58 [DEBUG] Version: 4.34.0",
-	[97603] = "9/1/2024 20:43 [DEBUG] Showing Minimap Icon",
-	[96807] = "5/1/2024 20:58 [DEBUG] Player has left instance. Unregestering events and resetting variables",
-	[96809] = "5/1/2024 20:58 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
-	[96811] = "5/1/2024 20:58 [DEBUG] Clearing Instance Variables",
+	[97599] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
+	[97597] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
+	[97595] = "9/1/2024 0:48 [DEBUG] Resetting PlayerRank",
+	[97593] = "9/1/2024 0:48 [DEBUG] Resetting Global Variables",
+	[97591] = "9/1/2024 0:48 [DEBUG] Clearing Instance Variables if exists",
+	[97589] = "9/1/2024 0:48 [DEBUG] Clearing Instance Variables if exists",
+	[97587] = "9/1/2024 0:48 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
 	[96813] = "5/1/2024 20:58 [DEBUG] InfoFrame does not need to be reset",
 	[68471] = "29/5/2023 2:42 [DEBUG] DifficultyID: 24",
 	[72567] = "10/6/2023 23:9 [DEBUG] DifficultyID: 23",
@@ -51124,7 +52119,7 @@ AchievementTrackerDebug = {
 	[97569] = "9/1/2024 0:21 [DEBUG] Expansion: 7",
 	[97563] = "9/1/2024 0:21 [DEBUG] Expansion: 7",
 	[97561] = "9/1/2024 0:21 [DEBUG] Instance: 1501",
-	[48621] = "31/3/2023 20:39 [DEBUG] Instance: 2522",
+	[97241] = "6/1/2024 22:49 [DEBUG] Clearing Instance Variables",
 	[68475] = "29/5/2023 2:42 [DEBUG] Asking user whether they want to track this instance",
 	[72571] = "10/6/2023 23:9 [DEBUG] Asking user whether they want to track this instance",
 	[76667] = "27/6/2023 1:26 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2003: attempt to call method 'IATInstanceCleanup' (a nil value).",
@@ -51156,7 +52151,7 @@ AchievementTrackerDebug = {
 	[97547] = "9/1/2024 0:16 [DEBUG] Registering CHAT_MSG_ADDON prefix",
 	[97545] = "9/1/2024 0:16 [DEBUG] Generating NPC Cache...",
 	[97543] = "9/1/2024 0:16 [DEBUG] Version: 4.34.0",
-	[97541] = "8/1/2024 23:51 [DEBUG] Showing Minimap Icon",
+	[97537] = "8/1/2024 23:51 [DEBUG] Attempting to load from local NPC Cache",
 	[68477] = "29/5/2023 2:42 [DEBUG] Expansion: 4",
 	[72573] = "10/6/2023 23:9 [DEBUG] Expansion: 10",
 	[76669] = "27/6/2023 1:26 [DEBUG] Player has left instance. Unregestering events and resetting variables",
@@ -51181,13 +52176,13 @@ AchievementTrackerDebug = {
 	[88958] = "17/8/2023 23:30 [DEBUG] Resetting PlayerRank",
 	[93054] = "3/1/2024 21:43 [DEBUG] Calling Detect Boss 3: 198995",
 	[97150] = "6/1/2024 19:59 [DEBUG] InfoFrame was not active",
-	[97539] = "8/1/2024 23:51 [DEBUG] Enabling Addon",
-	[96825] = "5/1/2024 21:1 [DEBUG] DifficultyID: 23",
-	[96827] = "5/1/2024 21:1 [DEBUG] Instance Type: Dungeons",
-	[96829] = "5/1/2024 21:1 [DEBUG] Asking user whether they want to track this instance",
-	[96831] = "5/1/2024 21:1 [DEBUG] Expansion: 8",
-	[96833] = "5/1/2024 21:29 [DEBUG] Clearing Instance Variables",
-	[96835] = "5/1/2024 21:29 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
+	[97535] = "8/1/2024 23:51 [DEBUG] ---IAT Runtime---",
+	[97533] = "8/1/2024 23:32 [DEBUG] Registering CHAT_MSG_ADDON prefix",
+	[97531] = "8/1/2024 23:32 [DEBUG] Generating NPC Cache...",
+	[97529] = "8/1/2024 23:32 [DEBUG] Version: 4.34.0",
+	[97527] = "8/1/2024 23:11 [DEBUG] Showing Minimap Icon",
+	[97525] = "8/1/2024 23:10 [DEBUG] Enabling Addon",
+	[97523] = "8/1/2024 23:10 [DEBUG] Attempting to load from local NPC Cache",
 	[96837] = "5/1/2024 21:29 [DEBUG] Clearing Instance Variables if exists",
 	[68479] = "29/5/2023 2:50 [DEBUG] Clearing Instance Variables",
 	[72575] = "10/6/2023 23:9 [DEBUG] 2521",
@@ -51252,7 +52247,7 @@ AchievementTrackerDebug = {
 	[97499] = "8/1/2024 21:20 [DEBUG] DifficultyID: 16",
 	[97497] = "8/1/2024 21:20 [DEBUG] Instance Type: Raids",
 	[97495] = "8/1/2024 21:20 [DEBUG] Offical Instance Name: 2549 _2549",
-	[48620] = "31/3/2023 20:39 [DEBUG] Instance Type: Raids",
+	[97239] = "6/1/2024 22:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
 	[68483] = "29/5/2023 2:50 [DEBUG] Clearing Instance Variables if exists",
 	[72579] = "10/6/2023 23:9 [DEBUG] Instance: 2521",
 	[76675] = "27/6/2023 1:26 [DEBUG] InfoFrame does not need to be reset",
@@ -51284,7 +52279,7 @@ AchievementTrackerDebug = {
 	[97483] = "8/1/2024 21:18 [DEBUG] Creating Tracking UI",
 	[97481] = "8/1/2024 21:18 [DEBUG] Instance: 2549",
 	[97479] = "8/1/2024 21:18 [DEBUG] Expansion: 10",
-	[97477] = "8/1/2024 21:18 [DEBUG] Instance: 2549",
+	[97473] = "8/1/2024 21:18 [DEBUG] 2549",
 	[68485] = "29/5/2023 2:50 [DEBUG] Clearing Instance Variables if exists",
 	[72581] = "10/6/2023 23:9 [DEBUG] Expansion: 10",
 	[76677] = "27/6/2023 1:26 [DEBUG] InfoFrame was not active",
@@ -51309,13 +52304,13 @@ AchievementTrackerDebug = {
 	[88966] = "17/8/2023 23:32 [DEBUG] DifficultyID: 14",
 	[93062] = "3/1/2024 21:43 [DEBUG] Length of array: 1",
 	[97158] = "6/1/2024 21:1 [DEBUG] Player has entered instance",
-	[97475] = "8/1/2024 21:18 [DEBUG] Expansion: 10",
-	[96843] = "5/1/2024 21:29 [DEBUG] Resetting PlayerRank",
-	[96845] = "5/1/2024 21:33 [DEBUG] Hiding Tracking UI",
-	[96847] = "5/1/2024 21:34 [DEBUG] Hiding Tracking UI",
-	[96849] = "5/1/2024 21:36 [DEBUG] 643",
-	[96851] = "5/1/2024 21:36 [DEBUG] Expansion: 4",
-	[96853] = "5/1/2024 21:36 [DEBUG] Instance: 643",
+	[97471] = "8/1/2024 21:1 [DEBUG] Showing Minimap Icon",
+	[97469] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
+	[97467] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
+	[97465] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
+	[97463] = "8/1/2024 0:3 [DEBUG] Registering CHAT_MSG_ADDON prefix",
+	[97461] = "8/1/2024 0:3 [DEBUG] Generating NPC Cache...",
+	[97459] = "8/1/2024 0:3 [DEBUG] Version: 4.34.0",
 	[96855] = "5/1/2024 21:36 [DEBUG] Achievements cannot be earned for the following difficulty 23",
 	[68487] = "29/5/2023 2:50 [DEBUG] Resetting Global Variables",
 	[72583] = "10/6/2023 23:9 [DEBUG] Instance: 2521",
@@ -51380,7 +52375,7 @@ AchievementTrackerDebug = {
 	[97435] = "7/1/2024 23:11 [DEBUG] Creating Tracking UI",
 	[97433] = "7/1/2024 23:11 [DEBUG] Instance: 1501",
 	[97431] = "7/1/2024 23:11 [DEBUG] Expansion: 7",
-	[48619] = "31/3/2023 20:39 [DEBUG] Expansion: 10",
+	[97237] = "6/1/2024 22:49 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[68491] = "29/5/2023 2:50 [DEBUG] ---IAT Runtime---",
 	[72587] = "10/6/2023 23:9 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2003: attempt to call method 'IATInstanceCleanup' (a nil value).",
 	[76683] = "27/6/2023 1:28 [DEBUG] Instance: 2519",
@@ -51412,7 +52407,7 @@ AchievementTrackerDebug = {
 	[97419] = "7/1/2024 23:10 [DEBUG] Attempting to load from local NPC Cache",
 	[97417] = "7/1/2024 23:10 [DEBUG] ---IAT Runtime---",
 	[97415] = "7/1/2024 23:9 [DEBUG] Resetting PlayerRank",
-	[97413] = "7/1/2024 23:9 [DEBUG] Resetting Global Variables",
+	[97409] = "7/1/2024 23:9 [DEBUG] Clearing Instance Variables if exists",
 	[68493] = "29/5/2023 2:50 [DEBUG] Attempting to load from local NPC Cache",
 	[72589] = "10/6/2023 23:9 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[76685] = "27/6/2023 1:28 [DEBUG] Expansion: 10",
@@ -51437,13 +52432,13 @@ AchievementTrackerDebug = {
 	[88974] = "18/8/2023 0:7 [DEBUG] Clearing Instance Variables",
 	[93070] = "3/1/2024 21:44 |cff00ccffIAT: |cffffffff|cffffff00|Hachievement:18589:Player-980-06C86D48:1:8:8:23:4294967295:4294967295:4294967295:4294967295|h[粉碎時間]|h|r 需要做成就的玩家: Shino, ",
 	[97166] = "6/1/2024 21:1 [DEBUG] Instance Type: Raids",
-	[97411] = "7/1/2024 23:9 [DEBUG] Clearing Instance Variables if exists",
-	[96861] = "5/1/2024 21:58 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
-	[96863] = "5/1/2024 21:58 [DEBUG] Clearing Instance Variables if exists",
-	[96865] = "5/1/2024 21:58 [DEBUG] Clearing Instance Variables if exists",
-	[96867] = "5/1/2024 21:58 [DEBUG] Resetting Global Variables",
-	[96869] = "5/1/2024 21:58 [DEBUG] Resetting PlayerRank",
-	[96871] = "5/1/2024 21:59 [DEBUG] Hiding Tracking UI",
+	[97407] = "7/1/2024 23:9 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
+	[97405] = "7/1/2024 23:9 [DEBUG] Clearing Instance Variables",
+	[97403] = "7/1/2024 23:9 [DEBUG] Hiding Tracking UI",
+	[97401] = "7/1/2024 22:44 [DEBUG] Expansion: 7",
+	[97399] = "7/1/2024 22:44 [DEBUG] Instance: 1501",
+	[97397] = "7/1/2024 22:44 [DEBUG] Expansion: 7",
+	[97395] = "7/1/2024 22:44 [DEBUG] Instance: 1501",
 	[96873] = "5/1/2024 22:1 [DEBUG] Hiding Tracking UI",
 	[68495] = "29/5/2023 2:50 [DEBUG] Enabling Addon",
 	[72591] = "10/6/2023 23:9 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4015: attempt to call method 'clearVariables' (a nil value).",
@@ -51508,7 +52503,7 @@ AchievementTrackerDebug = {
 	[97371] = "7/1/2024 22:43 [DEBUG] Attempting to load from local NPC Cache",
 	[97369] = "7/1/2024 22:43 [DEBUG] ---IAT Runtime---",
 	[97367] = "7/1/2024 22:40 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[48618] = "31/3/2023 20:39 [DEBUG] DifficultyID: 16",
+	[97235] = "6/1/2024 22:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
 	[68499] = "0/0/1999 -1:-1 [DEBUG] Version: 4.19.0",
 	[72595] = "10/6/2023 23:9 [DEBUG] InfoFrame does not need to be reset",
 	[76691] = "27/6/2023 1:28 [DEBUG] Expansion: 10",
@@ -51540,7 +52535,7 @@ AchievementTrackerDebug = {
 	[97355] = "7/1/2024 22:39 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
 	[97353] = "7/1/2024 22:39 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[97351] = "7/1/2024 22:39 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
-	[97349] = "7/1/2024 22:39 [DEBUG] Hiding Tracking UI",
+	[97345] = "7/1/2024 22:8 [DEBUG] Asking user whether they want to track this instance",
 	[68501] = "0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...",
 	[72597] = "10/6/2023 23:9 [DEBUG] InfoFrame was not active",
 	[76693] = "27/6/2023 2:8 [DEBUG] Clearing Instance Variables",
@@ -51565,13 +52560,13 @@ AchievementTrackerDebug = {
 	[88982] = "18/8/2023 0:7 [DEBUG] Resetting Global Variables",
 	[93078] = "3/1/2024 21:45 [DEBUG] InfoFrame does not need to be reset",
 	[97174] = "6/1/2024 21:6 [DEBUG] Attempting to load from local NPC Cache",
-	[97347] = "7/1/2024 22:8 [DEBUG] InfoFrame Setup Complete",
-	[96879] = "5/1/2024 22:1 [DEBUG] Instance: 643",
-	[96881] = "5/1/2024 22:1 [DEBUG] Achievements cannot be earned for the following difficulty 23",
-	[96883] = "5/1/2024 22:32 [DEBUG] Hiding Tracking UI",
-	[96885] = "5/1/2024 22:32 [DEBUG] Clearing Instance Variables",
-	[96887] = "5/1/2024 22:32 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
-	[96889] = "5/1/2024 22:32 [DEBUG] Clearing Instance Variables if exists",
+	[97343] = "7/1/2024 22:8 [DEBUG] Instance Type: Dungeons",
+	[97341] = "7/1/2024 22:8 [DEBUG] DifficultyID: 23",
+	[97339] = "7/1/2024 22:8 [DEBUG] Instance Type: Dungeons",
+	[97337] = "7/1/2024 22:8 [DEBUG] Offical Instance Name: 1501 _1501",
+	[97335] = "7/1/2024 22:8 [DEBUG] Player has entered instance",
+	[97333] = "7/1/2024 22:4 [DEBUG] Registering CHAT_MSG_ADDON prefix",
+	[97331] = "7/1/2024 22:4 [DEBUG] Generating NPC Cache...",
 	[96891] = "5/1/2024 22:32 [DEBUG] Clearing Instance Variables if exists",
 	[68503] = "0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix",
 	[72599] = "10/6/2023 23:9 [DEBUG] Hiding Tracking UI",
@@ -51636,7 +52631,7 @@ AchievementTrackerDebug = {
 	[97307] = "7/1/2024 0:3 [DEBUG] Clearing Instance Variables",
 	[97305] = "7/1/2024 0:3 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
 	[97303] = "7/1/2024 0:3 [DEBUG] Player has left instance. Unregestering events and resetting variables",
-	[48617] = "31/3/2023 20:39 [DEBUG] Instance: 2522",
+	[97233] = "6/1/2024 22:49 [DEBUG] Hiding Tracking UI",
 	[68507] = "29/5/2023 14:50 [DEBUG] Attempting to load from local NPC Cache",
 	[72603] = "10/6/2023 23:29 [DEBUG] Player has entered instance",
 	[76699] = "27/6/2023 2:8 [DEBUG] Clearing Instance Variables if exists",
@@ -51668,7 +52663,7 @@ AchievementTrackerDebug = {
 	[97291] = "6/1/2024 23:29 [DEBUG] Expansion: 7",
 	[97289] = "6/1/2024 23:29 [DEBUG] 1501",
 	[97287] = "6/1/2024 23:29 [DEBUG] Expansion: 7",
-	[97285] = "6/1/2024 23:29 [DEBUG] Creating Tracking UI",
+	[97281] = "6/1/2024 23:29 [DEBUG] Expansion: 7",
 	[68509] = "29/5/2023 14:50 [DEBUG] Enabling Addon",
 	[72605] = "10/6/2023 23:29 [DEBUG] Offical Instance Name: 1841 _1841",
 	[76701] = "27/6/2023 2:8 [DEBUG] Resetting Global Variables",
@@ -51693,13 +52688,13 @@ AchievementTrackerDebug = {
 	[88990] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
 	[93086] = "3/1/2024 21:45 [DEBUG] Calling Detect Boss 2: 206065",
 	[97182] = "6/1/2024 21:6 [DEBUG] Expansion: 10",
-	[97283] = "6/1/2024 23:29 [DEBUG] Instance: 1501",
-	[96897] = "5/1/2024 22:34 [DEBUG] ---IAT Runtime---",
-	[96899] = "5/1/2024 22:34 [DEBUG] Attempting to load from local NPC Cache",
-	[96901] = "5/1/2024 22:34 [DEBUG] Enabling Addon",
-	[96903] = "5/1/2024 22:34 [DEBUG] Showing Minimap Icon",
-	[96905] = "5/1/2024 23:1 [DEBUG] 1862",
-	[96907] = "5/1/2024 23:1 [DEBUG] Expansion: 8",
+	[97279] = "6/1/2024 23:29 [DEBUG] Instance: 1501",
+	[97277] = "6/1/2024 23:29 [DEBUG] Expansion: 7",
+	[97275] = "6/1/2024 23:29 [DEBUG] 1501",
+	[97273] = "6/1/2024 23:27 [DEBUG] Showing Minimap Icon",
+	[97271] = "6/1/2024 23:27 [DEBUG] Enabling Addon",
+	[97269] = "6/1/2024 23:27 [DEBUG] Attempting to load from local NPC Cache",
+	[97267] = "6/1/2024 23:27 [DEBUG] ---IAT Runtime---",
 	[96909] = "5/1/2024 23:1 [DEBUG] Instance: 1862",
 	[68511] = "29/5/2023 14:54 [DEBUG] Showing Minimap Icon",
 	[72607] = "10/6/2023 23:29 [DEBUG] Instance Type: Dungeons",
@@ -51764,7 +52759,7 @@ AchievementTrackerDebug = {
 	[96715] = "5/1/2024 19:37 [DEBUG] Showing Minimap Icon",
 	[97937] = "10/1/2024 22:22 [DEBUG] Instance: 2579",
 	[96733] = "5/1/2024 20:50 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
-	[48616] = "31/3/2023 20:39 [DEBUG] Instance Type: Raids",
+	[97231] = "6/1/2024 22:49 [DEBUG] 6",
 	[68515] = "29/5/2023 15:56 [DEBUG] Generating NPC Cache...",
 	[72611] = "10/6/2023 23:29 [DEBUG] Instance Type: Dungeons",
 	[76707] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
@@ -51796,7 +52791,7 @@ AchievementTrackerDebug = {
 	[96787] = "5/1/2024 20:56 [DEBUG] InfoFrame does not need to be reset",
 	[97681] = "9/1/2024 22:17 [DEBUG] Expansion: 8",
 	[96805] = "5/1/2024 20:58 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
-	[97617] = "9/1/2024 21:1 [DEBUG] DifficultyID: 23",
+	[97553] = "9/1/2024 0:20 [DEBUG] Enabling Addon",
 	[68517] = "29/5/2023 15:56 [DEBUG] Registering CHAT_MSG_ADDON prefix",
 	[72613] = "10/6/2023 23:29 [DEBUG] Asking user whether they want to track this instance",
 	[76709] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
@@ -51821,13 +52816,13 @@ AchievementTrackerDebug = {
 	[88998] = "18/8/2023 20:22 [DEBUG] Expansion: 10",
 	[93094] = "3/1/2024 21:45 [DEBUG] Calling Detect Boss 3: 206068",
 	[97190] = "6/1/2024 21:6 [DEBUG] Creating Tracking UI",
-	[96823] = "5/1/2024 21:1 [DEBUG] Instance Type: Dungeons",
-	[96915] = "5/1/2024 23:1 [DEBUG] Creating Tracking UI",
-	[96917] = "5/1/2024 23:1 [DEBUG] Expansion: 8",
-	[96919] = "5/1/2024 23:33 [DEBUG] Clearing Instance Variables",
-	[96921] = "5/1/2024 23:33 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
-	[96923] = "5/1/2024 23:33 [DEBUG] Clearing Instance Variables if exists",
-	[96925] = "5/1/2024 23:33 [DEBUG] Clearing Instance Variables if exists",
+	[96841] = "5/1/2024 21:29 [DEBUG] Resetting Global Variables",
+	[97489] = "8/1/2024 21:20 [DEBUG] Generating NPC Cache...",
+	[96859] = "5/1/2024 21:58 [DEBUG] Clearing Instance Variables",
+	[97425] = "7/1/2024 23:11 [DEBUG] 1501",
+	[96877] = "5/1/2024 22:1 [DEBUG] Expansion: 4",
+	[97361] = "7/1/2024 22:39 [DEBUG] InfoFrame was not active",
+	[96895] = "5/1/2024 22:32 [DEBUG] Resetting PlayerRank",
 	[96927] = "5/1/2024 23:33 [DEBUG] Resetting Global Variables",
 	[68519] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
 	[72615] = "10/6/2023 23:29 [DEBUG] Expansion: 8",
@@ -51892,7 +52887,7 @@ AchievementTrackerDebug = {
 	[97075] = "6/1/2024 16:55 [DEBUG] InfoFrame was not active",
 	[97093] = "6/1/2024 17:0 [DEBUG] Asking user whether they want to track this instance",
 	[97111] = "0/0/1999 -1:-1 [DEBUG] Version: 4.34.0",
-	[48615] = "31/3/2023 20:39 [DEBUG] Expansion: 10",
+	[97229] = "6/1/2024 21:24 [DEBUG] No Achievements to track for this instance",
 	[68523] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
 	[72619] = "10/6/2023 23:29 [DEBUG] Expansion: 8",
 	[76715] = "27/6/2023 19:44 [DEBUG] Generating NPC Cache...",
@@ -51924,7 +52919,7 @@ AchievementTrackerDebug = {
 	[97195] = "6/1/2024 21:23 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
 	[97193] = "6/1/2024 21:23 [DEBUG] Hiding Tracking UI",
 	[97191] = "6/1/2024 21:6 [DEBUG] InfoFrame Setup Complete",
-	[96933] = "5/1/2024 23:37 [DEBUG] Offical Instance Name: 643 _643",
+	[97197] = "6/1/2024 21:23 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[68525] = "29/5/2023 19:29 [DEBUG] Showing Minimap Icon",
 	[72621] = "10/6/2023 23:29 [DEBUG] Instance: 1841",
 	[76717] = "27/6/2023 19:44 [DEBUG] Registering CHAT_MSG_ADDON prefix",
@@ -51932,7 +52927,7 @@ AchievementTrackerDebug = {
 	[84909] = "26/7/2023 22:18 [DEBUG] 1754",
 	[89005] = "18/8/2023 20:22 [DEBUG] Asking user whether they want to track this instance",
 	[93101] = "3/1/2024 21:46 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
-	[97197] = "6/1/2024 21:23 [DEBUG] Player has left instance. Unregestering events and resetting variables",
+	[48599] = "31/3/2023 20:39 [DEBUG] Player has entered instance",
 	[50647] = "14/4/2023 1:17 [DEBUG] Expansion: 6",
 	[52695] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54743] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -51949,13 +52944,13 @@ AchievementTrackerDebug = {
 	[89006] = "18/8/2023 20:22 [DEBUG] Creating Tracking UI",
 	[93102] = "3/1/2024 21:46 [DEBUG] Clearing Instance Variables if exists",
 	[97198] = "6/1/2024 21:23 [DEBUG] Clearing Instance Variables if exists",
-	[97189] = "6/1/2024 21:6 [DEBUG] Asking user whether they want to track this instance",
-	[96935] = "5/1/2024 23:37 [DEBUG] Instance Type: Dungeons",
-	[96937] = "5/1/2024 23:37 [DEBUG] DifficultyID: 23",
-	[96939] = "5/1/2024 23:59 [DEBUG] 6",
-	[96941] = "5/1/2024 23:59 [DEBUG] Hiding Tracking UI",
-	[96943] = "5/1/2024 23:59 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
-	[96945] = "5/1/2024 23:59 [DEBUG] Player has left instance. Unregestering events and resetting variables",
+	[97187] = "6/1/2024 21:6 [DEBUG] Instance Type: Raids",
+	[97185] = "6/1/2024 21:6 [DEBUG] DifficultyID: 14",
+	[97181] = "6/1/2024 21:6 [DEBUG] Offical Instance Name: 2549 _2549",
+	[97179] = "6/1/2024 21:6 [DEBUG] Player has entered instance",
+	[97177] = "6/1/2024 21:6 [DEBUG] Registering CHAT_MSG_ADDON prefix",
+	[97175] = "6/1/2024 21:6 [DEBUG] Generating NPC Cache...",
+	[97171] = "6/1/2024 21:1 [DEBUG] Expansion: 10",
 	[96947] = "5/1/2024 23:59 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
 	[68527] = "29/5/2023 19:46 [DEBUG] Version: 4.19.0",
 	[72623] = "10/6/2023 23:29 [DEBUG] Expansion: 8",
@@ -52020,7 +53015,7 @@ AchievementTrackerDebug = {
 	[97149] = "6/1/2024 19:59 [DEBUG] Resetting PlayerRank",
 	[97145] = "6/1/2024 19:59 [DEBUG] Clearing Instance Variables if exists",
 	[97143] = "6/1/2024 19:59 [DEBUG] Clearing Instance Variables if exists",
-	[48614] = "31/3/2023 20:39 [DEBUG] Offical Instance Name: 2522 _2522",
+	[97227] = "6/1/2024 21:24 [DEBUG] Instance Type: Raids",
 	[68531] = "29/5/2023 19:46 [DEBUG] Registering CHAT_MSG_ADDON prefix",
 	[72627] = "10/6/2023 23:29 [DEBUG] Expansion: 8",
 	[76723] = "27/6/2023 19:57 [DEBUG] Enabling Addon",
@@ -52052,7 +53047,7 @@ AchievementTrackerDebug = {
 	[97135] = "6/1/2024 19:59 [DEBUG] Creating Tracking UI",
 	[97133] = "6/1/2024 19:59 [DEBUG] Instance: 2549",
 	[97131] = "6/1/2024 19:59 [DEBUG] Expansion: 10",
-	[96951] = "5/1/2024 23:59 [DEBUG] InfoFrame does not need to be reset",
+	[48603] = "31/3/2023 20:39 [DEBUG] Instance Type: Raids",
 	[68533] = "29/5/2023 20:2 [DEBUG] ---IAT Runtime---",
 	[72629] = "11/6/2023 0:3 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2003: attempt to call method 'IATInstanceCleanup' (a nil value).",
 	[76725] = "27/6/2023 19:56 [DEBUG] Showing Minimap Icon",
@@ -52060,7 +53055,7 @@ AchievementTrackerDebug = {
 	[84917] = "26/7/2023 22:18 [DEBUG] Instance: 1754",
 	[89013] = "19/8/2023 0:28 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[93109] = "3/1/2024 21:46 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
-	[48603] = "31/3/2023 20:39 [DEBUG] Instance Type: Raids",
+	[97205] = "6/1/2024 21:23 [DEBUG] InfoFrame was not active",
 	[50651] = "14/4/2023 1:17 [DEBUG] Displaying Tracking UI since it was already created",
 	[52699] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54747] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52077,13 +53072,13 @@ AchievementTrackerDebug = {
 	[89014] = "19/8/2023 0:28 [DEBUG] Clearing Instance Variables if exists",
 	[93110] = "3/1/2024 21:46 [DEBUG] Clearing Instance Variables if exists",
 	[97206] = "6/1/2024 21:24 [DEBUG] Player has entered instance",
-	[97127] = "6/1/2024 19:59 [DEBUG] Expansion: 10",
-	[96953] = "5/1/2024 23:59 [DEBUG] InfoFrame was not active",
-	[96955] = "6/1/2024 0:0 [DEBUG] Player has entered instance",
-	[96957] = "6/1/2024 0:0 [DEBUG] Offical Instance Name: 643 _643",
-	[96959] = "6/1/2024 0:0 [DEBUG] Instance Type: Dungeons",
-	[96961] = "6/1/2024 0:0 [DEBUG] DifficultyID: 8",
-	[96963] = "6/1/2024 0:10 [DEBUG] 6",
+	[97125] = "6/1/2024 19:59 [DEBUG] 2549",
+	[97123] = "6/1/2024 19:59 [DEBUG] Showing Minimap Icon",
+	[97121] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
+	[97119] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
+	[97117] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
+	[97115] = "0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix",
+	[97113] = "0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...",
 	[96965] = "6/1/2024 0:10 [DEBUG] Hiding Tracking UI",
 	[68535] = "29/5/2023 20:2 [DEBUG] Attempting to load from local NPC Cache",
 	[72631] = "11/6/2023 0:3 [DEBUG] Player has left instance. Unregestering events and resetting variables",
@@ -52147,8 +53142,8 @@ AchievementTrackerDebug = {
 	[97085] = "6/1/2024 17:0 [DEBUG] Offical Instance Name: 2579 _2579",
 	[97083] = "6/1/2024 17:0 [DEBUG] Player has entered instance",
 	[97081] = "6/1/2024 16:55 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[48606] = "31/3/2023 20:39 [DEBUG] Expansion: 10",
-	[48613] = "31/3/2023 20:39 [DEBUG] 2522",
+	[97211] = "6/1/2024 21:24 [DEBUG] Instance: 2549",
+	[97225] = "6/1/2024 21:24 [DEBUG] DifficultyID: 15",
 	[68539] = "29/5/2023 20:11 [DEBUG] Showing Minimap Icon",
 	[72635] = "11/6/2023 0:3 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4023: attempt to call method 'ClearVariables' (a nil value).",
 	[76731] = "0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix",
@@ -52156,7 +53151,7 @@ AchievementTrackerDebug = {
 	[84923] = "26/7/2023 22:51 [DEBUG] Clearing Instance Variables",
 	[89019] = "19/8/2023 0:28 [DEBUG] InfoFrame does not need to be reset",
 	[93115] = "3/1/2024 21:47 [DEBUG] Entered Combat",
-	[97211] = "6/1/2024 21:24 [DEBUG] Instance: 2549",
+	[48606] = "31/3/2023 20:39 [DEBUG] Expansion: 10",
 	[50654] = "14/4/2023 1:17 [DEBUG] 1208",
 	[52702] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54750] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52180,7 +53175,7 @@ AchievementTrackerDebug = {
 	[97069] = "6/1/2024 16:55 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
 	[97067] = "6/1/2024 16:55 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[96969] = "6/1/2024 0:10 [DEBUG] Player has left instance. Unregestering events and resetting variables",
-	[48607] = "31/3/2023 20:39 [DEBUG] Instance Type: Raids",
+	[97065] = "6/1/2024 16:55 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
 	[68541] = "29/5/2023 20:15 [DEBUG] Version: 4.19.0",
 	[72637] = "11/6/2023 0:3 [DEBUG] InfoFrame does not need to be reset",
 	[76733] = "27/6/2023 21:57 [DEBUG] Player has entered instance",
@@ -52205,14 +53200,14 @@ AchievementTrackerDebug = {
 	[89022] = "19/8/2023 0:28 [DEBUG] ---IAT Runtime---",
 	[93118] = "3/1/2024 21:47 [DEBUG] Clearing Instance Variables if exists",
 	[97214] = "6/1/2024 21:24 [DEBUG] Instance Type: Raids",
-	[96971] = "6/1/2024 0:10 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
-	[96973] = "6/1/2024 0:10 [DEBUG] Clearing Instance Variables",
-	[96975] = "6/1/2024 0:10 [DEBUG] InfoFrame does not need to be reset",
-	[96977] = "6/1/2024 0:10 [DEBUG] InfoFrame was not active",
-	[96979] = "0/0/1999 -1:-1 [DEBUG] Version: 4.34.0",
-	[96981] = "0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...",
-	[96983] = "0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[97215] = "6/1/2024 21:24 [DEBUG] Instance: 2549",
+	[97063] = "6/1/2024 16:55 [DEBUG] Hiding Tracking UI",
+	[97061] = "6/1/2024 16:5 [DEBUG] InfoFrame Setup Complete",
+	[97059] = "6/1/2024 16:5 [DEBUG] Asking user whether they want to track this instance",
+	[97055] = "6/1/2024 16:5 [DEBUG] DifficultyID: 23",
+	[97053] = "6/1/2024 16:5 [DEBUG] Instance Type: Dungeons",
+	[97051] = "6/1/2024 16:5 [DEBUG] Offical Instance Name: 1279 _1279",
+	[97049] = "6/1/2024 16:5 [DEBUG] Player has entered instance",
+	[48608] = "31/3/2023 20:39 [DEBUG] Instance: 2522",
 	[68543] = "29/5/2023 20:15 [DEBUG] Generating NPC Cache...",
 	[72639] = "11/6/2023 0:3 [DEBUG] InfoFrame was not active",
 	[76735] = "27/6/2023 21:57 [DEBUG] Offical Instance Name: 1841 _1841",
@@ -52220,7 +53215,7 @@ AchievementTrackerDebug = {
 	[84927] = "26/7/2023 22:51 [DEBUG] Clearing Instance Variables if exists",
 	[89023] = "19/8/2023 0:28 [DEBUG] Version: 4.24.0",
 	[93119] = "3/1/2024 21:47 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4038: attempt to call method 'ClearVariables' (a nil value).",
-	[48608] = "31/3/2023 20:39 [DEBUG] Instance: 2522",
+	[97215] = "6/1/2024 21:24 [DEBUG] Instance: 2549",
 	[50656] = "14/4/2023 1:17 [DEBUG] Expansion: 6",
 	[52704] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54752] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52244,7 +53239,7 @@ AchievementTrackerDebug = {
 	[97037] = "6/1/2024 15:59 [DEBUG] Attempting to load from local NPC Cache",
 	[97035] = "6/1/2024 15:59 [DEBUG] ---IAT Runtime---",
 	[97033] = "6/1/2024 15:56 [DEBUG] Resetting PlayerRank",
-	[48609] = "31/3/2023 20:39 [DEBUG] Asking user whether they want to track this instance",
+	[97217] = "6/1/2024 21:24 [DEBUG] Displaying Tracking UI since it was already created",
 	[68545] = "29/5/2023 20:15 [DEBUG] Registering CHAT_MSG_ADDON prefix",
 	[72641] = "11/6/2023 0:3 [DEBUG] Hiding Tracking UI",
 	[76737] = "27/6/2023 21:57 [DEBUG] Instance Type: Dungeons",
@@ -52252,7 +53247,7 @@ AchievementTrackerDebug = {
 	[84929] = "26/7/2023 22:51 [DEBUG] Clearing Instance Variables if exists",
 	[89025] = "19/8/2023 0:28 [DEBUG] Generating NPC Cache...",
 	[93121] = "3/1/2024 21:47 [DEBUG] InfoFrame does not need to be reset",
-	[97217] = "6/1/2024 21:24 [DEBUG] Displaying Tracking UI since it was already created",
+	[48609] = "31/3/2023 20:39 [DEBUG] Asking user whether they want to track this instance",
 	[50657] = "14/4/2023 1:17 [DEBUG] Instance Type: Dungeons",
 	[52705] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54753] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52275,8 +53270,8 @@ AchievementTrackerDebug = {
 	[97025] = "6/1/2024 15:56 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
 	[97023] = "6/1/2024 15:56 [DEBUG] Clearing Instance Variables",
 	[97019] = "6/1/2024 15:22 [DEBUG] Achievements cannot be earned for the following difficulty 23",
-	[48610] = "31/3/2023 20:39 [DEBUG] Displaying Tracking UI since it was already created",
-	[48612] = "31/3/2023 20:39 [DEBUG] Player has entered instance",
+	[97219] = "6/1/2024 21:24 [DEBUG] Player has entered instance",
+	[97223] = "6/1/2024 21:24 [DEBUG] Instance Type: Raids",
 	[68547] = "29/5/2023 20:46 [DEBUG] ---IAT Runtime---",
 	[72643] = "11/6/2023 0:17 [DEBUG] Hiding Tracking UI",
 	[76739] = "27/6/2023 21:57 [DEBUG] DifficultyID: 23",
@@ -52284,7 +53279,7 @@ AchievementTrackerDebug = {
 	[84931] = "26/7/2023 22:51 [DEBUG] Resetting Global Variables",
 	[89027] = "19/8/2023 0:28 [DEBUG] Registering CHAT_MSG_ADDON prefix",
 	[93123] = "3/1/2024 21:47 [DEBUG] Entered Combat",
-	[97219] = "6/1/2024 21:24 [DEBUG] Player has entered instance",
+	[48610] = "31/3/2023 20:39 [DEBUG] Displaying Tracking UI since it was already created",
 	[50658] = "14/4/2023 1:17 [DEBUG] Instance: 1208",
 	[52706] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54754] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52308,7 +53303,7 @@ AchievementTrackerDebug = {
 	[97009] = "6/1/2024 15:21 [DEBUG] InfoFrame does not need to be reset",
 	[97007] = "6/1/2024 15:21 [DEBUG] Clearing Instance Variables",
 	[97005] = "6/1/2024 15:21 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
-	[96987] = "6/1/2024 14:45 [DEBUG] Offical Instance Name: 1279 _1279",
+	[97221] = "6/1/2024 21:24 [DEBUG] Offical Instance Name: 2549 _2549",
 	[68549] = "29/5/2023 20:46 [DEBUG] Attempting to load from local NPC Cache",
 	[72645] = "11/6/2023 0:17 [DEBUG] 2520",
 	[76741] = "27/6/2023 21:57 [DEBUG] Instance Type: Dungeons",
@@ -52316,7 +53311,7 @@ AchievementTrackerDebug = {
 	[84933] = "26/7/2023 22:51 [DEBUG] Resetting PlayerRank",
 	[89029] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
 	[93125] = "3/1/2024 21:48 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
-	[97221] = "6/1/2024 21:24 [DEBUG] Offical Instance Name: 2549 _2549",
+	[48611] = "31/3/2023 20:39 [DEBUG] Expansion: 10",
 	[50659] = "14/4/2023 1:17 [DEBUG] DifficultyID: 24",
 	[52707] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54755] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52333,14 +53328,14 @@ AchievementTrackerDebug = {
 	[89030] = "0/0/1999 -1:-1 [DEBUG] Version: 4.24.0",
 	[93126] = "3/1/2024 21:48 [DEBUG] Clearing Instance Variables if exists",
 	[97222] = "6/1/2024 21:24 [DEBUG] Expansion: 10",
-	[96989] = "6/1/2024 14:45 [DEBUG] Instance Type: Dungeons",
-	[96991] = "6/1/2024 14:45 [DEBUG] DifficultyID: 23",
-	[96993] = "6/1/2024 14:45 [DEBUG] Instance Type: Dungeons",
-	[96995] = "6/1/2024 14:45 [DEBUG] Asking user whether they want to track this instance",
-	[96997] = "6/1/2024 14:45 [DEBUG] InfoFrame Setup Complete",
-	[96999] = "6/1/2024 15:21 [DEBUG] Hiding Tracking UI",
 	[97001] = "6/1/2024 15:21 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
-	[48611] = "31/3/2023 20:39 [DEBUG] Expansion: 10",
+	[96999] = "6/1/2024 15:21 [DEBUG] Hiding Tracking UI",
+	[96997] = "6/1/2024 14:45 [DEBUG] InfoFrame Setup Complete",
+	[96995] = "6/1/2024 14:45 [DEBUG] Asking user whether they want to track this instance",
+	[96993] = "6/1/2024 14:45 [DEBUG] Instance Type: Dungeons",
+	[96991] = "6/1/2024 14:45 [DEBUG] DifficultyID: 23",
+	[96989] = "6/1/2024 14:45 [DEBUG] Instance Type: Dungeons",
+	[96987] = "6/1/2024 14:45 [DEBUG] Offical Instance Name: 1279 _1279",
 	[68551] = "29/5/2023 20:46 [DEBUG] Enabling Addon",
 	[72647] = "11/6/2023 0:17 [DEBUG] Expansion: 10",
 	[76743] = "27/6/2023 21:57 [DEBUG] Asking user whether they want to track this instance",
@@ -52348,7 +53343,7 @@ AchievementTrackerDebug = {
 	[84935] = "26/7/2023 22:55 [DEBUG] Hiding Tracking UI",
 	[89031] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
 	[93127] = "3/1/2024 21:48 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4038: attempt to call method 'ClearVariables' (a nil value).",
-	[97223] = "6/1/2024 21:24 [DEBUG] Instance Type: Raids",
+	[48612] = "31/3/2023 20:39 [DEBUG] Player has entered instance",
 	[50660] = "14/4/2023 1:17 [DEBUG] Expansion: 6",
 	[52708] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54756] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52365,14 +53360,14 @@ AchievementTrackerDebug = {
 	[89032] = "0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...",
 	[93128] = "3/1/2024 21:48 [DEBUG] Resetting Global Variables",
 	[97224] = "6/1/2024 21:24 [DEBUG] Instance: 2549",
-	[97049] = "6/1/2024 16:5 [DEBUG] Player has entered instance",
-	[97051] = "6/1/2024 16:5 [DEBUG] Offical Instance Name: 1279 _1279",
-	[97053] = "6/1/2024 16:5 [DEBUG] Instance Type: Dungeons",
-	[97055] = "6/1/2024 16:5 [DEBUG] DifficultyID: 23",
-	[97059] = "6/1/2024 16:5 [DEBUG] Asking user whether they want to track this instance",
-	[97061] = "6/1/2024 16:5 [DEBUG] InfoFrame Setup Complete",
-	[97063] = "6/1/2024 16:55 [DEBUG] Hiding Tracking UI",
-	[97065] = "6/1/2024 16:55 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
+	[96983] = "0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix",
+	[96981] = "0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...",
+	[96979] = "0/0/1999 -1:-1 [DEBUG] Version: 4.34.0",
+	[96977] = "6/1/2024 0:10 [DEBUG] InfoFrame was not active",
+	[96975] = "6/1/2024 0:10 [DEBUG] InfoFrame does not need to be reset",
+	[96973] = "6/1/2024 0:10 [DEBUG] Clearing Instance Variables",
+	[96971] = "6/1/2024 0:10 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
+	[48607] = "31/3/2023 20:39 [DEBUG] Instance Type: Raids",
 	[68553] = "29/5/2023 20:47 [DEBUG] Showing Minimap Icon",
 	[72649] = "11/6/2023 0:17 [DEBUG] Instance: 2520",
 	[76745] = "27/6/2023 21:57 [DEBUG] InfoFrame Setup Complete",
@@ -52380,7 +53375,7 @@ AchievementTrackerDebug = {
 	[84937] = "26/7/2023 22:57 [DEBUG] Player has entered instance",
 	[89033] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
 	[93129] = "3/1/2024 21:48 [DEBUG] InfoFrame does not need to be reset",
-	[97225] = "6/1/2024 21:24 [DEBUG] DifficultyID: 15",
+	[48613] = "31/3/2023 20:39 [DEBUG] 2522",
 	[50661] = "14/4/2023 1:17 [DEBUG] Instance Type: Dungeons",
 	[52709] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54757] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52397,14 +53392,14 @@ AchievementTrackerDebug = {
 	[89034] = "0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix",
 	[93130] = "3/1/2024 21:48 [DEBUG] Left Combat",
 	[97226] = "6/1/2024 21:24 [DEBUG] Expansion: 10",
-	[97113] = "0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...",
-	[97115] = "0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[97117] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
-	[97119] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
-	[97121] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
-	[97123] = "6/1/2024 19:59 [DEBUG] Showing Minimap Icon",
-	[97125] = "6/1/2024 19:59 [DEBUG] 2549",
-	[97205] = "6/1/2024 21:23 [DEBUG] InfoFrame was not active",
+	[96963] = "6/1/2024 0:10 [DEBUG] 6",
+	[96961] = "6/1/2024 0:0 [DEBUG] DifficultyID: 8",
+	[96959] = "6/1/2024 0:0 [DEBUG] Instance Type: Dungeons",
+	[96957] = "6/1/2024 0:0 [DEBUG] Offical Instance Name: 643 _643",
+	[96955] = "6/1/2024 0:0 [DEBUG] Player has entered instance",
+	[96953] = "5/1/2024 23:59 [DEBUG] InfoFrame was not active",
+	[97127] = "6/1/2024 19:59 [DEBUG] Expansion: 10",
+	[96951] = "5/1/2024 23:59 [DEBUG] InfoFrame does not need to be reset",
 	[68555] = "29/5/2023 21:14 [DEBUG] 2569",
 	[72651] = "11/6/2023 0:17 [DEBUG] Expansion: 10",
 	[76747] = "27/6/2023 22:32 [DEBUG] Hiding Tracking UI",
@@ -52412,7 +53407,7 @@ AchievementTrackerDebug = {
 	[84939] = "26/7/2023 22:57 [DEBUG] Offical Instance Name: 2451 _2451",
 	[89035] = "19/8/2023 14:27 [DEBUG] Showing Minimap Icon",
 	[93131] = "3/1/2024 21:48 [DEBUG] ---Encounter Started---",
-	[97227] = "6/1/2024 21:24 [DEBUG] Instance Type: Raids",
+	[48614] = "31/3/2023 20:39 [DEBUG] Offical Instance Name: 2522 _2522",
 	[50662] = "14/4/2023 1:17 [DEBUG] Instance: 1208",
 	[52710] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54758] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52429,14 +53424,14 @@ AchievementTrackerDebug = {
 	[89036] = "19/8/2023 14:57 [DEBUG] ---IAT Runtime---",
 	[93132] = "3/1/2024 21:48 [DEBUG] Encounter ID: 2667",
 	[97228] = "6/1/2024 21:24 [DEBUG] Instance: 2549",
-	[97171] = "6/1/2024 21:1 [DEBUG] Expansion: 10",
-	[97175] = "6/1/2024 21:6 [DEBUG] Generating NPC Cache...",
-	[97177] = "6/1/2024 21:6 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[97179] = "6/1/2024 21:6 [DEBUG] Player has entered instance",
-	[97181] = "6/1/2024 21:6 [DEBUG] Offical Instance Name: 2549 _2549",
-	[97185] = "6/1/2024 21:6 [DEBUG] DifficultyID: 14",
-	[97187] = "6/1/2024 21:6 [DEBUG] Instance Type: Raids",
-	[48599] = "31/3/2023 20:39 [DEBUG] Player has entered instance",
+	[96945] = "5/1/2024 23:59 [DEBUG] Player has left instance. Unregestering events and resetting variables",
+	[96943] = "5/1/2024 23:59 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
+	[96941] = "5/1/2024 23:59 [DEBUG] Hiding Tracking UI",
+	[96939] = "5/1/2024 23:59 [DEBUG] 6",
+	[96937] = "5/1/2024 23:37 [DEBUG] DifficultyID: 23",
+	[96935] = "5/1/2024 23:37 [DEBUG] Instance Type: Dungeons",
+	[97189] = "6/1/2024 21:6 [DEBUG] Asking user whether they want to track this instance",
+	[96933] = "5/1/2024 23:37 [DEBUG] Offical Instance Name: 643 _643",
 	[68557] = "29/5/2023 21:14 [DEBUG] Expansion: 10",
 	[72653] = "11/6/2023 0:17 [DEBUG] Instance: 2520",
 	[76749] = "27/6/2023 22:32 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2003: attempt to call method 'IATInstanceCleanup' (a nil value).",
@@ -52444,7 +53439,7 @@ AchievementTrackerDebug = {
 	[84941] = "26/7/2023 22:57 [DEBUG] Instance Type: Dungeons",
 	[89037] = "19/8/2023 14:57 [DEBUG] Version: 4.24.0",
 	[93133] = "3/1/2024 21:48 [DEBUG] Detected boss using ENCOUNTER ID",
-	[97229] = "6/1/2024 21:24 [DEBUG] No Achievements to track for this instance",
+	[48615] = "31/3/2023 20:39 [DEBUG] Expansion: 10",
 	[50663] = "14/4/2023 1:17 [DEBUG] No Achievements to track for this instance",
 	[52711] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54759] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52461,14 +53456,14 @@ AchievementTrackerDebug = {
 	[89038] = "19/8/2023 14:57 [DEBUG] Attempting to load from local NPC Cache",
 	[93134] = "3/1/2024 21:48 [DEBUG] Found the following encounter ID: 2667",
 	[97230] = "6/1/2024 21:24 [DEBUG] Expansion: 10",
-	[96895] = "5/1/2024 22:32 [DEBUG] Resetting PlayerRank",
-	[97361] = "7/1/2024 22:39 [DEBUG] InfoFrame was not active",
-	[96877] = "5/1/2024 22:1 [DEBUG] Expansion: 4",
-	[97425] = "7/1/2024 23:11 [DEBUG] 1501",
-	[96859] = "5/1/2024 21:58 [DEBUG] Clearing Instance Variables",
-	[97489] = "8/1/2024 21:20 [DEBUG] Generating NPC Cache...",
-	[96841] = "5/1/2024 21:29 [DEBUG] Resetting Global Variables",
-	[97553] = "9/1/2024 0:20 [DEBUG] Enabling Addon",
+	[96925] = "5/1/2024 23:33 [DEBUG] Clearing Instance Variables if exists",
+	[96923] = "5/1/2024 23:33 [DEBUG] Clearing Instance Variables if exists",
+	[96921] = "5/1/2024 23:33 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
+	[96919] = "5/1/2024 23:33 [DEBUG] Clearing Instance Variables",
+	[96917] = "5/1/2024 23:1 [DEBUG] Expansion: 8",
+	[96915] = "5/1/2024 23:1 [DEBUG] Creating Tracking UI",
+	[96823] = "5/1/2024 21:1 [DEBUG] Instance Type: Dungeons",
+	[97617] = "9/1/2024 21:1 [DEBUG] DifficultyID: 23",
 	[68559] = "29/5/2023 21:14 [DEBUG] Instance: 2569",
 	[72655] = "11/6/2023 0:17 [DEBUG] Displaying Tracking UI since it was already created",
 	[76751] = "27/6/2023 22:32 [DEBUG] Player has left instance. Unregestering events and resetting variables",
@@ -52476,7 +53471,7 @@ AchievementTrackerDebug = {
 	[84943] = "26/7/2023 22:57 [DEBUG] DifficultyID: 23",
 	[89039] = "19/8/2023 14:57 [DEBUG] Generating NPC Cache...",
 	[93135] = "3/1/2024 21:48 [DEBUG] (E) Adding the following encounter ID: boss2",
-	[97231] = "6/1/2024 22:49 [DEBUG] 6",
+	[48616] = "31/3/2023 20:39 [DEBUG] Instance Type: Raids",
 	[50664] = "14/4/2023 1:17 [DEBUG] Expansion: 6",
 	[52712] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54760] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52493,14 +53488,14 @@ AchievementTrackerDebug = {
 	[89040] = "19/8/2023 14:57 [DEBUG] Enabling Addon",
 	[93136] = "3/1/2024 21:48 [DEBUG] (E) Adding the following achievement ID beacuse it doesn't exist: 18556",
 	[97232] = "6/1/2024 22:49 [DEBUG] Hiding Tracking UI",
-	[97267] = "6/1/2024 23:27 [DEBUG] ---IAT Runtime---",
-	[97269] = "6/1/2024 23:27 [DEBUG] Attempting to load from local NPC Cache",
-	[97271] = "6/1/2024 23:27 [DEBUG] Enabling Addon",
-	[97273] = "6/1/2024 23:27 [DEBUG] Showing Minimap Icon",
-	[97275] = "6/1/2024 23:29 [DEBUG] 1501",
-	[97277] = "6/1/2024 23:29 [DEBUG] Expansion: 7",
-	[97279] = "6/1/2024 23:29 [DEBUG] Instance: 1501",
-	[97281] = "6/1/2024 23:29 [DEBUG] Expansion: 7",
+	[96907] = "5/1/2024 23:1 [DEBUG] Expansion: 8",
+	[96905] = "5/1/2024 23:1 [DEBUG] 1862",
+	[96903] = "5/1/2024 22:34 [DEBUG] Showing Minimap Icon",
+	[96901] = "5/1/2024 22:34 [DEBUG] Enabling Addon",
+	[96899] = "5/1/2024 22:34 [DEBUG] Attempting to load from local NPC Cache",
+	[96897] = "5/1/2024 22:34 [DEBUG] ---IAT Runtime---",
+	[97283] = "6/1/2024 23:29 [DEBUG] Instance: 1501",
+	[97285] = "6/1/2024 23:29 [DEBUG] Creating Tracking UI",
 	[68561] = "29/5/2023 21:14 [DEBUG] Expansion: 10",
 	[72657] = "11/6/2023 0:50 [DEBUG] Hiding Tracking UI",
 	[76753] = "27/6/2023 22:32 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4015: attempt to call method 'clearVariables' (a nil value).",
@@ -52508,7 +53503,7 @@ AchievementTrackerDebug = {
 	[84945] = "26/7/2023 22:57 [DEBUG] Instance Type: Dungeons",
 	[89041] = "19/8/2023 14:57 [DEBUG] Registering CHAT_MSG_ADDON prefix",
 	[93137] = "3/1/2024 21:48 [DEBUG] Entered Combat",
-	[97233] = "6/1/2024 22:49 [DEBUG] Hiding Tracking UI",
+	[48617] = "31/3/2023 20:39 [DEBUG] Instance: 2522",
 	[50665] = "14/4/2023 1:24 [DEBUG] Clearing Instance Variables",
 	[52713] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54761] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52525,14 +53520,14 @@ AchievementTrackerDebug = {
 	[89042] = "19/8/2023 14:56 [DEBUG] Showing Minimap Icon",
 	[93138] = "3/1/2024 21:48 [DEBUG] Length of array: 1",
 	[97234] = "6/1/2024 22:49 [DEBUG] Clearing Instance Variables",
-	[97331] = "7/1/2024 22:4 [DEBUG] Generating NPC Cache...",
-	[97333] = "7/1/2024 22:4 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[97335] = "7/1/2024 22:8 [DEBUG] Player has entered instance",
-	[97337] = "7/1/2024 22:8 [DEBUG] Offical Instance Name: 1501 _1501",
-	[97339] = "7/1/2024 22:8 [DEBUG] Instance Type: Dungeons",
-	[97341] = "7/1/2024 22:8 [DEBUG] DifficultyID: 23",
-	[97343] = "7/1/2024 22:8 [DEBUG] Instance Type: Dungeons",
-	[97345] = "7/1/2024 22:8 [DEBUG] Asking user whether they want to track this instance",
+	[96889] = "5/1/2024 22:32 [DEBUG] Clearing Instance Variables if exists",
+	[96887] = "5/1/2024 22:32 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
+	[96885] = "5/1/2024 22:32 [DEBUG] Clearing Instance Variables",
+	[96883] = "5/1/2024 22:32 [DEBUG] Hiding Tracking UI",
+	[96881] = "5/1/2024 22:1 [DEBUG] Achievements cannot be earned for the following difficulty 23",
+	[96879] = "5/1/2024 22:1 [DEBUG] Instance: 643",
+	[97347] = "7/1/2024 22:8 [DEBUG] InfoFrame Setup Complete",
+	[97349] = "7/1/2024 22:39 [DEBUG] Hiding Tracking UI",
 	[68563] = "29/5/2023 21:14 [DEBUG] Instance: 2569",
 	[72659] = "11/6/2023 0:50 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2003: attempt to call method 'IATInstanceCleanup' (a nil value).",
 	[76755] = "27/6/2023 22:32 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4023: attempt to call method 'ClearVariables' (a nil value).",
@@ -52540,7 +53535,7 @@ AchievementTrackerDebug = {
 	[84947] = "26/7/2023 22:57 [DEBUG] Asking user whether they want to track this instance",
 	[89043] = "19/8/2023 15:0 [DEBUG] Player has entered instance",
 	[93139] = "3/1/2024 21:48 [DEBUG] 成就: 18556",
-	[97235] = "6/1/2024 22:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
+	[48618] = "31/3/2023 20:39 [DEBUG] DifficultyID: 16",
 	[50666] = "14/4/2023 1:24 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2003: attempt to call method 'IATInstanceCleanup' (a nil value).",
 	[52714] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54762] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52557,14 +53552,14 @@ AchievementTrackerDebug = {
 	[89044] = "19/8/2023 15:0 [DEBUG] 2519",
 	[93140] = "3/1/2024 21:48 |cff00ccffIAT: |cffffffff正在追蹤: |cffffff00|Hachievement:18556:Player-980-06C86D48:1:8:26:23:4294967295:4294967295:4294967295:4294967295|h[混沌時光]|h|r",
 	[97236] = "6/1/2024 22:49 [DEBUG] Cleaning up instance events for _2549",
-	[97395] = "7/1/2024 22:44 [DEBUG] Instance: 1501",
-	[97397] = "7/1/2024 22:44 [DEBUG] Expansion: 7",
-	[97399] = "7/1/2024 22:44 [DEBUG] Instance: 1501",
-	[97401] = "7/1/2024 22:44 [DEBUG] Expansion: 7",
-	[97403] = "7/1/2024 23:9 [DEBUG] Hiding Tracking UI",
-	[97405] = "7/1/2024 23:9 [DEBUG] Clearing Instance Variables",
-	[97407] = "7/1/2024 23:9 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
-	[97409] = "7/1/2024 23:9 [DEBUG] Clearing Instance Variables if exists",
+	[96871] = "5/1/2024 21:59 [DEBUG] Hiding Tracking UI",
+	[96869] = "5/1/2024 21:58 [DEBUG] Resetting PlayerRank",
+	[96867] = "5/1/2024 21:58 [DEBUG] Resetting Global Variables",
+	[96865] = "5/1/2024 21:58 [DEBUG] Clearing Instance Variables if exists",
+	[96863] = "5/1/2024 21:58 [DEBUG] Clearing Instance Variables if exists",
+	[96861] = "5/1/2024 21:58 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
+	[97411] = "7/1/2024 23:9 [DEBUG] Clearing Instance Variables if exists",
+	[97413] = "7/1/2024 23:9 [DEBUG] Resetting Global Variables",
 	[68565] = "29/5/2023 21:14 [DEBUG] Creating Tracking UI",
 	[72661] = "11/6/2023 0:50 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[76757] = "27/6/2023 22:32 [DEBUG] InfoFrame does not need to be reset",
@@ -52572,7 +53567,7 @@ AchievementTrackerDebug = {
 	[84949] = "26/7/2023 22:57 [DEBUG] Expansion: 10",
 	[89045] = "19/8/2023 15:0 [DEBUG] Offical Instance Name: 2519 _2519",
 	[93141] = "3/1/2024 21:48 [DEBUG] Setting Master Addon 8",
-	[97237] = "6/1/2024 22:49 [DEBUG] Player has left instance. Unregestering events and resetting variables",
+	[48619] = "31/3/2023 20:39 [DEBUG] Expansion: 10",
 	[50667] = "14/4/2023 1:24 [DEBUG] Cleaning up instance events for _1208",
 	[52715] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54763] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52589,14 +53584,14 @@ AchievementTrackerDebug = {
 	[89046] = "19/8/2023 15:0 [DEBUG] Expansion: 10",
 	[93142] = "3/1/2024 21:48 [DEBUG] Inserting into Message Queue: 正在追蹤: |cffffff00|Hachievement:18556:Player-980-06C86D48:1:8:26:23:4294967295:4294967295:4294967295:4294967295|h[混沌時光]|h|r,false",
 	[97238] = "6/1/2024 22:49 [DEBUG] Clearing Instance Variables if exists",
-	[97459] = "8/1/2024 0:3 [DEBUG] Version: 4.34.0",
-	[97461] = "8/1/2024 0:3 [DEBUG] Generating NPC Cache...",
-	[97463] = "8/1/2024 0:3 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[97465] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
-	[97467] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
-	[97469] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
-	[97471] = "8/1/2024 21:1 [DEBUG] Showing Minimap Icon",
-	[97473] = "8/1/2024 21:18 [DEBUG] 2549",
+	[96853] = "5/1/2024 21:36 [DEBUG] Instance: 643",
+	[96851] = "5/1/2024 21:36 [DEBUG] Expansion: 4",
+	[96849] = "5/1/2024 21:36 [DEBUG] 643",
+	[96847] = "5/1/2024 21:34 [DEBUG] Hiding Tracking UI",
+	[96845] = "5/1/2024 21:33 [DEBUG] Hiding Tracking UI",
+	[96843] = "5/1/2024 21:29 [DEBUG] Resetting PlayerRank",
+	[97475] = "8/1/2024 21:18 [DEBUG] Expansion: 10",
+	[97477] = "8/1/2024 21:18 [DEBUG] Instance: 2549",
 	[68567] = "29/5/2023 21:14 [DEBUG] Expansion: 10",
 	[72663] = "11/6/2023 0:50 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4015: attempt to call method 'clearVariables' (a nil value).",
 	[76759] = "27/6/2023 22:32 [DEBUG] InfoFrame was not active",
@@ -52604,7 +53599,7 @@ AchievementTrackerDebug = {
 	[84951] = "26/7/2023 23:31 [DEBUG] Clearing Instance Variables",
 	[89047] = "19/8/2023 15:0 [DEBUG] Instance Type: Dungeons",
 	[93143] = "3/1/2024 21:48 |cff00ccffIAT: |cffffffff|cffffff00|Hachievement:18556:Player-980-06C86D48:1:8:26:23:4294967295:4294967295:4294967295:4294967295|h[混沌時光]|h|r 需要做成就的玩家: Shino, ",
-	[97239] = "6/1/2024 22:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
+	[48620] = "31/3/2023 20:39 [DEBUG] Instance Type: Raids",
 	[50668] = "14/4/2023 1:24 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[52716] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54764] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52621,14 +53616,14 @@ AchievementTrackerDebug = {
 	[89048] = "19/8/2023 15:0 [DEBUG] Instance: 2519",
 	[93144] = "3/1/2024 21:48 [DEBUG] This addon is in charge of outputting messages",
 	[97240] = "6/1/2024 22:49 [DEBUG] Clearing Instance Variables if exists",
-	[97523] = "8/1/2024 23:10 [DEBUG] Attempting to load from local NPC Cache",
-	[97525] = "8/1/2024 23:10 [DEBUG] Enabling Addon",
-	[97527] = "8/1/2024 23:11 [DEBUG] Showing Minimap Icon",
-	[97529] = "8/1/2024 23:32 [DEBUG] Version: 4.34.0",
-	[97531] = "8/1/2024 23:32 [DEBUG] Generating NPC Cache...",
-	[97533] = "8/1/2024 23:32 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[97535] = "8/1/2024 23:51 [DEBUG] ---IAT Runtime---",
-	[97537] = "8/1/2024 23:51 [DEBUG] Attempting to load from local NPC Cache",
+	[96835] = "5/1/2024 21:29 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
+	[96833] = "5/1/2024 21:29 [DEBUG] Clearing Instance Variables",
+	[96831] = "5/1/2024 21:1 [DEBUG] Expansion: 8",
+	[96829] = "5/1/2024 21:1 [DEBUG] Asking user whether they want to track this instance",
+	[96827] = "5/1/2024 21:1 [DEBUG] Instance Type: Dungeons",
+	[96825] = "5/1/2024 21:1 [DEBUG] DifficultyID: 23",
+	[97539] = "8/1/2024 23:51 [DEBUG] Enabling Addon",
+	[97541] = "8/1/2024 23:51 [DEBUG] Showing Minimap Icon",
 	[68569] = "29/5/2023 21:16 [DEBUG] Version: 4.19.0",
 	[72665] = "11/6/2023 0:50 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4023: attempt to call method 'ClearVariables' (a nil value).",
 	[76761] = "27/6/2023 22:35 [DEBUG] Hiding Tracking UI",
@@ -52636,7 +53631,7 @@ AchievementTrackerDebug = {
 	[84953] = "26/7/2023 23:31 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
 	[89049] = "19/8/2023 15:0 [DEBUG] DifficultyID: 23",
 	[93145] = "3/1/2024 21:48 [IAT] 正在追蹤: |cffffff00|Hachievement:18556:Player-980-06C86D48:1:8:26:23:4294967295:4294967295:4294967295:4294967295|h[混沌時光]|h|r",
-	[97241] = "6/1/2024 22:49 [DEBUG] Clearing Instance Variables",
+	[48621] = "31/3/2023 20:39 [DEBUG] Instance: 2522",
 	[50669] = "14/4/2023 1:24 [DEBUG] Clearing Instance Variables if exists",
 	[52717] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54765] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52653,14 +53648,14 @@ AchievementTrackerDebug = {
 	[89050] = "19/8/2023 15:0 [DEBUG] Expansion: 10",
 	[93146] = "3/1/2024 21:48 |cff00ccffIAT: |cffffffff一輪輪胖嘟嘟 is outputting messages for this fight",
 	[97242] = "6/1/2024 22:49 [DEBUG] Resetting Global Variables",
-	[97587] = "9/1/2024 0:48 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
-	[97589] = "9/1/2024 0:48 [DEBUG] Clearing Instance Variables if exists",
-	[97591] = "9/1/2024 0:48 [DEBUG] Clearing Instance Variables if exists",
-	[97593] = "9/1/2024 0:48 [DEBUG] Resetting Global Variables",
-	[97595] = "9/1/2024 0:48 [DEBUG] Resetting PlayerRank",
-	[97597] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
-	[97599] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
-	[97601] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
+	[96811] = "5/1/2024 20:58 [DEBUG] Clearing Instance Variables",
+	[96809] = "5/1/2024 20:58 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
+	[96807] = "5/1/2024 20:58 [DEBUG] Player has left instance. Unregestering events and resetting variables",
+	[97603] = "9/1/2024 20:43 [DEBUG] Showing Minimap Icon",
+	[97605] = "9/1/2024 20:58 [DEBUG] Version: 4.34.0",
+	[97607] = "9/1/2024 20:58 [DEBUG] Generating NPC Cache...",
+	[97609] = "9/1/2024 20:58 [DEBUG] Registering CHAT_MSG_ADDON prefix",
+	[97611] = "9/1/2024 21:1 [DEBUG] Player has entered instance",
 	[68571] = "29/5/2023 21:16 [DEBUG] Generating NPC Cache...",
 	[72667] = "11/6/2023 0:50 [DEBUG] InfoFrame does not need to be reset",
 	[76763] = "27/6/2023 22:37 [DEBUG] Version: 4.21.0",
@@ -52668,7 +53663,7 @@ AchievementTrackerDebug = {
 	[84955] = "26/7/2023 23:31 [DEBUG] Clearing Instance Variables if exists",
 	[89051] = "19/8/2023 15:0 [DEBUG] Instance Type: Dungeons",
 	[93147] = "3/1/2024 21:49 [DEBUG] ---Encounter Ended---",
-	[97243] = "6/1/2024 22:49 [DEBUG] InfoFrame does not need to be reset",
+	[48622] = "31/3/2023 20:39 [DEBUG] No Achievements to track for this instance",
 	[50670] = "14/4/2023 1:24 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4015: attempt to call method 'clearVariables' (a nil value).",
 	[52718] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54766] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52685,14 +53680,14 @@ AchievementTrackerDebug = {
 	[89052] = "19/8/2023 15:0 [DEBUG] Instance: 2519",
 	[93148] = "3/1/2024 21:49 [DEBUG] Locking Detection for 3 seconds",
 	[97244] = "6/1/2024 22:49 [DEBUG] Resetting PlayerRank",
-	[97651] = "9/1/2024 22:4 [DEBUG] Hiding Tracking UI",
-	[97653] = "9/1/2024 22:4 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
-	[97655] = "9/1/2024 22:4 [DEBUG] Player has left instance. Unregestering events and resetting variables",
-	[97657] = "9/1/2024 22:4 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
-	[97659] = "9/1/2024 22:4 [DEBUG] Clearing Instance Variables",
-	[97661] = "9/1/2024 22:4 [DEBUG] InfoFrame does not need to be reset",
-	[97663] = "9/1/2024 22:4 [DEBUG] InfoFrame was not active",
-	[97665] = "9/1/2024 22:17 [DEBUG] Player has entered instance",
+	[96793] = "5/1/2024 20:56 [DEBUG] Expansion: 8",
+	[96791] = "5/1/2024 20:56 [DEBUG] 1763",
+	[96789] = "5/1/2024 20:56 [DEBUG] InfoFrame was not active",
+	[97667] = "9/1/2024 22:17 [DEBUG] Offical Instance Name: 1763 _1763",
+	[97669] = "9/1/2024 22:17 [DEBUG] Instance Type: Dungeons",
+	[97671] = "9/1/2024 22:17 [DEBUG] DifficultyID: 23",
+	[97673] = "9/1/2024 22:17 [DEBUG] Instance Type: Dungeons",
+	[97675] = "9/1/2024 22:17 [DEBUG] Asking user whether they want to track this instance",
 	[68573] = "29/5/2023 21:16 [DEBUG] Registering CHAT_MSG_ADDON prefix",
 	[72669] = "11/6/2023 0:50 [DEBUG] InfoFrame was not active",
 	[76765] = "27/6/2023 22:37 [DEBUG] Generating NPC Cache...",
@@ -52700,7 +53695,7 @@ AchievementTrackerDebug = {
 	[84957] = "26/7/2023 23:31 [DEBUG] Clearing Instance Variables if exists",
 	[89053] = "19/8/2023 15:0 [DEBUG] Asking user whether they want to track this instance",
 	[93149] = "3/1/2024 21:49 [DEBUG] Clearing Instance Variables if exists",
-	[97245] = "6/1/2024 22:49 [DEBUG] InfoFrame was not active",
+	[48623] = "31/3/2023 20:39 [DEBUG] Expansion: 10",
 	[50671] = "14/4/2023 1:24 [DEBUG] Clearing Instance Variables if exists",
 	[52719] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54767] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52717,14 +53712,14 @@ AchievementTrackerDebug = {
 	[89054] = "19/8/2023 15:0 [DEBUG] Creating Tracking UI",
 	[93150] = "3/1/2024 21:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
 	[97246] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
-	[97715] = "9/1/2024 22:43 [DEBUG] Asking user whether they want to track this instance",
-	[97717] = "9/1/2024 22:43 [DEBUG] Expansion: 7",
-	[97719] = "9/1/2024 22:43 [DEBUG] 1466",
-	[97721] = "9/1/2024 22:43 [DEBUG] Expansion: 7",
-	[97723] = "9/1/2024 22:43 [DEBUG] Instance: 1466",
-	[97725] = "9/1/2024 22:43 [DEBUG] Expansion: 7",
-	[97727] = "9/1/2024 22:43 [DEBUG] Instance: 1466",
-	[97729] = "9/1/2024 22:43 [DEBUG] Expansion: 7",
+	[96775] = "5/1/2024 20:56 [DEBUG] InfoFrame Setup Complete",
+	[96773] = "5/1/2024 20:56 [DEBUG] Asking user whether they want to track this instance",
+	[96771] = "5/1/2024 20:56 [DEBUG] Instance Type: Dungeons",
+	[97731] = "9/1/2024 23:18 [DEBUG] Hiding Tracking UI",
+	[97733] = "9/1/2024 23:18 [DEBUG] Clearing Instance Variables",
+	[97735] = "9/1/2024 23:18 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
+	[97737] = "9/1/2024 23:18 [DEBUG] Clearing Instance Variables if exists",
+	[97739] = "9/1/2024 23:18 [DEBUG] Clearing Instance Variables if exists",
 	[68575] = "29/5/2023 21:16 [DEBUG] Player has entered instance",
 	[72671] = "11/6/2023 0:51 [DEBUG] Version: 4.21.0",
 	[76767] = "27/6/2023 22:37 [DEBUG] Registering CHAT_MSG_ADDON prefix",
@@ -52732,7 +53727,7 @@ AchievementTrackerDebug = {
 	[84959] = "26/7/2023 23:31 [DEBUG] Resetting Global Variables",
 	[89055] = "19/8/2023 15:0 [DEBUG] InfoFrame Setup Complete",
 	[93151] = "3/1/2024 21:49 [DEBUG] Clearing Instance Variables if exists",
-	[97247] = "0/0/1999 -1:-1 [DEBUG] Version: 4.34.0",
+	[48624] = "31/3/2023 21:6 [DEBUG] Clearing Instance Variables",
 	[50672] = "14/4/2023 1:24 [DEBUG] Clearing Instance Variables",
 	[52720] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54768] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52749,14 +53744,14 @@ AchievementTrackerDebug = {
 	[89056] = "19/8/2023 15:0 [DEBUG] Expansion: 10",
 	[93152] = "3/1/2024 21:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4038: attempt to call method 'ClearVariables' (a nil value).",
 	[97248] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
-	[97779] = "10/1/2024 0:20 [DEBUG] DifficultyID: 23",
-	[97781] = "10/1/2024 0:20 [DEBUG] Instance Type: Dungeons",
-	[97783] = "10/1/2024 0:20 [DEBUG] No Achievements to track for this instance",
-	[97785] = "10/1/2024 0:49 [DEBUG] 6",
-	[97787] = "10/1/2024 0:49 [DEBUG] Hiding Tracking UI",
-	[97789] = "10/1/2024 0:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
-	[97791] = "10/1/2024 0:49 [DEBUG] Player has left instance. Unregestering events and resetting variables",
-	[97793] = "10/1/2024 0:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
+	[96757] = "5/1/2024 20:55 [DEBUG] Version: 4.34.0",
+	[96755] = "5/1/2024 20:55 [DEBUG] Expansion: 8",
+	[96753] = "5/1/2024 20:55 [DEBUG] Asking user whether they want to track this instance",
+	[97795] = "10/1/2024 0:49 [DEBUG] Clearing Instance Variables",
+	[97797] = "10/1/2024 0:49 [DEBUG] InfoFrame does not need to be reset",
+	[97799] = "10/1/2024 0:49 [DEBUG] InfoFrame was not active",
+	[97801] = "0/0/1999 -1:-1 [DEBUG] Version: 4.34.0",
+	[97803] = "0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...",
 	[68577] = "29/5/2023 21:16 [DEBUG] Offical Instance Name: 2569 _2569",
 	[72673] = "11/6/2023 0:51 [DEBUG] Generating NPC Cache...",
 	[76769] = "27/6/2023 22:50 [DEBUG] Player has entered instance",
@@ -52764,7 +53759,7 @@ AchievementTrackerDebug = {
 	[84961] = "26/7/2023 23:31 [DEBUG] Resetting PlayerRank",
 	[89057] = "19/8/2023 15:41 [DEBUG] Hiding Tracking UI",
 	[93153] = "3/1/2024 21:49 [DEBUG] Resetting Global Variables",
-	[97249] = "0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...",
+	[48625] = "31/3/2023 21:6 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2003: attempt to call method 'IATInstanceCleanup' (a nil value).",
 	[50673] = "14/4/2023 1:24 [DEBUG] Resetting Global Variables",
 	[52721] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54769] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52781,14 +53776,14 @@ AchievementTrackerDebug = {
 	[89058] = "19/8/2023 15:41 [DEBUG] Clearing Instance Variables",
 	[93154] = "3/1/2024 21:49 [DEBUG] InfoFrame does not need to be reset",
 	[97250] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
-	[97843] = "10/1/2024 21:35 [DEBUG] 6",
-	[97845] = "10/1/2024 21:35 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
-	[97847] = "10/1/2024 21:35 [DEBUG] Player has left instance. Unregestering events and resetting variables",
-	[97849] = "10/1/2024 21:35 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
-	[97851] = "10/1/2024 21:35 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4038: attempt to call method 'ClearVariables' (a nil value).",
-	[97853] = "10/1/2024 21:35 [DEBUG] InfoFrame does not need to be reset",
-	[97855] = "10/1/2024 21:35 [DEBUG] InfoFrame was not active",
-	[97857] = "10/1/2024 21:49 [DEBUG] Version: 4.34.0",
+	[96739] = "5/1/2024 20:50 [DEBUG] Resetting Global Variables",
+	[96737] = "5/1/2024 20:50 [DEBUG] Clearing Instance Variables if exists",
+	[96735] = "5/1/2024 20:50 [DEBUG] Clearing Instance Variables if exists",
+	[97859] = "10/1/2024 21:49 [DEBUG] Generating NPC Cache...",
+	[97861] = "10/1/2024 21:49 [DEBUG] Registering CHAT_MSG_ADDON prefix",
+	[97863] = "10/1/2024 22:8 [DEBUG] Player has entered instance",
+	[97865] = "10/1/2024 22:8 [DEBUG] Offical Instance Name: 2579 _2579",
+	[97867] = "10/1/2024 22:8 [DEBUG] Instance Type: Dungeons",
 	[68579] = "29/5/2023 21:16 [DEBUG] Instance Type: Raids",
 	[72675] = "11/6/2023 0:51 [DEBUG] Registering CHAT_MSG_ADDON prefix",
 	[76771] = "27/6/2023 22:50 [DEBUG] Offical Instance Name: 2520 _2520",
@@ -52796,7 +53791,7 @@ AchievementTrackerDebug = {
 	[84963] = "26/7/2023 23:31 [DEBUG] ---IAT Runtime---",
 	[89059] = "19/8/2023 15:41 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
 	[93155] = "3/1/2024 21:49 [DEBUG] Left Combat",
-	[97251] = "0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix",
+	[48626] = "31/3/2023 21:6 [DEBUG] Cleaning up instance events for _2522",
 	[50674] = "14/4/2023 1:24 [DEBUG] InfoFrame does not need to be reset",
 	[52722] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54770] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52813,14 +53808,14 @@ AchievementTrackerDebug = {
 	[89060] = "19/8/2023 15:41 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
 	[93156] = "3/1/2024 21:49 [DEBUG] Entered Combat",
 	[97252] = "6/1/2024 22:56 [DEBUG] Showing Minimap Icon",
-	[97907] = "10/1/2024 22:9 [DEBUG] Generating NPC Cache...",
-	[97909] = "10/1/2024 22:9 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[97911] = "10/1/2024 22:12 [DEBUG] Player has entered instance",
-	[97913] = "10/1/2024 22:12 [DEBUG] Offical Instance Name: 2579 _2579",
-	[97915] = "10/1/2024 22:12 [DEBUG] Instance Type: Dungeons",
-	[97917] = "10/1/2024 22:12 [DEBUG] DifficultyID: 23",
-	[97919] = "10/1/2024 22:12 [DEBUG] Instance Type: Dungeons",
-	[97921] = "10/1/2024 22:12 [DEBUG] Asking user whether they want to track this instance",
+	[96721] = "5/1/2024 20:17 [DEBUG] Instance: 1279",
+	[96719] = "5/1/2024 20:17 [DEBUG] Expansion: 6",
+	[96717] = "5/1/2024 20:17 [DEBUG] 1279",
+	[97923] = "10/1/2024 22:12 [DEBUG] InfoFrame Setup Complete",
+	[97925] = "10/1/2024 22:20 [DEBUG] ---IAT Runtime---",
+	[97927] = "10/1/2024 22:20 [DEBUG] Attempting to load from local NPC Cache",
+	[97929] = "10/1/2024 22:20 [DEBUG] Enabling Addon",
+	[97931] = "10/1/2024 22:22 [DEBUG] Showing Minimap Icon",
 	[68581] = "29/5/2023 21:16 [DEBUG] DifficultyID: 14",
 	[72677] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
 	[76773] = "27/6/2023 22:50 [DEBUG] Instance Type: Dungeons",
@@ -52828,7 +53823,7 @@ AchievementTrackerDebug = {
 	[84965] = "26/7/2023 23:31 [DEBUG] Attempting to load from local NPC Cache",
 	[89061] = "19/8/2023 15:41 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[93157] = "3/1/2024 21:49 [DEBUG] Detection unlocked",
-	[97253] = "6/1/2024 23:19 [DEBUG] ---IAT Runtime---",
+	[48627] = "31/3/2023 21:6 [DEBUG] Player has left instance. Unregestering events and resetting variables",
 	[50675] = "14/4/2023 1:24 [DEBUG] Resetting PlayerRank",
 	[52723] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54771] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52845,14 +53840,14 @@ AchievementTrackerDebug = {
 	[89062] = "19/8/2023 15:41 [DEBUG] Clearing Instance Variables if exists",
 	[93158] = "3/1/2024 21:49 [DEBUG] Clearing Instance Variables if exists",
 	[97254] = "6/1/2024 23:19 [DEBUG] Version: 4.34.0",
-	[97971] = "0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...",
-	[97973] = "0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[97975] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
-	[97977] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
-	[97979] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
-	[97981] = "11/1/2024 10:38 [DEBUG] Showing Minimap Icon",
-	[97983] = "11/1/2024 10:39 [DEBUG] Version: 4.34.0",
-	[97985] = "11/1/2024 10:39 [DEBUG] Generating NPC Cache...",
+	[96703] = "5/1/2024 1:3 [DEBUG] Clearing Instance Variables if exists",
+	[96701] = "5/1/2024 1:3 [DEBUG] Clearing Instance Variables if exists",
+	[96699] = "5/1/2024 1:3 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2022: attempt to call method 'InstanceCleanup' (a nil value).",
+	[97987] = "11/1/2024 10:39 [DEBUG] Registering CHAT_MSG_ADDON prefix",
+	[97989] = "0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---",
+	[97991] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
+	[97993] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
+	[97995] = "11/1/2024 20:12 [DEBUG] Showing Minimap Icon",
 	[68583] = "29/5/2023 21:16 [DEBUG] Instance Type: Raids",
 	[72679] = "0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache",
 	[76775] = "27/6/2023 22:50 [DEBUG] DifficultyID: 23",
@@ -52860,7 +53855,7 @@ AchievementTrackerDebug = {
 	[84967] = "26/7/2023 23:31 [DEBUG] Enabling Addon",
 	[89063] = "19/8/2023 15:41 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
 	[93159] = "3/1/2024 21:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
-	[97255] = "6/1/2024 23:19 [DEBUG] Attempting to load from local NPC Cache",
+	[48628] = "31/3/2023 21:6 [DEBUG] Clearing Instance Variables if exists",
 	[50676] = "14/4/2023 1:24 [DEBUG] InfoFrame was not active",
 	[52724] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54772] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52877,14 +53872,14 @@ AchievementTrackerDebug = {
 	[89064] = "19/8/2023 15:41 [DEBUG] Clearing Instance Variables if exists",
 	[93160] = "3/1/2024 21:49 [DEBUG] Clearing Instance Variables if exists",
 	[97256] = "6/1/2024 23:19 [DEBUG] Generating NPC Cache...",
-	[98035] = "11/1/2024 20:49 [DEBUG] Instance Type: Raids",
-	[98037] = "11/1/2024 20:49 [DEBUG] DifficultyID: 14",
-	[98039] = "11/1/2024 20:49 [DEBUG] Instance Type: Raids",
-	[98041] = "11/1/2024 20:49 [DEBUG] Asking user whether they want to track this instance",
-	[98043] = "11/1/2024 20:49 [DEBUG] InfoFrame Setup Complete",
-	[98045] = "11/1/2024 20:49 [DEBUG] Hiding Tracking UI",
-	[98047] = "11/1/2024 20:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
-	[98049] = "11/1/2024 20:49 [DEBUG] Player has left instance. Unregestering events and resetting variables",
+	[96689] = "5/1/2024 0:32 [DEBUG] Expansion: 10",
+	[96687] = "5/1/2024 0:32 [DEBUG] Instance: 2579",
+	[96685] = "5/1/2024 0:32 [DEBUG] Expansion: 10",
+	[96683] = "5/1/2024 0:32 [DEBUG] 2579",
+	[96681] = "5/1/2024 0:32 [DEBUG] Expansion: 10",
+	[98051] = "11/1/2024 20:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
+	[98053] = "11/1/2024 20:49 [DEBUG] Clearing Instance Variables",
+	[98055] = "11/1/2024 20:49 [DEBUG] InfoFrame does not need to be reset",
 	[68585] = "29/5/2023 21:16 [DEBUG] Asking user whether they want to track this instance",
 	[72681] = "0/0/1999 -1:-1 [DEBUG] Enabling Addon",
 	[76777] = "27/6/2023 22:50 [DEBUG] Instance Type: Dungeons",
@@ -52892,7 +53887,7 @@ AchievementTrackerDebug = {
 	[84969] = "26/7/2023 23:32 [DEBUG] Showing Minimap Icon",
 	[89065] = "19/8/2023 15:41 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4038: attempt to call method 'ClearVariables' (a nil value).",
 	[93161] = "3/1/2024 21:49 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4038: attempt to call method 'ClearVariables' (a nil value).",
-	[97257] = "6/1/2024 23:19 [DEBUG] Enabling Addon",
+	[48629] = "31/3/2023 21:6 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4015: attempt to call method 'clearVariables' (a nil value).",
 	[50677] = "14/4/2023 1:24 [DEBUG] 6",
 	[52725] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54773] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52909,14 +53904,14 @@ AchievementTrackerDebug = {
 	[89066] = "19/8/2023 15:41 [DEBUG] Resetting Global Variables",
 	[93162] = "3/1/2024 21:49 [DEBUG] Resetting Global Variables",
 	[97258] = "6/1/2024 23:19 [DEBUG] Registering CHAT_MSG_ADDON prefix",
-	[98099] = "11/1/2024 21:7 [DEBUG] Showing Minimap Icon",
-	[98101] = "11/1/2024 21:7 [DEBUG] 2549",
-	[98103] = "11/1/2024 21:7 [DEBUG] Expansion: 10",
-	[98105] = "11/1/2024 21:7 [DEBUG] Instance: 2549",
-	[98107] = "11/1/2024 21:7 [DEBUG] Expansion: 10",
-	[98109] = "11/1/2024 21:7 [DEBUG] Instance: 2549",
-	[98111] = "11/1/2024 21:7 [DEBUG] Creating Tracking UI",
-	[98113] = "11/1/2024 21:7 [DEBUG] Expansion: 10",
+	[96665] = "5/1/2024 0:26 [DEBUG] InfoFrame does not need to be reset",
+	[96663] = "5/1/2024 0:26 [DEBUG] Clearing Instance Variables",
+	[98115] = "11/1/2024 21:23 [DEBUG] Clearing Instance Variables",
+	[98117] = "11/1/2024 21:23 [DEBUG] Cleaning up instance events for _2549",
+	[98119] = "11/1/2024 21:23 [DEBUG] Clearing Instance Variables if exists",
+	[98121] = "11/1/2024 21:23 [DEBUG] Clearing Instance Variables if exists",
+	[98123] = "11/1/2024 21:23 [DEBUG] Resetting Global Variables",
+	[98125] = "11/1/2024 21:23 [DEBUG] Resetting PlayerRank",
 	[68587] = "29/5/2023 21:16 [DEBUG] InfoFrame Setup Complete",
 	[72683] = "11/6/2023 23:21 [DEBUG] Showing Minimap Icon",
 	[76779] = "27/6/2023 22:50 [DEBUG] Asking user whether they want to track this instance",
@@ -52924,7 +53919,7 @@ AchievementTrackerDebug = {
 	[84971] = "26/7/2023 23:37 [DEBUG] 1458",
 	[89067] = "19/8/2023 15:41 [DEBUG] InfoFrame does not need to be reset",
 	[93163] = "3/1/2024 21:49 [DEBUG] InfoFrame does not need to be reset",
-	[97259] = "6/1/2024 23:19 [DEBUG] Showing Minimap Icon",
+	[48630] = "31/3/2023 21:6 [DEBUG] Clearing Instance Variables if exists",
 	[50678] = "14/4/2023 1:24 [DEBUG] Hiding Tracking UI",
 	[52726] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54774] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52941,14 +53936,14 @@ AchievementTrackerDebug = {
 	[89068] = "19/8/2023 15:41 [DEBUG] Resetting PlayerRank",
 	[93164] = "3/1/2024 21:49 [DEBUG] Left Combat",
 	[97260] = "6/1/2024 23:22 [DEBUG] ---IAT Runtime---",
-	[98163] = "11/1/2024 23:29 [DEBUG] Clearing Instance Variables",
-	[98165] = "11/1/2024 23:29 [DEBUG] InfoFrame does not need to be reset",
-	[98167] = "11/1/2024 23:29 [DEBUG] InfoFrame was not active",
-	[98169] = "11/1/2024 23:30 [DEBUG] 603",
-	[98171] = "11/1/2024 23:30 [DEBUG] Expansion: 3",
-	[98173] = "11/1/2024 23:30 [DEBUG] Instance: 603",
-	[98175] = "11/1/2024 23:30 [DEBUG] Expansion: 3",
-	[98177] = "11/1/2024 23:30 [DEBUG] Instance: 603",
+	[96647] = "4/1/2024 23:44 [DEBUG] Player has entered instance",
+	[96645] = "4/1/2024 23:44 [DEBUG] Registering CHAT_MSG_ADDON prefix",
+	[98179] = "11/1/2024 23:30 [DEBUG] Displaying Tracking UI since it was already created",
+	[98181] = "11/1/2024 23:39 [DEBUG] Hiding Tracking UI",
+	[98183] = "11/1/2024 23:39 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
+	[98185] = "11/1/2024 23:39 [DEBUG] Player has left instance. Unregestering events and resetting variables",
+	[98187] = "11/1/2024 23:39 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
+	[98189] = "11/1/2024 23:39 [DEBUG] Clearing Instance Variables",
 	[68589] = "29/5/2023 21:17 [DEBUG] ---IAT Runtime---",
 	[72685] = "11/6/2023 23:27 [DEBUG] Version: 4.21.0",
 	[76781] = "27/6/2023 22:50 [DEBUG] InfoFrame Setup Complete",
@@ -52956,7 +53951,7 @@ AchievementTrackerDebug = {
 	[84973] = "26/7/2023 23:37 [DEBUG] Expansion: 7",
 	[89069] = "19/8/2023 15:41 [DEBUG] InfoFrame was not active",
 	[93165] = "3/1/2024 21:50 [DEBUG] Calling Detect Boss 2: 206214",
-	[97261] = "6/1/2024 23:22 [DEBUG] Version: 4.34.0",
+	[48631] = "31/3/2023 21:6 [DEBUG] Clearing Instance Variables",
 	[50679] = "14/4/2023 1:25 [DEBUG] Hiding Tracking UI",
 	[52727] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54775] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -52973,14 +53968,14 @@ AchievementTrackerDebug = {
 	[89070] = "19/8/2023 15:42 [DEBUG] Hiding Tracking UI",
 	[93166] = "3/1/2024 21:50 [DEBUG] Found the following boss ID: 206214",
 	[97262] = "6/1/2024 23:22 [DEBUG] Attempting to load from local NPC Cache",
-	[98227] = "14/1/2024 22:54 [DEBUG] Instance Type: Dungeons",
-	[98229] = "14/1/2024 22:54 [DEBUG] DifficultyID: 23",
-	[98231] = "14/1/2024 22:54 [DEBUG] Instance Type: Dungeons",
-	[98233] = "14/1/2024 22:54 [DEBUG] No Achievements to track for this instance",
-	[98235] = "14/1/2024 23:26 [DEBUG] 6",
-	[98237] = "14/1/2024 23:26 [DEBUG] Hiding Tracking UI",
-	[98239] = "14/1/2024 23:26 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:2014: attempt to call method 'IATInstanceCleanup' (a nil value).",
-	[98241] = "14/1/2024 23:26 [DEBUG] Player has left instance. Unregestering events and resetting variables",
+	[96629] = "4/1/2024 23:43 [DEBUG] Enabling Addon",
+	[96627] = "4/1/2024 23:43 [DEBUG] Attempting to load from local NPC Cache",
+	[98243] = "14/1/2024 23:26 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4030: attempt to call method 'clearVariables' (a nil value).",
+	[98245] = "14/1/2024 23:26 [DEBUG] Function failed, error text: ...nstanceAchievementTracker/AchievementTrackerCore.lua:4038: attempt to call method 'ClearVariables' (a nil value).",
+	[98247] = "14/1/2024 23:26 [DEBUG] InfoFrame does not need to be reset",
+	[98249] = "14/1/2024 23:26 [DEBUG] InfoFrame was not active",
+	[98251] = "0/0/1999 -1:-1 [DEBUG] Version: 4.34.0",
+	[98253] = "0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...",
 	[68591] = "29/5/2023 21:17 [DEBUG] Attempting to load from local NPC Cache",
 	[72687] = "11/6/2023 23:27 [DEBUG] Generating NPC Cache...",
 	[76783] = "27/6/2023 22:54 [DEBUG] ---IAT Runtime---",
@@ -52988,7 +53983,7 @@ AchievementTrackerDebug = {
 	[84975] = "26/7/2023 23:37 [DEBUG] Instance: 1458",
 	[89071] = "19/8/2023 15:42 [DEBUG] ---IAT Runtime---",
 	[93167] = "3/1/2024 21:50 [DEBUG] Entered Combat",
-	[97263] = "6/1/2024 23:22 [DEBUG] Generating NPC Cache...",
+	[48632] = "31/3/2023 21:6 [DEBUG] Resetting Global Variables",
 	[50680] = "14/4/2023 1:25 [DEBUG] Player has entered instance",
 	[52728] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
 	[54776] = "14/4/2023 21:48 [DEBUG] Group Size set to: 21",
@@ -53005,14 +54000,14 @@ AchievementTrackerDebug = {
 	[89072] = "19/8/2023 15:42 [DEBUG] Version: 4.24.0",
 	[93168] = "3/1/2024 21:50 [DEBUG] Clearing Instance Variables if exists",
 	[97264] = "6/1/2024 23:22 [DEBUG] Enabling Addon",
-	[98291] = "15/1/2024 20:26 [DEBUG] Player has entered instance",
-	[98293] = "15/1/2024 20:26 [DEBUG] Offical Instance Name: 2579 _2579",
-	[98295] = "15/1/2024 20:26 [DEBUG] Instance Type: Dungeons",
-	[98297] = "15/1/2024 20:26 [DEBUG] DifficultyID: 23",
-	[98299] = "15/1/2024 20:26 [DEBUG] Instance Type: Dungeons",
-	[98301] = "15/1/2024 20:26 [DEBUG] Asking user whether they want to track this instance",
-	[98303] = "15/1/2024 20:26 [DEBUG] InfoFrame Setup Complete",
-	[98305] = "15/1/2024 21:3 [DEBUG] Hiding Tracking UI",
+	[96611] = "0/0/1999 -1:-1 [DEBUG] Version: 4.34.0",
+	[96609] = "4/1/2024 23:12 [DEBUG] Expansion: 6",
+	[98079] = "11/1/2024 20:56 [DEBUG] Player has entered instance",
+	[97567] = "9/1/2024 0:21 [DEBUG] Creating Tracking UI",
+	[98077] = "11/1/2024 20:55 [DEBUG] Registering CHAT_MSG_ADDON prefix",
+	[97565] = "9/1/2024 0:21 [DEBUG] Instance: 1501",
+	[98071] = "11/1/2024 20:50 [DEBUG] Expansion: 10",
+	[97559] = "9/1/2024 0:21 [DEBUG] Expansion: 7",
 }
 AchievementTrackerNPCCache = {
 	[75829] = "納里旭",
@@ -53319,40 +54314,40 @@ AchievementTrackerNPCCache = {
 	[29932] = "『兇猛』埃克",
 	[146107] = "活體爆彈",
 	[121071] = "瞎眼長老",
-	[201320] = "拉修克",
-	[205630] = "迷路的大傢伙",
-	[205437] = "嗆辣岩漿蝸牛",
-	[145903] = "暗鑄十字軍",
-	[205665] = "攻城猛瑪象",
+	[33768] = "礫石",
+	[201934] = "暗焰融合體",
+	[200912] = "娜翠絲",
+	[149995] = "高階祭司艾吉兒",
+	[157161] = "沙塵漩渦",
 	[98949] = "『憎恨者』惡擊",
-	[192104] = "熔岩蛞蝓",
+	[84152] = "樹人",
 	[166313] = "科爾蘇加德",
 	[201340] = "洞穴礫石",
-	[118924] = "靈魂引擎",
+	[4218] = "德納薩里安",
 	[98246] = "復活的戰士",
 	[137158] = "被禁錮的閃電元素",
 	[209333] = "瘤根",
-	[206689] = "『殘暴者』伊吉拉",
+	[108600] = "月光之女",
 	[32915] = "亮葉長者",
-	[161375] = "潛力樣本",
+	[51405] = "憤怒之土",
 	[174626] = "鬼祟的僕從",
-	[208459] = "熾炎樹人",
-	[32927] = "符文大師墨吉姆",
+	[214236] = "德納薩里安",
+	[181579] = "利胡敏",
 	[155243] = "食腐蟹",
 	[56636] = "指揮官黎莫克",
-	[214082] = "斯莫德隆",
+	[53695] = "怒面",
 	[146750] = "恩若司",
 	[56732] = "劉‧焰心",
-	[53695] = "怒面",
-	[131853] = "神獵手葛拉斯",
-	[207800] = "卡多雷之魂",
-	[205627] = "薩克利擲箭手",
+	[80728] = "蛆蟲",
+	[155144] = "深淵指揮官希瓦菈",
+	[175616] = "佐菲克斯",
+	[196845] = "冰凍巨靈",
 	[146495] = "『可怖者』法蘇爾",
 	[214211] = "伊迪瑞娜",
 	[1043] = "迷路的幼龍",
 	[59080] = "黑暗院長加丁",
 	[110907] = "星占師伊崔斯",
-	[208478] = "弗柯羅斯",
+	[155245] = "深海潛伏者",
 	[142148] = "戰母拉卡莉",
 	[165805] = "凱爾薩斯之影",
 	[214241] = "德蒂希斯",
@@ -53360,115 +54355,115 @@ AchievementTrackerNPCCache = {
 	[94923] = "克塔羅斯‧黑羽堡主",
 	[214242] = "菲爾丹",
 	[72545] = "『會計長』莫克瓦",
-	[33343] = "XS-013廢料機器人",
-	[197774] = "劇毒蛙母",
-	[214240] = "邁里恩",
+	[88938] = "拉格納羅斯",
+	[40634] = "納茲賈爾風暴女巫",
+	[155056] = "機器廢棄物",
 	[209490] = "小呱啦中士",
 	[115831] = "法力吞噬者",
 	[189893] = "灌能幼龍",
-	[107699] = "法刃艾露莉亞",
-	[77149] = "老鼠",
 	[143045] = "濱岸螃蟹",
+	[77149] = "老鼠",
+	[81305] = "『血肉撕裂者』諾加爾",
 	[214235] = "拉瑞亞",
 	[144324] = "勾拉圖爾",
 	[138314] = "派奇",
-	[74570] = "禍滅",
-	[96223] = "加摩爾",
+	[166246] = "巴頓",
+	[56839] = "安杜因‧烏瑞恩",
 	[60913] = "能量電荷",
 	[53696] = "范達爾之焰",
 	[152253] = "泰拉古魯",
 	[137036] = "覺醒的虛無",
 	[59930] = "強化的殭屍",
 	[127503] = "監督者寇格斯",
-	[102169] = "黑色膽汁",
+	[171474] = "手指點心",
 	[43658] = "狂亂的鱷魚",
 	[67879] = "指揮官泰弗瑞克",
-	[156575] = "黑暗審判官克珊內絲",
+	[58605] = "血色執法者",
 	[33524] = "薩倫聚惡體",
 	[98761] = "靈魂碎片",
 	[202637] = "茲坎",
-	[153202] = "活塞碎擊者",
+	[83775] = "歐格隆苦力",
 	[160271] = "禁忌化身",
-	[155760] = "坦克爆破者MK2",
-	[45992] = "瓦莉歐娜",
 	[150081] = "智者瑪利",
-	[111864] = "黏答答",
+	[45992] = "瓦莉歐娜",
+	[131667] = "縛魂巨怪",
+	[69181] = "羽冠龍",
 	[60410] = "艾拉岡",
-	[158190] = "麥迪文",
-	[82457] = "耐祖奧",
+	[67231] = "帝王的試煉",
+	[120564] = "泰坦異常體",
 	[82074] = "原始真鐵礦石",
 	[156987] = "凱厄將軍",
-	[78430] = "寇達娜‧魔歌",
+	[214020] = "現形的帝王",
 	[52418] = "失落的加茲蘭卡後代",
 	[164532] = "『奪魂者』哈卡",
 	[197396] = "奇雞",
 	[152512] = "暴風怨靈",
-	[214020] = "現形的帝王",
-	[144246] = "K.U.-J.0.機械犬",
+	[78430] = "寇達娜‧魔歌",
+	[155645] = "行動電擊器X2型",
 	[53501] = "燃體隕石",
 	[78736] = "札伊拉酋長",
-	[72889] = "過熱的爬行者地雷",
+	[162102] = "總監督者貝莉亞",
 	[165556] = "迅捷化身",
 	[154431] = "卡茲格羅斯",
-	[61442] = "『蠻士』奎",
+	[62465] = "烏克船長",
 	[178783] = "『紅衣』莫瑞亞茲",
-	[105301] = "加快的時光元素",
-	[141805] = "變形機械打手3000型",
+	[169554] = "廢棄的靈魄容器",
+	[91938] = "作祟之魂",
 	[68904] = "蘇茵",
-	[147896] = "贊達拉十字軍",
+	[104217] = "塔莉仙‧火冠",
 	[59100] = "過期的實驗體",
 	[165512] = "拉克利的繭",
 	[53258] = "萊爾利斯領主",
-	[162933] = "意念收割者",
+	[198038] = "洪荒化身",
 	[95886] = "艾胥貢",
 	[102088] = "暗水部屬",
-	[198038] = "洪荒化身",
+	[45993] = "瑟拉里恩",
 	[104262] = "燃燒餘燼",
 	[64471] = "『人間赤煙』添武",
 	[26641] = "德拉克瑞撕腸者",
 	[74787] = "奴隸看守者庫拉多",
-	[114462] = "館長",
+	[61709] = "憤怒之子",
 	[154817] = "機械岡國王",
-	[138705] = "美味鸚鵡糧",
 	[68905] = "盧凜",
+	[138705] = "美味鸚鵡糧",
 	[77153] = "鋼鐵之星",
-	[98696] = "伊麗珊娜‧黑羽",
-	[114895] = "夜禍",
-	[185439] = "腐朽的創先者文物",
+	[53694] = "裂軀",
+	[69820] = "憎惡魔像之子",
+	[166266] = "備用零件",
 	[77814] = "泰朗戈爾",
-	[185409] = "菲拉卡",
+	[202800] = "樣本櫃",
 	[43404] = "瑪洛里亞克",
-	[102423] = "一杯蜜酒",
+	[147430] = "兔妖",
 	[52675] = "貝絲堤拉克",
-	[41440] = "變異怪",
-	[44530] = "納茲賈爾榮譽守衛",
-	[61431] = "葛林托克斥候",
-	[185427] = "不穩定的創先者文物",
-	[59779] = "雷爪守衛",
-	[29023] = "賈納雷",
+	[76283] = "毒惡防衛者",
+	[104341] = "折磨",
+	[162317] = "肉排",
+	[113971] = "貞潔聖女",
+	[72436] = "伊莫爾西斯",
+	[64556] = "烏克船長",
 	[67883] = "玫瑰‧愛瑟羅德",
 	[59822] = "風暴烈酒姑媽",
 	[52442] = "叢翼蜂后",
-	[56843] = "博學行者石步",
-	[64017] = "德帕‧德帕",
+	[33552] = "尤格薩倫",
+	[181546] = "新生原型",
 	[61243] = "蓋肯",
 	[95888] = "寇達娜‧魔歌",
-	[181546] = "新生原型",
-	[172386] = "靈魄導體",
-	[123531] = "泰夏拉克化身",
+	[33686] = "諾甘農博識者",
+	[110758] = "高階審判官懷特邁恩",
+	[185423] = "新型掠奪自主機",
 	[73638] = "谷之淚",
-	[101823] = "蘑菇商人",
+	[129440] = "哈蘭‧史威特",
 	[39984] = "惡性穴居怪",
 	[67966] = "迴旋龍龜",
-	[108996] = "復仇魂體",
+	[165408] = "哈奇厄斯",
 	[91349] = "瑪諾洛斯",
 	[97551] = "幽光",
-	[153415] = "暴力之煞",
-	[193335] = "龍隊指揮官沙卡瑞斯",
-	[185128] = "紀念碑",
+	[154741] = "噴灑機器人",
+	[68599] = "費拉‧珍珠",
+	[108996] = "復仇魂體",
 	[135129] = "尤格薩倫的幻影",
 	[70250] = "冰凍蛇頭",
-	[90018] = "獄火大砲",
+	[173770] = "熊熊燃燒的火盆",
 	[135513] = "遠古典籍",
 	[177584] = "燃燒的示刑台",
 	[71529] = "『嗜血巨龍』梭克",
@@ -53478,258 +54473,258 @@ AchievementTrackerNPCCache = {
 	[90199] = "血魔",
 	[178095] = "獄主之眼",
 	[115902] = "剃顎奔潮者",
-	[33202] = "上古水靈",
-	[39665] = "羅姆歐格‧裂骨者",
+	[164218] = "宮務大臣",
+	[164967] = "伊克思博士",
 	[138967] = "祖爾",
 	[185130] = "紀念碑",
-	[169594] = "裝滿的靈魄容器",
+	[27654] = "『審問者』德拉高斯",
 	[70251] = "劇毒蛇頭",
 	[105097] = "螢光蟲",
-	[166644] = "工藝師希莫斯",
+	[55419] = "瓦羅森隊長",
 	[71466] = "鋼鐵破滅邪神",
-	[197298] = "初生元龍",
-	[170851] = "爆燃瘟疫彈",
+	[173769] = "悶燒的火盆",
+	[175474] = "好鬥的服務生",
 	[185131] = "紀念碑",
 	[52438] = "莫爾塔克斯",
-	[67779] = "成熟的薩烏洛克的蛋",
+	[33134] = "薩拉",
 	[52414] = "托通",
 	[53494] = "巴勒羅克",
-	[139737] = "斯陀頌恩領主",
+	[4155] = "伊迪瑞娜",
 	[99663] = "煩躁的靈魂",
 	[87451] = "『血肉撕裂者』諾加爾",
-	[61884] = "『武器大師』辛",
-	[71603] = "煞之軟泥",
+	[72490] = "監督者摩卡",
+	[173768] = "熾熱的火盆",
 	[70252] = "秘法蛇頭",
-	[4155] = "伊迪瑞娜",
+	[144596] = "戰利品寶箱",
 	[4159] = "邁里恩",
-	[94996] = "長者碎魂",
+	[139737] = "斯陀頌恩領主",
 	[4167] = "德蒂希斯",
 	[185005] = "安杜因的悲痛",
-	[201261] = "『地獄鍛造者』卡扎拉",
-	[78948] = "泰克塔",
+	[33244] = "彌米倫",
 	[56897] = "雷剛",
+	[78948] = "泰克塔",
 	[34826] = "痛苦仕女",
-	[49864] = "暮光惡魔",
 	[180658] = "聚焦稜鏡",
+	[71979] = "柯爾克隆戰爭使者",
 	[99664] = "永不安息的靈魂",
-	[34035] = "野性防衛者",
-	[155595] = "神聖齒輪",
+	[180690] = "『追尋者』瓦薩仁",
 	[61213] = "柯克席克徵召兵",
-	[4223] = "菲爾丹",
+	[155595] = "神聖齒輪",
+	[50376] = "憤怒之土",
 	[64346] = "寄生煞",
 	[152910] = "艾薩拉女王",
-	[173767] = "餘火未盡的火盆",
-	[142949] = "塞拉摩市民",
+	[38135] = "畸形的狂熱者",
+	[205352] = "紐特羅",
 	[135903] = "深淵化身",
-	[154074] = "虛無之球",
+	[136683] = "貿易親王加里維克斯",
 	[68655] = "畢勾沃斯先生",
 	[32857] = "風暴召喚者布倫迪爾",
-	[32273] = "恆龍墮落者",
-	[205340] = "過期的實驗品",
-	[33113] = "烈焰戰輪",
+	[111941] = "霍迪爾",
 	[52422] = "移石者考勒瑪",
+	[172093] = "澎湃的肉塊",
+	[205340] = "過期的實驗品",
 	[15687] = "摩洛斯",
 	[73195] = "柯爾克隆獄卒",
 	[136160] = "神王達薩",
-	[172093] = "澎湃的肉塊",
-	[205341] = "一疊卷軸",
+	[33113] = "烈焰戰輪",
+	[33241] = "芙蕾雅",
 	[68336] = "卡爾洛斯‧地獄吼",
 	[138718] = "鯊鯊的空盤子",
-	[33241] = "芙蕾雅",
-	[55308] = "督軍松奧茲",
+	[205341] = "一疊卷軸",
+	[29305] = "慕拉比",
 	[67569] = "長者埃德勒",
-	[77927] = "巨獸之子",
 	[172094] = "分裂點心",
+	[77927] = "巨獸之子",
 	[56930] = "柯克席克喚蟲者",
-	[150995] = "彌米倫",
-	[138719] = "餵食鯊鯊的飯飯",
 	[205342] = "永不燃燒的黯黑蠟燭",
-	[36330] = "高佛雷領主",
+	[138719] = "餵食鯊鯊的飯飯",
+	[103758] = "星占師伊崔斯",
+	[56637] = "歐克‧歐克",
 	[55312] = "未眠者尤沙吉",
-	[179392] = "金塔莎",
+	[56165] = "水晶導體",
 	[164934] = "法力風暴",
-	[23574] = "阿奇爾森",
-	[74475] = "瑪格默拉圖斯",
 	[126712] = "訓練假人",
+	[74475] = "瑪格默拉圖斯",
+	[76585] = "狂野的怒翼",
 	[205343] = "「可攜式」黯黑鐵砧",
 	[26627] = "水晶處理者",
 	[93145] = "長者之魂",
 	[39987] = "成長的暮光狂熱者",
 	[116802] = "正常大小的老鼠",
 	[108682] = "琥珀龍",
-	[63091] = "翠玉麒麟獸",
+	[52440] = "古布",
 	[86250] = "凱拉克",
-	[28514] = "納羅拉克",
-	[52936] = "火焰德魯伊",
-	[111882] = "阿亮",
+	[171456] = "破碎毀滅者",
+	[146016] = "李洛伊‧詹金斯",
+	[105744] = "火速小子",
 	[172992] = "巨大的多頭樹妖",
 	[94808] = "地獄火守護者",
-	[81834] = "無價的隨身用具",
+	[33136] = "尤格薩倫守護者",
 	[175422] = "聚合靈魄",
-	[119938] = "再活化的聖殿騎士",
+	[205989] = "被遺忘的樣本櫃",
 	[153172] = "被偷的廢料機器人",
 	[109450] = "薩倫煙霧",
 	[67571] = "米歐浩斯‧曼納斯頓",
 	[164363] = "不死石魔",
-	[71983] = "先知狼騎兵",
+	[78121] = "戈利安戰爭法師",
 	[115844] = "苟洛斯",
-	[141792] = "莉茲‧惡鍋",
-	[36535] = "腐化的殘缺之魂",
+	[105742] = "渦霸",
+	[71983] = "先知狼騎兵",
 	[86918] = "尚未充能的傀儡",
-	[69086] = "烈焰南瓜頭",
-	[72496] = "監督者薩蘇恩",
+	[172995] = "多頭樹妖種子",
+	[69427] = "黑暗憎惡魔像",
 	[122366] = "瓦里瑪薩斯",
-	[73033] = "腐化的劈顱者",
+	[104528] = "大植物學家泰亞恩",
 	[80551] = "泰克塔裂石怪",
 	[153941] = "澤亞洛伊",
 	[184759] = "耗竭的自主機",
-	[189620] = "皮普",
-	[36855] = "亡語女士",
-	[61567] = "大臣金巴克",
-	[172995] = "多頭樹妖種子",
-	[104528] = "大植物學家泰亞恩",
-	[105743] = "咻啪",
-	[129208] = "恐怖船長洛克伍德",
-	[71984] = "攻城工程師",
-	[86928] = "強化傀儡",
-	[122135] = "沙圖格",
-	[165066] = "獵人亞提默",
-	[52392] = "古拉巴什大廚師",
-	[95833] = "海爾珈",
 	[156884] = "生命精華",
-	[100436] = "伊麗珊娜‧黑羽",
-	[69427] = "黑暗憎惡魔像",
+	[36855] = "亡語女士",
+	[129208] = "恐怖船長洛克伍德",
 	[174018] = "爆燃瘟疫彈",
+	[100436] = "伊麗珊娜‧黑羽",
+	[52392] = "古拉巴什大廚師",
+	[61567] = "大臣金巴克",
+	[105743] = "咻啪",
+	[165066] = "獵人亞提默",
+	[122135] = "沙圖格",
+	[86928] = "強化傀儡",
+	[71984] = "攻城工程師",
+	[95833] = "海爾珈",
+	[189620] = "皮普",
+	[73033] = "腐化的劈顱者",
+	[72496] = "監督者薩蘇恩",
+	[69086] = "烈焰南瓜頭",
 	[164557] = "哈奇厄斯裂片",
-	[105742] = "渦霸",
-	[78121] = "戈利安戰爭法師",
+	[36535] = "腐化的殘缺之魂",
+	[141792] = "莉茲‧惡鍋",
 	[64061] = "魔古山看守者",
-	[205989] = "被遺忘的樣本櫃",
-	[33136] = "尤格薩倫守護者",
-	[105744] = "火速小子",
-	[146016] = "李洛伊‧詹金斯",
-	[171456] = "破碎毀滅者",
+	[119938] = "再活化的聖殿騎士",
+	[81834] = "無價的隨身用具",
+	[111882] = "阿亮",
+	[52936] = "火焰德魯伊",
+	[28514] = "納羅拉克",
 	[115143] = "猛攫鞭笞者",
-	[52440] = "古布",
-	[76585] = "狂野的怒翼",
-	[56165] = "水晶導體",
+	[63091] = "翠玉麒麟獸",
+	[23574] = "阿奇爾森",
+	[179392] = "金塔莎",
 	[99031] = "神器",
-	[56637] = "歐克‧歐克",
-	[103758] = "星占師伊崔斯",
+	[36330] = "高佛雷領主",
+	[150995] = "彌米倫",
 	[26628] = "德拉克瑞鐮爪龍",
-	[29305] = "慕拉比",
+	[55308] = "督軍松奧茲",
 	[55334] = "壞滅虛無",
 	[59458] = "小跳跳兔妖",
 	[110732] = "瘋狂駭物",
-	[111941] = "霍迪爾",
-	[136683] = "貿易親王加里維克斯",
-	[205352] = "紐特羅",
-	[38135] = "畸形的狂熱者",
-	[50376] = "憤怒之土",
+	[32273] = "恆龍墮落者",
+	[154074] = "虛無之球",
+	[142949] = "塞拉摩市民",
+	[173767] = "餘火未盡的火盆",
+	[4223] = "菲爾丹",
 	[73265] = "腐化的融合體",
-	[180690] = "『追尋者』瓦薩仁",
-	[71979] = "柯爾克隆戰爭使者",
+	[34035] = "野性防衛者",
+	[49864] = "暮光惡魔",
 	[129722] = "泰坦能量微粒",
 	[58787] = "大貝紗",
-	[33244] = "彌米倫",
-	[173768] = "熾熱的火盆",
-	[72490] = "監督者摩卡",
-	[144596] = "戰利品寶箱",
+	[201261] = "『地獄鍛造者』卡扎拉",
+	[71603] = "煞之軟泥",
+	[61884] = "『武器大師』辛",
+	[94996] = "長者碎魂",
 	[201773] = "永恆燃焰",
 	[165073] = "荒棄俘虜",
-	[33134] = "薩拉",
+	[67779] = "成熟的薩烏洛克的蛋",
 	[141800] = "布魯提克‧黑砧",
-	[175474] = "好鬥的服務生",
-	[173769] = "悶燒的火盆",
-	[55419] = "瓦羅森隊長",
-	[27654] = "『審問者』德拉高斯",
-	[164967] = "伊克思博士",
-	[164218] = "宮務大臣",
+	[170851] = "爆燃瘟疫彈",
+	[197298] = "初生元龍",
+	[166644] = "工藝師希莫斯",
+	[169594] = "裝滿的靈魄容器",
+	[39665] = "羅姆歐格‧裂骨者",
+	[33202] = "上古水靈",
 	[158041] = "『腐化者』恩若司",
 	[176583] = "能量核心",
 	[105299] = "遲緩的時光元素",
-	[173770] = "熊熊燃燒的火盆",
-	[68599] = "費拉‧珍珠",
-	[154741] = "噴灑機器人",
-	[165408] = "哈奇厄斯",
+	[90018] = "獄火大砲",
+	[193335] = "龍隊指揮官沙卡瑞斯",
+	[185128] = "紀念碑",
+	[153415] = "暴力之煞",
 	[50284] = "暮光狂熱者",
-	[129440] = "哈蘭‧史威特",
-	[185423] = "新型掠奪自主機",
-	[110758] = "高階審判官懷特邁恩",
-	[33686] = "諾甘農博識者",
-	[33552] = "尤格薩倫",
+	[101823] = "蘑菇商人",
+	[123531] = "泰夏拉克化身",
+	[172386] = "靈魄導體",
+	[64017] = "德帕‧德帕",
+	[56843] = "博學行者石步",
 	[84520] = "鬥場看守者賈諾克",
 	[49485] = "變異怪",
-	[64556] = "烏克船長",
-	[72436] = "伊莫爾西斯",
-	[113971] = "貞潔聖女",
-	[162317] = "肉排",
-	[104341] = "折磨",
-	[76283] = "毒惡防衛者",
-	[147430] = "兔妖",
-	[202800] = "樣本櫃",
+	[29023] = "賈納雷",
+	[59779] = "雷爪守衛",
+	[185427] = "不穩定的創先者文物",
+	[61431] = "葛林托克斥候",
+	[44530] = "納茲賈爾榮譽守衛",
+	[41440] = "變異怪",
+	[102423] = "一杯蜜酒",
+	[185409] = "菲拉卡",
 	[131318] = "黎克沙長老",
-	[166266] = "備用零件",
-	[69820] = "憎惡魔像之子",
-	[53694] = "裂軀",
+	[185439] = "腐朽的創先者文物",
+	[114895] = "夜禍",
+	[98696] = "伊麗珊娜‧黑羽",
 	[76209] = "暗影之靈",
-	[61709] = "憤怒之子",
-	[45993] = "瑟拉里恩",
+	[114462] = "館長",
+	[162933] = "意念收割者",
 	[101976] = "米歐菲瑟‧曼納斯頓",
 	[80557] = "泰克塔小微石怪",
-	[104217] = "塔莉仙‧火冠",
-	[91938] = "作祟之魂",
-	[169554] = "廢棄的靈魄容器",
+	[147896] = "贊達拉十字軍",
+	[141805] = "變形機械打手3000型",
+	[105301] = "加快的時光元素",
 	[64479] = "破城車",
-	[62465] = "烏克船長",
-	[162102] = "總監督者貝莉亞",
+	[61442] = "『蠻士』奎",
+	[72889] = "過熱的爬行者地雷",
 	[160859] = "回憶魅靈",
 	[38009] = "再活化的狂熱者",
-	[155645] = "行動電擊器X2型",
+	[144246] = "K.U.-J.0.機械犬",
 	[145898] = "受庇佑的侍徒",
-	[120564] = "泰坦異常體",
-	[67231] = "帝王的試煉",
-	[69181] = "羽冠龍",
-	[131667] = "縛魂巨怪",
+	[82457] = "耐祖奧",
+	[158190] = "麥迪文",
+	[111864] = "黏答答",
+	[155760] = "坦克爆破者MK2",
 	[33118] = "『火爐之主』伊格尼司",
-	[83775] = "歐格隆苦力",
-	[58605] = "血色執法者",
-	[171474] = "手指點心",
+	[153202] = "活塞碎擊者",
+	[156575] = "黑暗審判官克珊內絲",
+	[102169] = "黑色膽汁",
 	[178763] = "巴頓",
 	[148201] = "爬行者地雷",
-	[56839] = "安杜因‧烏瑞恩",
-	[166246] = "巴頓",
+	[96223] = "加摩爾",
+	[74570] = "禍滅",
 	[151654] = "嘟斯‧機緩",
-	[81305] = "『血肉撕裂者』諾加爾",
+	[107699] = "法刃艾露莉亞",
 	[137588] = "奄奄一息的比目魚",
 	[124164] = "葛剛尼斯的苦難化身",
-	[155056] = "機器廢棄物",
-	[40634] = "納茲賈爾風暴女巫",
-	[88938] = "拉格納羅斯",
+	[214240] = "邁里恩",
+	[197774] = "劇毒蛙母",
+	[33343] = "XS-013廢料機器人",
 	[99868] = "芬里爾",
 	[45906] = "駱駝",
-	[155245] = "深海潛伏者",
+	[208478] = "弗柯羅斯",
 	[65407] = "影潘學徒",
 	[138740] = "菇本武藏",
 	[127809] = "歸源模組",
-	[196845] = "冰凍巨靈",
-	[175616] = "佐菲克斯",
-	[155144] = "深淵指揮官希瓦菈",
-	[80728] = "蛆蟲",
+	[205627] = "薩克利擲箭手",
+	[207800] = "卡多雷之魂",
+	[131853] = "神獵手葛拉斯",
+	[214082] = "斯莫德隆",
 	[38010] = "再活化的擁護者",
-	[181579] = "利胡敏",
-	[214236] = "德納薩里安",
-	[51405] = "憤怒之土",
-	[108600] = "月光之女",
+	[32927] = "符文大師墨吉姆",
+	[208459] = "熾炎樹人",
+	[161375] = "潛力樣本",
+	[206689] = "『殘暴者』伊吉拉",
 	[61699] = "西克席克琥珀之翼",
-	[4218] = "德納薩里安",
+	[118924] = "靈魂引擎",
 	[171094] = "恐怖古物",
-	[84152] = "樹人",
-	[157161] = "沙塵漩渦",
-	[149995] = "高階祭司艾吉兒",
-	[200912] = "娜翠絲",
-	[201934] = "暗焰融合體",
-	[33768] = "礫石",
+	[192104] = "熔岩蛞蝓",
+	[205665] = "攻城猛瑪象",
+	[145903] = "暗鑄十字軍",
+	[205437] = "嗆辣岩漿蝸牛",
+	[205630] = "迷路的大傢伙",
+	[201320] = "拉修克",
 }
 AchievementTrackerNPCCacheClassic = {
 }

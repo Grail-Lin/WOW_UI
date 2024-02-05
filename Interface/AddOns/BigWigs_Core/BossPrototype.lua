@@ -34,7 +34,7 @@ local EJ_GetEncounterInfo, UnitGroupRolesAssigned, C_UIWidgetManager = EJ_GetEnc
 local SendChatMessage, GetInstanceInfo, Timer, SetRaidTarget = loader.SendChatMessage, loader.GetInstanceInfo, loader.CTimerAfter, loader.SetRaidTarget
 local UnitGUID, UnitHealth, UnitHealthMax, Ambiguate = loader.UnitGUID, loader.UnitHealth, loader.UnitHealthMax, loader.Ambiguate
 local RegisterAddonMessagePrefix, UnitDetailedThreatSituation = loader.RegisterAddonMessagePrefix, loader.UnitDetailedThreatSituation
-local isClassic, isRetail = loader.isClassic, loader.isRetail
+local isClassic, isRetail, isClassicEra = loader.isClassic, loader.isRetail, loader.isVanilla
 local format, find, gsub, band, tremove, twipe = string.format, string.find, string.gsub, bit.band, table.remove, table.wipe
 local select, type, next, tonumber = select, type, next, tonumber
 local PlaySoundFile = loader.PlaySoundFile
@@ -1276,6 +1276,18 @@ function boss:DeleteFromTable(table, item)
 	end
 end
 
+do
+	local comma = (myLocale == "zhTW" or myLocale == "zhCN") and "，" or ", "
+	local tconcat = table.concat
+	--- Concatenate all the entries from a table into a string separated with commas.
+	-- @param[type=table] table The table to concatenate
+	-- @number entries The amount of entries in the table to concatenate
+	-- @return string
+	function boss:TableToString(table, entries)
+		return tconcat(table, comma, 1, entries)
+	end
+end
+
 --- Get the current instance difficulty.
 -- @return difficulty id
 function boss:Difficulty()
@@ -1331,10 +1343,15 @@ function boss:Retail()
 end
 
 --- Check if on a classic server.
--- @return number 2 = classic era, 5 = classic, nil if retail
+-- @return boolean
 function boss:Classic()
-	return WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE and WOW_PROJECT_ID
-	--return isClassic
+	return isClassic
+end
+
+--- Check if on a vanilla server.
+-- @return boolean
+function boss:Vanilla()
+	return isClassicEra
 end
 
 --- Get the mob/npc id from a GUID.
@@ -2299,8 +2316,6 @@ do
 		end
 	end
 
-	local comma = (myLocale == "zhTW" or myLocale == "zhCN") and "，" or ", "
-	local tconcat = table.concat
 	do
 		local function printTargets(self, key, playerTable, color, text, icon, markers)
 			local playersInTable = #playerTable
@@ -2325,7 +2340,7 @@ do
 							playerTable[i] = self:GetIconTexture(markers[i]) .. playerTable[i]
 						end
 					end
-					local list = tconcat(playerTable, comma, 1, playersInTable)
+					local list = self:TableToString(playerTable, playersInTable)
 					-- Don't Emphasize if it's on other people when both EMPHASIZE and ME_ONLY_EMPHASIZE are enabled.
 					local isEmphasized = band(self.db.profile[key], C.EMPHASIZE) == C.EMPHASIZE and band(self.db.profile[key], C.ME_ONLY_EMPHASIZE) ~= C.ME_ONLY_EMPHASIZE
 					self:SendMessage("BigWigs_Message", self, key, format(L.other, msg, list), color, texture, isEmphasized)
@@ -2440,7 +2455,7 @@ do
 							tbl[#tbl+1] = self:ColorName(name)
 						end
 					end
-					local list = tconcat(tbl, comma, 1, #tbl)
+					local list = self:TableToString(tbl, #tbl)
 					-- Don't Emphasize if it's on other people when both EMPHASIZE and ME_ONLY_EMPHASIZE are enabled.
 					local isEmphasized = band(self.db.profile[key], C.EMPHASIZE) == C.EMPHASIZE and band(self.db.profile[key], C.ME_ONLY_EMPHASIZE) ~= C.ME_ONLY_EMPHASIZE
 					self:SendMessage("BigWigs_Message", self, key, format(L.other, msg, list), color, texture, isEmphasized)
@@ -2871,11 +2886,17 @@ do
 		[0x00000040] = 7, -- COMBATLOG_OBJECT_RAIDTARGET7
 		[0x00000080] = 8, -- COMBATLOG_OBJECT_RAIDTARGET8
 	}
-	--- Get the raid target icon currently set on a unit based on its combat log flags.
-	-- @string flags unit bit flags
+	local GetRaidTargetIndex = GetRaidTargetIndex
+	--- Get the raid target icon currently set on a unit based on a unit token (string) or combat log flags (number).
+	-- @param unitOrFlags unit token or combat log flags
 	-- @return number The number based on the icon ranging from 1-8 (nil if no icon is set)
-	function boss:GetIcon(flags)
-		return flagToIcon[flags]
+	function boss:GetIcon(unitOrFlags)
+		if type(unitOrFlags) == "string" then
+			local icon = GetRaidTargetIndex(unitOrFlags)
+			return icon
+		else
+			return flagToIcon[unitOrFlags]
+		end
 	end
 end
 
@@ -3169,7 +3190,7 @@ do
 	end
 end
 
---- Start a "berserk" bar and show an engage message.
+--- Start a "berserk" bar, and optionally also show an engage message, and multiple reminder messages.
 -- @number seconds the time before the boss enrages/berserks
 -- @param[opt] noMessages if any value, don't display an engage message. If set to 0, don't display any messages
 -- @string[opt] customBoss set a custom boss name
@@ -3206,4 +3227,17 @@ function boss:Berserk(seconds, noMessages, customBoss, customBerserk, customFina
 		self:DelayedMessage(key, seconds - 5, "orange", format(L.custom_sec, berserk, 5))
 		self:DelayedMessage(key, seconds, "red", customFinalMessage or format(L.custom_end, name, berserk), icon, "Alarm")
 	end
+end
+
+--- Stop a "berserk" bar, and any related messages.
+-- @string barText The text the bar is using
+-- @string[opt] customBoss the text that was set as a custom boss name
+-- @string[opt] customFinalMessage the text that was set for the final message
+function boss:StopBerserk(barText, customBoss, customFinalMessage)
+	self:StopBar(barText)
+	self:CancelDelayedMessage(format(L.custom_min, barText, 1))
+	self:CancelDelayedMessage(format(L.custom_sec, barText, 30))
+	self:CancelDelayedMessage(format(L.custom_sec, barText, 10))
+	self:CancelDelayedMessage(format(L.custom_sec, barText, 5))
+	self:CancelDelayedMessage(customFinalMessage or format(L.custom_end, customBoss or self.displayName, barText))
 end

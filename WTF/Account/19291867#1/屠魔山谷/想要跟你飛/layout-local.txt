@@ -3,7 +3,7 @@ Frame: DcrMUFsContainer
 FrameLevel: 1
 Anchor: TOP
 X: 402
-Y: -247
+Y: -207
 W: 20
 H: 20
 Frame: ScriptErrorsFrame
@@ -29,8 +29,8 @@ W: 550
 H: 525
 Frame: CharacterFrame
 FrameLevel: 1
-Anchor: TOP
-X: 249
+Anchor: TOPLEFT
+X: 386
 Y: -116
 W: 338
 H: 424
@@ -83,6 +83,13 @@ X: 211
 Y: -144
 W: 128
 H: 64
+Frame: FriendsFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 338
+H: 424
 Frame: ColorPickerFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -111,10 +118,3 @@ X: 358
 Y: -108
 W: 261
 H: 590
-Frame: FriendsFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 338
-H: 424

@@ -12,14 +12,14 @@ TomTomDB = {
 		["撕開你的一切 - 屠魔山谷"] = "Default",
 		["想要跟你飛 - 尖石"] = "Default",
 		["都是他們的錯 - 屠魔山谷"] = "Default",
-		["夕行 - 屠魔山谷"] = "Default",
+		["一輪輪胖嘟嘟 - 尖石"] = "Default",
 		["一輪輪胖嘟嘟 - 屠魔山谷"] = "Default",
 		["只用來看裝備 - 屠魔山谷"] = "Default",
-		["想要跟你飛 - 屠魔山谷"] = "Default",
-		["稅道夏武 - 尖石"] = "Default",
 		["暮頌 - 屠魔山谷"] = "Default",
+		["稅道夏武 - 尖石"] = "Default",
+		["想要跟你飛 - 屠魔山谷"] = "Default",
 		["馬可西亞斯 - 屠魔山谷"] = "Default",
-		["一輪輪胖嘟嘟 - 尖石"] = "Default",
+		["夕行 - 屠魔山谷"] = "Default",
 		["粉紅塔里克 - 屠魔山谷"] = "Default",
 	},
 	["profiles"] = {
@@ -60,14 +60,14 @@ TomTomWaypointsM = {
 		["撕開你的一切 - 屠魔山谷"] = "撕開你的一切 - 屠魔山谷",
 		["想要跟你飛 - 尖石"] = "想要跟你飛 - 尖石",
 		["都是他們的錯 - 屠魔山谷"] = "都是他們的錯 - 屠魔山谷",
-		["夕行 - 屠魔山谷"] = "夕行 - 屠魔山谷",
+		["一輪輪胖嘟嘟 - 尖石"] = "一輪輪胖嘟嘟 - 尖石",
 		["一輪輪胖嘟嘟 - 屠魔山谷"] = "一輪輪胖嘟嘟 - 屠魔山谷",
 		["只用來看裝備 - 屠魔山谷"] = "只用來看裝備 - 屠魔山谷",
-		["想要跟你飛 - 屠魔山谷"] = "想要跟你飛 - 屠魔山谷",
-		["稅道夏武 - 尖石"] = "稅道夏武 - 尖石",
 		["暮頌 - 屠魔山谷"] = "暮頌 - 屠魔山谷",
+		["稅道夏武 - 尖石"] = "稅道夏武 - 尖石",
+		["想要跟你飛 - 屠魔山谷"] = "想要跟你飛 - 屠魔山谷",
 		["馬可西亞斯 - 屠魔山谷"] = "馬可西亞斯 - 屠魔山谷",
-		["一輪輪胖嘟嘟 - 尖石"] = "一輪輪胖嘟嘟 - 尖石",
+		["夕行 - 屠魔山谷"] = "夕行 - 屠魔山谷",
 		["粉紅塔里克 - 屠魔山谷"] = "粉紅塔里克 - 屠魔山谷",
 	},
 	["profiles"] = {
@@ -87,10 +87,18 @@ TomTomWaypointsM = {
 					["from"] = "Teixi/Dreilla - Profession Knowledge Tracker (Weak Auras 2)",
 					["callbacks"] = {
 						["distance"] = {
-						},
-						["minimap"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
 						},
 						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 					},
 					["minimap"] = true,
@@ -110,10 +118,18 @@ TomTomWaypointsM = {
 					["from"] = "Teixi/Dreilla - Profession Knowledge Tracker (Weak Auras 2)",
 					["callbacks"] = {
 						["distance"] = {
-						},
-						["minimap"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
 						},
 						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 					},
 					["minimap"] = true,
@@ -133,10 +149,18 @@ TomTomWaypointsM = {
 					["from"] = "Teixi/Dreilla - Profession Knowledge Tracker (Weak Auras 2)",
 					["callbacks"] = {
 						["distance"] = {
-						},
-						["minimap"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
 						},
 						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 					},
 					["minimap"] = true,
@@ -158,10 +182,18 @@ TomTomWaypointsM = {
 					["from"] = "Teixi/Dreilla - Profession Knowledge Tracker (Weak Auras 2)",
 					["callbacks"] = {
 						["distance"] = {
-						},
-						["minimap"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
 						},
 						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 					},
 					["minimap"] = true,
@@ -181,10 +213,18 @@ TomTomWaypointsM = {
 					["from"] = "Teixi/Dreilla - Profession Knowledge Tracker (Weak Auras 2)",
 					["callbacks"] = {
 						["distance"] = {
-						},
-						["minimap"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
 						},
 						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 					},
 					["minimap"] = true,
@@ -204,10 +244,18 @@ TomTomWaypointsM = {
 					["from"] = "Teixi/Dreilla - Profession Knowledge Tracker (Weak Auras 2)",
 					["callbacks"] = {
 						["distance"] = {
-						},
-						["minimap"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
 						},
 						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 					},
 					["minimap"] = true,
@@ -227,10 +275,18 @@ TomTomWaypointsM = {
 					["from"] = "Teixi/Dreilla - Profession Knowledge Tracker (Weak Auras 2)",
 					["callbacks"] = {
 						["distance"] = {
-						},
-						["minimap"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
 						},
 						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 					},
 					["minimap"] = true,
@@ -252,10 +308,18 @@ TomTomWaypointsM = {
 					["from"] = "Teixi/Dreilla - Profession Knowledge Tracker (Weak Auras 2)",
 					["callbacks"] = {
 						["distance"] = {
-						},
-						["minimap"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
 						},
 						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 					},
 					["minimap"] = true,
@@ -275,10 +339,18 @@ TomTomWaypointsM = {
 					["from"] = "Teixi/Dreilla - Profession Knowledge Tracker (Weak Auras 2)",
 					["callbacks"] = {
 						["distance"] = {
-						},
-						["minimap"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
 						},
 						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 					},
 					["minimap"] = true,
@@ -300,10 +372,18 @@ TomTomWaypointsM = {
 					["from"] = "Teixi/Dreilla - Profession Knowledge Tracker (Weak Auras 2)",
 					["callbacks"] = {
 						["distance"] = {
-						},
-						["minimap"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
 						},
 						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 					},
 					["minimap"] = true,
@@ -323,10 +403,18 @@ TomTomWaypointsM = {
 					["from"] = "Teixi/Dreilla - Profession Knowledge Tracker (Weak Auras 2)",
 					["callbacks"] = {
 						["distance"] = {
-						},
-						["minimap"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
 						},
 						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 					},
 					["minimap"] = true,
@@ -348,10 +436,18 @@ TomTomWaypointsM = {
 					["from"] = "Teixi/Dreilla - Profession Knowledge Tracker (Weak Auras 2)",
 					["callbacks"] = {
 						["distance"] = {
-						},
-						["minimap"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
 						},
 						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 					},
 					["minimap"] = true,
@@ -371,10 +467,18 @@ TomTomWaypointsM = {
 					["from"] = "Teixi/Dreilla - Profession Knowledge Tracker (Weak Auras 2)",
 					["callbacks"] = {
 						["distance"] = {
-						},
-						["minimap"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
 						},
 						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 					},
 					["minimap"] = true,
@@ -394,10 +498,18 @@ TomTomWaypointsM = {
 					["from"] = "Teixi/Dreilla - Profession Knowledge Tracker (Weak Auras 2)",
 					["callbacks"] = {
 						["distance"] = {
-						},
-						["minimap"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
 						},
 						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 					},
 					["minimap"] = true,
@@ -425,42 +537,9 @@ TomTomWaypointsM = {
 		},
 		["都是他們的錯 - 屠魔山谷"] = {
 		},
-		["夕行 - 屠魔山谷"] = {
+		["一輪輪胖嘟嘟 - 尖石"] = {
 		},
 		["一輪輪胖嘟嘟 - 屠魔山谷"] = {
-			[2024] = {
-				["2024:600000000:650000000:TomTom 路徑點"] = {
-					2024, -- [1]
-					0.6, -- [2]
-					0.65, -- [3]
-					["arrivaldistance"] = 15,
-					["crazy"] = true,
-					["persistent"] = true,
-					["desc"] = "TomTom 路徑點",
-					["silent"] = true,
-					["cleardistance"] = 10,
-					["title"] = "TomTom 路徑點",
-					["from"] = "TomTom/way",
-					["callbacks"] = {
-						["distance"] = {
-							[10] = nil --[[ skipped inline function ]],
-							[15] = nil --[[ skipped inline function ]],
-						},
-						["world"] = {
-							["onclick"] = nil --[[ skipped inline function ]],
-							["tooltip_update"] = nil --[[ skipped inline function ]],
-							["tooltip_show"] = nil --[[ skipped inline function ]],
-						},
-						["minimap"] = {
-							["onclick"] = nil --[[ skipped inline function ]],
-							["tooltip_update"] = nil --[[ skipped inline function ]],
-							["tooltip_show"] = nil --[[ skipped inline function ]],
-						},
-					},
-					["minimap"] = true,
-					["world"] = true,
-				},
-			},
 			[2023] = {
 				["2023:600000000:650000000:TomTom 路徑點"] = {
 					2023, -- [1]
@@ -476,18 +555,10 @@ TomTomWaypointsM = {
 					["from"] = "TomTom/way",
 					["callbacks"] = {
 						["distance"] = {
-							[10] = nil --[[ skipped inline function ]],
-							[15] = nil --[[ skipped inline function ]],
-						},
-						["world"] = {
-							["onclick"] = nil --[[ skipped inline function ]],
-							["tooltip_update"] = nil --[[ skipped inline function ]],
-							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 						["minimap"] = {
-							["onclick"] = nil --[[ skipped inline function ]],
-							["tooltip_update"] = nil --[[ skipped inline function ]],
-							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["world"] = {
 						},
 					},
 					["minimap"] = true,
@@ -507,18 +578,35 @@ TomTomWaypointsM = {
 					["from"] = "TomTom/way",
 					["callbacks"] = {
 						["distance"] = {
-							[10] = nil --[[ skipped inline function ]],
-							[15] = nil --[[ skipped inline function ]],
-						},
-						["world"] = {
-							["onclick"] = nil --[[ skipped inline function ]],
-							["tooltip_update"] = nil --[[ skipped inline function ]],
-							["tooltip_show"] = nil --[[ skipped inline function ]],
 						},
 						["minimap"] = {
-							["onclick"] = nil --[[ skipped inline function ]],
-							["tooltip_update"] = nil --[[ skipped inline function ]],
-							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["world"] = {
+						},
+					},
+					["minimap"] = true,
+					["world"] = true,
+				},
+			},
+			[2024] = {
+				["2024:600000000:650000000:TomTom 路徑點"] = {
+					2024, -- [1]
+					0.6, -- [2]
+					0.65, -- [3]
+					["arrivaldistance"] = 15,
+					["crazy"] = true,
+					["persistent"] = true,
+					["desc"] = "TomTom 路徑點",
+					["silent"] = true,
+					["cleardistance"] = 10,
+					["title"] = "TomTom 路徑點",
+					["from"] = "TomTom/way",
+					["callbacks"] = {
+						["distance"] = {
+						},
+						["minimap"] = {
+						},
+						["world"] = {
 						},
 					},
 					["minimap"] = true,
@@ -528,15 +616,15 @@ TomTomWaypointsM = {
 		},
 		["只用來看裝備 - 屠魔山谷"] = {
 		},
-		["想要跟你飛 - 屠魔山谷"] = {
+		["暮頌 - 屠魔山谷"] = {
 		},
 		["稅道夏武 - 尖石"] = {
 		},
-		["暮頌 - 屠魔山谷"] = {
+		["想要跟你飛 - 屠魔山谷"] = {
 		},
 		["馬可西亞斯 - 屠魔山谷"] = {
 		},
-		["一輪輪胖嘟嘟 - 尖石"] = {
+		["夕行 - 屠魔山谷"] = {
 		},
 		["粉紅塔里克 - 屠魔山谷"] = {
 		},
